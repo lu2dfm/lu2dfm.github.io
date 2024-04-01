@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Antenas on LU2DFM</title>
+    <link>http://lu2dfm.github.io/es/categories/antenas/</link>
+    <description>Recent content in Antenas on LU2DFM</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Thu, 25 Nov 2010 00:00:00 +0000</lastBuildDate><atom:link href="http://lu2dfm.github.io/es/categories/antenas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Moxon en GNU/Linux</title>
+      <link>http://lu2dfm.github.io/es/post/2010/20101125_moxgenlinux/</link>
+      <pubDate>Thu, 25 Nov 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://lu2dfm.github.io/es/post/2010/20101125_moxgenlinux/</guid>
+      <description>La moxon es una direccional simple de dos elementos, compacta, liviana y fácil de construir.
+Se puede fabricar de muchas maneras. Hay un sitio dedicado a estas antenas donde pueden verse ejemplos de los mas diversos métodos constructivos.
+Yo he estado modelando una moxon para 6 metros y comparando diferentes relaciones entre las dimensiones.
+Por lo que he visto el algoritmo desarrollado hace unos años por Cebik es aparentemente el óptimo, por lo menos en cuanto a tres parámetros importantes: relación adelante-atrás (F/B), impedancia del punto de alimentación y ancho de banda útil (ROE 2:1).</description>
+    </item>
+    
+    <item>
+      <title>Los medidores de ROE te hacen estúpido</title>
+      <link>http://lu2dfm.github.io/es/post/2010/kl7aj_swr_meters_make_you_stupid_sp/</link>
+      <pubDate>Wed, 24 Nov 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://lu2dfm.github.io/es/post/2010/kl7aj_swr_meters_make_you_stupid_sp/</guid>
+      <description>Traducción autorizada por el autor, por Fer, LU2DFM el 10 de Marzo de 2010.
+Original en: http://www.eham.net/articles/23317. Versión PDF
+Los medidores de ROE te hacen estúpido o línea abierta hasta la eternidad Posiblemente ya se te ha ocurrido que podría ser deseable instalar tu antena de radioaficionado a alguna distancia de tu transmisor y/o receptor. De hecho, a menos que estés dispuesto a operar tu estación de radioaficionado desde lo alto de un árbol o de una torre, es muy posible que estés empleando algún tipo de línea de transmisión.</description>
+    </item>
+    
+  </channel>
+</rss>

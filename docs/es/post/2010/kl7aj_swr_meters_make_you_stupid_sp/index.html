@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Los medidores de ROE te hacen estúpido - LU2DFM</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/es/" title="LU2DFM" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">LU2DFM</div>
+					<div class="logo__tagline">Radio, electrónica, software libre</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menú</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/es/post/">
+				
+				<span class="menu__text">Blog</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/es/busco/">
+				
+				<span class="menu__text">Busco</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/es/about/">
+				
+				<span class="menu__text">Acerca de</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/es/links/">
+				
+				<span class="menu__text">Links</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/es/contacto/">
+				
+				<span class="menu__text">Contacto</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+    <article class="post">
+        <header class="post__header">
+            <h1 class="post__title">Los medidores de ROE te hacen estúpido</h1>
+            <p class="post__lead">Art. original por Eric J. Nichols, KL7AJ.</p>
+            <div class="post__meta meta"><div class="meta__item-author meta__item">
+	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">Fer</span>
+</div>
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2010-11-24T00:00:00Z">24-11-2010</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/es/categories/radio/" rel="category">Radio</a>, <a class="meta__link" href="/es/categories/antenas/" rel="category">Antenas</a>
+	</span>
+</div></div>
+        </header>
+        <div class="content post__content clearfix">
+            
+            
+            
+            <p>Traducción autorizada por el autor, por Fer, LU2DFM el 10 de Marzo de 2010.<br>
+Original en: <a href="http://www.eham.net/articles/23317">http://www.eham.net/articles/23317</a>. <a href="/doc/kl7aj_SWR_Meters_Make_You_Stupid_sp.pdf" target="_blank">Versión PDF</a></p>
+<h4 id="los-medidores-de-roe-te-hacen-estúpido">Los medidores de ROE te hacen estúpido</h4>
+<h4 id="o-línea-abierta-hasta-la-eternidad">o línea abierta hasta la eternidad</h4>
+<p>Posiblemente ya se te ha ocurrido que podría ser deseable instalar tu antena de
+radioaficionado a alguna distancia de tu transmisor y/o receptor. De hecho, a
+menos que estés dispuesto a operar tu estación de radioaficionado desde lo alto
+de un árbol o de una torre, es muy posible que estés empleando algún tipo de
+línea de transmisión. El propósito de una línea de transmisión es llevar la
+energía de radiofrecuencia desde un equipo de radio hasta una antena, o vice
+versa, de la manera menos complicada posible. Podés pensar en una línea de
+transmisión como un alargue<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.para la RF. De hecho, para las
+regiones mas bajas del espectro radioeléctrico, un verdadero alargue puede
+servir a este propósito razonablemente bien, para distancias razonables.</p>
+<p>Como otros aspectos de la Radioafición, la línea de transmisión parece que ha
+tomado vida propia, acumulando una vasta, pegajosa y confusa bola de nieve de
+desinformación en el proceso. Todo esto es muy innecesario.  Una línea de
+transmisión es un medio para un fin, nunca un fin en sí misma. Y no dejes que
+nadie te diga otra cosa.</p>
+<h4 id="un-poco-de-historia">Un poco de historia</h4>
+<p>En los tempranos años de la radio, no había una clara demarcación entre la
+línea de transmisión y la antena. De hecho, veamos una muy típica antena de
+radioaficionado de los días pasados. Consistía en un conjunto de cables
+paralelos, o &ldquo;techo plano&rdquo; (flat-top) como si fuera un tendedero de ropa, y un
+SOLO HILO desde el &ldquo;techo plano&rdquo; hasta el transmisor. Esta línea de transmisión
+de un único alambre típicamente irradiaba tanta señal como la antena de &ldquo;techo
+plano&rdquo; en sí, lo cual no era necesariamente malo. Cualquier cosa que pudieras
+colgar allá afuera en el espacio y que irradiara una señal ayudaba.</p>
+<p>Incontables cientos de miles de contactos de larga distancia por radio fueron
+hechos con semejantes armatostes.</p>
+<h4 id="si-no-está-roto-arreglalo-igual">Si no está roto, arreglalo igual</h4>
+<p>A pesar de la incuestionable efectividad de semejante artefacto por tan largo
+período de la historia de la radioafición, por alguna misteriosa razón, en
+algún momento sobre el final de la Primera Guerra que Sería el Fin de Todas las
+Guerras, fue decidido que la vida no debería ser tan simple. Este bizarro
+concepto de &ldquo;especialización&rdquo; comenzó a infiltrar la vida en el Planeta Tierra.
+Los Nazis de la especialización decidieron que una antena debería radiar pero
+una línea de transmisión no. Se descubrió que se podía evitar que una línea de
+transmisión de un solo hilo irradiase colocando otro hilo al lado del primero,
+y conectando el extremo inferior de aquel (el del lado del transmisor) a
+tierra. Agregaron el doble de cobre para desactivar la mitad de la antena&hellip;
+que negocio! Parece un proyecto del gobierno, no?</p>
+<p>Bueno, este es un concepto del que, por cierto, no se puede culpar al gobierno.
+Fueron ciertamente radioaficionados quienes surgieron con esta &ldquo;idea&rdquo;. El
+producto final de esto fue llamado antena &ldquo;Zepp&rdquo;, porque era usada en los
+Zeppelins.</p>
+<p>En realidad, no deberíamos ser tan duros. La idea de una línea de transmisión
+no radiante fue motivada por la necesidad de mover una fuente de alta tensión
+de RF de la proximidad inmediata de un globo del tamaño de Milwaukee lleno de
+hidrógeno. Por alguna particular razón, ciertos personajes de smoking blanco
+estaban un poco nerviosos por la bolsa de gas del tamaño de Milwaukee llena de
+hidrógeno al lado de una fuente de alta tensión de RF. Como las radios de
+abordo en aquella época eran transmisores de chispa, probablemente no era tan
+mala idea mantener este hecho bajo consideración después de todo. Al final
+terminamos con el desastre del Hindenberg, pero por lo menos no fue causado por
+la radio de abordo! (Por lo menos hasta donde sabemos).</p>
+<p>Cuando los radioaficionados reactivaron sus operaciones después de la guerra, y
+tuvieron mejores cosas a que dedicar sus habilidades que prevenir que los
+dirigibles se encendieran en llamas, descubrieron que la antena Zepp funcionaba
+bastante bien en tierra también. (Bueno, en realidad unos metros SOBRE la
+tierra, pero se entiende la idea).</p>
+<p>Ahora bien, para mantener las dos mitades de la línea de transmisión de la Zepp
+bien paralelas, en la condición en que producen la menor cantidad de radiación,
+los dos hilos eran mantenidos juntos (o separados) con aisladores uniformemente
+espaciados, dando a la línea de trasmisión el aspecto de una escalera.
+Extrañamente, se la terminó llamando línea escalera. Obviamente, una vez mas,
+no pudieron dejarla tranquila. Algún genio en alguna parte se imaginó que el
+extremo superior del segundo hilo tenía que ir a algún lado. En la
+configuración convencional de la Zepp no iba a ninguna parte. Solo terminaba
+ahí. Esto molestaba a alguna gente. El hecho de que realmente funcionara no
+importaba. Alguna gente odia cosas como las antenas asimétricas y el número Pi,
+sin importar que tan bien funcionen. Por lo tanto, una vez mas, trataron de
+arreglar algo que no estaba roto.</p>
+<p>Después de mucho reflexionar sobre a DONDE exactamente el extremo libre de la
+línea escalera debería ir, uno de los antedichos algunos decidió que si iba a
+otro hilo de antena, entonces las cosas serían mas simétricas.</p>
+<p>Y así nació la antena &ldquo;Doble Zepp&rdquo;, en realidad dos antenas Zepp alimentadas
+con una sola línea de transmisión. Los dioses de la simetría fueron
+satisfechos. Y para ser honestos, la antena realmente funcionaba algo mejor que
+la encarnación original. Pero, tal vez mas significativamente, las funciones de
+la antena y de la línea de transmisión fueron entonces entidades completamente
+separadas. Todo era maravilloso.</p>
+<p>En realidad, no. Nuestros problemas recién empezaban.</p>
+<h4 id="no-intenten-esto-en-casa">No intenten esto en casa</h4>
+<p>Con muy raras excepciones, la improvisada estación del radioaficionados
+primitivo usualmente no tenía nada ni siquiera parecido a los equipos de
+medición actuales. De hecho, la mayor parte de los equipos de diagnóstico que
+los radioaficionados modernos dan por sentados, no estaba disponible a ningún
+precio por la mayor parte de la existencia de la radioafición.  Esto fue en
+realidad bueno, por dos cosas:</p>
+<p>El desempeño de la estación del radioaficionado estaba basado estrictamente
+en&hellip; bueno&hellip; desempeño. La única indicación de que las cosas estaban
+funcionando como deberían era el hecho de que uno estaba haciendo un montón de
+contactos. La falta de equipos de pruebas mantenía el objetivo bien en la mira.</p>
+<p>La radioafición era mas barata. Para que usar un costoso medidor de corriente
+de placa cuando vos podías verificar la sintonía de tu transmisor viendo que
+tan largo era el arco de RF entre el capuchón de placa de la válvula de salida
+y la punta de un lápiz que tenías en la mano? ¡SI! Los radioaficionados HACÍAN
+esto&hellip; y la mayoría vivió para contarlo. ¿Gabinete? ¿Que gabinete?</p>
+<p>Era posible que vos hicieras algún descubrimiento accidental de vez en cuando.
+La teoría es importante&hellip; hasta cierto punto. Ayuda a explicar lo que vos ya
+descubriste por accidente, pero no siempre te lleva a nuevos descubrimientos
+por si misma. Vos necesitás una patada en el traste cada tanto y quemarte las
+pestañas para realmente entender la radio. (No le cuentes a la Secretaría de
+Seguridad Laboral que yo dije esto, por cierto).</p>
+<p>El punto a destacar es que teniendo un montón de &ldquo;herramientas&rdquo; a mano
+usualmente obtenés mas información de la que necesitás saber, y a menos que
+sepas como USAR toda esa información, puede ser peor que la ignorancia, como
+veremos en breve.</p>
+<p>En algún momento entre las dos Guerras que terminarían con todas las guerras,
+los radioaficionados descubrieron que podés hacer que una línea de transmisión
+irradie casi NADA si mantenés las corrientes en cada pata de la escalera
+precisamente iguales en magnitud, y EN OPOSICIÓN DE FASE. Esto permitía que la
+antena se comportara como una antena pura, y la línea de transmisión como una
+línea de transmisión pura. La Zepp original fue medio paso en esa dirección,
+pero la Doble Zepp completó el trabajo. Los radioaficionados comenzaron a
+preocuparse mucho por el balance de la corriente&hellip;  pudieran pagárselo o no.
+Si vos eras tacaño y/o pobre, el instrumento elegido era un par de lámparas
+incandescentes, una en cada pata de la escalerita. Si vos eras realmente gente
+bien, entonces vos ponías un verdadero amperímetro de RF en cada pata. (Es
+posible ver estos instrumentos en un montón de viejas fotos de estaciones de
+radioaficionados antiguas; eran del tamaño de un medidor de Watt/hora<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.
+Si las corrientes eran iguales en cada pata, significaba que tu antena estaba
+produciendo la mayor parte de la radiación, y la línea de transmisión no, lo
+que era generalmente bueno. Pero con un pequeño problemita.</p>
+<p>Los medidores de corriente, ya fueran simplemente un par de lamparitas o buenos
+amperímetros de RF, no te decían nada sobre la fase relativa entre ambas patas.
+Sin embargo, era generalmente asumido que si tu Doble Zepp era FÍSICAMENTE
+simétrica, y tu escalerita relativamente perpendicular a la antedicha Doble
+Zepp, las fases de las corrientes DEBÍAN, en efecto, ser iguales y opuestas.
+Entonces, aunque no científicamente rigurosos, el par de amperímetros de RF
+resultaban muy prácticos. Como mínimo, sintonizando para MÁXIMA corriente de RF
+siempre resultaba en la mas fuerte señal irradiada. En el caso de las
+lamparitas, vos sintonizabas para máximo brillo, y todo estaba bien en el
+mundo. Por un tiempo, al menos.</p>
+<p>Sin embargo, los radioaficionados, siendo quienes eran, no estaban contentos a
+menos que tuvieran algo de que preocuparse. En este punto, tenemos que hacer
+una pequeña digresión, y presentar otro Radioaficionado Muerto, el oscuro
+ingeniero eléctrico alemán con el nombre de Ernst Lecher. El vivió a comienzos
+de siglo&hellip; del siglo XX, eso. Su trabajo ya hubo sido, mayormente, aprendido y
+olvidado para la mitad del siglo por buena parte del mundo de la radio. El
+pobre Ernst hizo gran parte de su trabajo antes que nadie tuviera un uso para
+la radio. El estuvo bien adelantado a su tiempo. Desafortunadamente, si buscás
+a Ernst Lecher en Internet, te verás inundado por un verdadero montón de
+&ldquo;información&rdquo; de lo mas bizarra sobre cosas como la energía psíquica y los
+zahoríes, por favor!</p>
+<p>Permítaseme poner esto en claro en nombre del pobre Ernst, que indudablemente
+se está revolcando en su tumba y es incapaz de defenderse por si mismo de estos
+descerebrados &ldquo;discípulos&rdquo; y otros varios paranoicos. Ernst Lecher no tiene
+ABSOLUTAMENTE NADA que ver con la metafísica, los zahoríes, la energía
+psíquica, ni ningún otro tipo de pseudo ciencia de la Nueva Era. El fue un
+VERDADERO científico, un VERDADERO ingeniero, y obtuvo resultados VERDADEROS en
+un VERDADERO laboratorio. Yo pronuncio una maldición sobre aquellos que
+desacreditan su nombre con esas infames habladurías y basura.</p>
+<p>Veamos, en cambio, su VERDADERA contribución al conocimiento de la radio, la
+Línea Lecher (también conocida como Hilo Lecher).</p>
+<p>Una Línea Lecher es un instrumento fabulosamente simple y revelador. Te permite
+medir el largo de onda de una señal de radio directamente&hellip; el primer
+instrumento que existió para permitirte hacer esto. Consiste nada mas que de un
+par de varillas de cobre paralelas, de un par de largos de onda mas o menos en
+la frecuencia de interés, con un metro colocado a lo largo de la línea. También
+tenés un detector de tensión móvil para que puedas medir la tensión de RF a lo
+largo de la línea en cualquier punto. (Yo fabriqué una verdaderamente hermosa
+para mi clase de electrónica que siempre genera un montón de ¡ooohs! y ¡ahhs!
+en mis alumnos).</p>
+<p>Necesitás una pequeña cantidad de RF entrando por un extremo de la línea, que
+establece ONDAS ESTACIONARIAS a lo largo de la línea. A medida que movés el
+detector de tensión a lo largo de la línea, la tensión va variando entre un
+máximo y un cero cada media longitud de onda. Vos medís la distancia entre dos
+puntos de tensión cero, y voilá, tenés exactamente medio largo de onda. Bueno,
+casi exactamente, ya que hay una pequeña demora en una onda que se propaga en
+la Línea Lecher respecto a una que se propaga en espacio libre. Solo un pequeño
+porcentaje de demora adicional para un típico para de hilos con una separación
+de 7.5cm (3&quot;) entre ellos. (También podés medir la distancia entre puntos de
+MÁXIMA tensión, pero estos son mucho menos definidos, mientras los CEROS o
+NULOS son extremadamente agudos).</p>
+<p>En cualquier caso, es un instrumento muy sensible y preciso&hellip; de hecho, hasta
+los años 1950s la Línea Lecher era el método mas preciso conocido para medir
+señales de UHF. Los frecuencímetros no existían.</p>
+<p>La Línea Lecher también sirve como un circuito de alto Q (selectivo) en
+amplificadores y filtros de UHF. Variaciones de la Línea Lecher (Líneas Lecher
+cargadas) que son algo mas chicas que las versiones de tamaño completo también
+han sido utilizadas. La mayoría de los transmisores de emisoras comerciales de
+FM todavía usan alguna variación de la Línea Lecher en el circuito sintonizado
+de placa.</p>
+<p>Adicionalmente, dispositivos tales como el sintonizador de sección (stub) en
+corto, prácticamente universal en la industria de las microondas, está basado
+en la Línea Lecher. De hecho, como cualquier ingeniero en microondas te puede
+decir, CUALQUIER impedancia se puede adaptar a CUALQUIER OTRA impedancia usando
+solo dos sintonizadores de sección (stub). Todo por Ernst Lecher y su fabulosas
+ONDAS ESTACIONARIAS amaestradas.</p>
+<p>Tan simple, tan educativo, tan elegante, y tan increíblemente útil.  Y, aún,
+lamentablemente, otra fuente de póstumo tormento para Ernst.</p>
+<p>Ya que, en los años recientes, las ONDAS ESTACIONARIAS han venido a ser vistas
+como algo que es necesario evitar como el virus Ébola. Esto, mas que ninguna
+otra confusión, ha resultado ser la mayor fuente de Intercambio de Estupidez de
+la Radioafición (IER). Por alguna inexplicable razón que probablemente nunca
+conoceremos, seres presumiblemente inteligentes, racionales, se convierten en
+el idiota del pueblo ni bien el término ONDA ESTACIONARIA es pronunciado;
+estrechan sus colectivas manos, palpitando al unísono e hiperventilando de
+horror.</p>
+<p>El hecho en este asunto es que alrededor del 95% de lo que hace que la radio
+funcione después de todo es la aplicación de algún tipo de ONDA ESTACIONARIA.
+Las ondas estacionarias son como el agua. Solo porque algún Cro-Magnon se las
+arregle para ahogarse en una bañera no es motivo para que el resto de nosotros
+tenga que vivir de una dieta de arena seca. ¡La radioafición NECESITA las ondas
+estacionarias para sobrevivir!</p>
+<p>Ahora bien, puede haber unos pocos lectores que nunca hayan encontrado el
+término relación de onda estacionaria, o ROE. Si vos sos unos de esos
+individuos, podés considerarte bendito. No vas a tener que &ldquo;desaprender&rdquo; nada.
+Sos una hoja en blanco, despojado de incontables siglos-hombre de ignorancia
+colectiva acumulada acerca de esta materia.</p>
+<p>¿Estás listo?</p>
+<p>¡Perfecto! Empecemos.</p>
+<p>Uno de los mejores hábitos que podés adquirir como nuevo radioaficionado es el
+hábito de MEDIR todo. Vos NUNCA querrás tomar la palabra de otro sobre lo que
+ocurre en la electrónica de la radioafición (o cualquier otro tema, para el
+caso), aún de una fuente infalible y confiable (¡o de mí mismo!). Este hábito
+por si mismo, si se lo sigue religiosamente, podría eliminar 99% del IER, tal
+como ha sido definido arriba. El hecho en este asunto es que realizar
+experimentos reales da un poco de trabajo&hellip; pero repetir la ignorancia no.
+Bueno, tal vez mover un poco la lengua queme una o dos calorías, pero eso es
+todo.</p>
+<p>Este es otro gran principio, directo del laboratorio de física: si querés saber
+que está pasando, seguí el calor.</p>
+<p>Que significa esto? Muy simple, en realidad, pero tiene algunas sutiles
+connotaciones. Cuando vos generás una cierta cantidad de energía de
+radiofrecuencia, esta puede ir solo a dos lugares. Puede ser radiada en el
+espacio. O puede hacer que algo se caliente. No hay otras opciones.</p>
+<p>Veremos por que esto es de importancia crucial a medida que avancemos.</p>
+<h4 id="sin-final-a-la-vista">Sin final a la vista</h4>
+<p>Echemos una mirada a una línea de transmisión que sea infinitamente larga&hellip;
+nuestra Línea Escalera a la Eternidad. En el lejano extremo de la escalerita,
+pongamos una lamparita de 100 watts. (Por supuesto, te va a llevar un buen rato
+caminar hasta allá y conectar la lamparita, y luego caminar de vuelta para
+completar el experimento, pero seguí con nosotros un momento).  Ahora,
+conectemos un radio transmisor de 100 watts en el extremo de entrada de nuestra
+línea de transmisión infinita. Encendamos el radio transmisor por precisamente
+un segundo, y apaguémoslo de nuevo. Ahora, hagamos un poco de café, y mientras
+se posa, o se cuela, o se recalienta en el microondas, revolvamos el armario
+para encontrar los viejos largavistas. Agarramos el café y nos sentamos en el
+pasto apuntando nuestros largavistas hacia el extremo de nuestra línea de
+transmisión de largo infinito. (Podría ser ventajoso realizar este experimento
+de noche, como podrás imaginarte). En realidad, le tomaría una cantidad de
+tiempo infinito a la ráfaga de RF de un segundo llegar hasta la lamparita, y
+OTRO tiempo infinito tomará ver el resultado en la lamparita.</p>
+<p>Lo mas probable, es que este experimento falle, a menos que vos vivas hasta una
+MUY, MUY, MUY avanzada edad. Pero no importa; aún los experimentos fallidos
+son educativos.</p>
+<p>Modifiquemos un poco nuestro experimento, para que tenga un poco mas de
+probabilidad de éxito. Usemos una línea de transmisión que tenga una longitud
+de un minuto-luz. Eso serán unos meros 17.86 millones de kilómetros de largo,
+mas algún centavo; una figura MUCHO mas manejable.</p>
+<p>De nuevo, encendamos el transmisor por un segundo, y apaguémoslo otra vez.
+Tendremos que apuntar nuestros largavistas a la lamparita a solo 17.86 millones
+de kilómetros de distancia. Después de DOS minutos, veremos que la lamparita
+brilla encendida durante un segundo exacto. (Nuevamente, teniendo en cuenta que
+a la luz le toma un minuto viajar desde la lamparita hasta nuestros ojos).</p>
+<p>¿No es asombroso?</p>
+<p>A riesgo de complicar las cosas, agregaremos unos pocos detalles menores. Uno
+debería saber que una lamparita incandescente convencional es horriblemente
+ineficiente. Si tenés suerte, alrededor del 2.5% de la energía es convertida en
+luz; el 97.5% restante, tal como adivinaste, es CALOR. También tiene una
+resistencia que cambia dramáticamente con la potencia aplicada, lo cual es aún
+mas relevante cuando se usa una lamparita como indicador de RF. Pero tenemos un
+largo recorrido que hacer en esta lección antes de que estos factores se tornen
+importantes.</p>
+<p>El aspecto importante a tener en cuenta en esto es que TODA la energía que
+enviamos por la línea de transmisión, (100 watt-segundo en este caso, para ser
+precisos) es disipada, esto es, nunca sabremos mas de ella. Es energía PERDIDA.
+La energía de radiofrecuencia radiada por una antena también es es energía
+PERDIDA. Por supuesto, puede que sea un poco extraño filosóficamente llamar
+energía &ldquo;perdida&rdquo; a la energía radiada por una antena porque este es el único
+propósito de la antena en primer lugar. Pero nosotros no podemos traer esa
+energía de vuelta, lo cual es el punto importante.</p>
+<p>Ahora, si vos estuviste realmente prestando atención, posiblemente hayas
+pensado para vos mismo, &ldquo;¿Que pasa en esos 59 segundos previos a que la energía
+alcance la lamparita? ¿Como podemos definir POTENCIA o ENERGÍA? ¿No hace falta
+algún tipo de CARGA? ¡Hasta que la ráfaga de un segundo no llega a la
+lamparita, NO HAY carga! ¿Estamos violando la ley de Ohm, o algo así?</p>
+<p>Todas excelentes preguntas. Y son centrales para esta discusión.</p>
+<p>Acá es donde encontramos una misteriosa entidad denominada &ldquo;Impedancia
+Característica&rdquo;. La impedancia característica puede ser pensada como la
+RESISTENCIA EQUIVALENTE a la entrada de una línea de transmisión de longitud
+infinita. Su valor es independiente del largo de la línea. Es una función de la
+separación entre los conductores, y del diámetro de los mismos. Hay una fórmula
+que no es para nada complicada, pero que no necesitás memorizar. Lo único que
+tenés que saber es que la impedancia característica es BAJA para conductores
+gruesos poco espaciados, y ALTA para delgados conductores bien espaciados. Para
+la línea comercial típica es de aproximadamente 450 ohms. En días de antaño, la
+línea escalerita casera generalmente andaba alrededor de los 600 ohms.</p>
+<p>Ahora, acá es donde llegamos a la parte buena.</p>
+<p>Desde el punto de vista de tu transmisor, la impedancia característica de una
+línea infinita aparece como una resistencia REAL. Vos podés calcular potencia
+generada tal como si en los terminales de salida del transmisor hubiera una
+resistencia REAL de carne y hueso (o por lo menos, de CARBÓN).</p>
+<p>Y además&hellip; hasta que la señal transmitida ALCANCE el extremo lejano de la
+línea de transmisión Y vuelva (hablaremos de ondas reflejadas en seguida) la
+impedancia de entrada es también igual a la impedancia característica de la
+línea de transmisión. En otras palabras, la impedancia que un transmisor ve
+para una RÁFAGA es siempre igual a la impedancia característica de la línea,
+sin importar que es lo que esté colgando en el extremo lejano de la línea.
+ (Veremos que para señales de radio de ESTADO CONSTANTE la situación puede ser
+muy diferente). Podemos ver también que EN EL INSTANTE del disparo podemos usar
+la impedancia característica de la línea para calcular la potencia y energía de
+cualquier señal transmitida, usando tensión y corriente, tal como si se tratase
+de un resistor físico real.</p>
+<p>Ahora, si SACAMOS la lamparita del extremo de la línea, y repetimos el
+experimento, no va a haber gran diferencia en cuanto a lo que a nuestro
+transmisor le importa&hellip; al menos por dos minutos&hellip; después de los cuales
+tampoco va a importar mucho de todas maneras, porque para ese momento el
+transmisor llevará largo tiempo apagado! Nuestro transmisor no tiene forma de
+saber (o que le importe) que hay en el extremo lejano de la línea de
+transmisión, en condiciones instantáneas (ráfagas cortas).</p>
+<p>Yo pienso que vos vas a estar de acuerdo en que la descripción del
+comportamiento con ráfagas de una línea de transmisión es bastante trivial&hellip;
+no vale la pena elaborar mas.</p>
+<p>Donde las cosas se ponen interesantes (y mas complicadas), sin embargo, es
+cuando tenemos ondas INCIDENTE y REFLEJADA simultáneamente presentes. Pero
+quedate tranquilo, no tenemos que meternos con esto por ahora.</p>
+<p>Volvamos a nuestra configuración sin la lamparita. ¿Que ES lo que pasa con la
+ráfaga de 100 watt-segundo cuando se encuentra con la condición de &ldquo;puente
+derrumbado&rdquo;?</p>
+<p>Curiosamente, la energía de RF no se esfuma desde el extremo de la línea de
+transmisión hacia el espacio. Si PUDIERA hacer esto, no habría mucha necesidad
+de una antena al fin de cuentas. De hecho, si vos pudieras hacer que una línea
+de transmisión impulse la energía de RF directamente en el espacio, serías
+realmente muy rico.</p>
+<p>En cambio, lo que ocurre es que la ráfaga de RF es COMPLETAMENTE REFLEJADA de
+vuelta hacia la fuente. La energía tiene que ir a algún lado, y si no puede ser
+convertida en calor, o irradiada en el espacio como una señal de radio, tiene
+que encontrar algún lugar donde PUEDA hacer una cosa o la otra.</p>
+<p>Bueno, para ser honesto, TIENE otra opción. Puede quedarse rebotando de un lado
+para el otro para siempre. Hablaremos de esta opción dentro de poco.</p>
+<p>Pero primero, modifiquemos una vez mas nuestra configuración de pruebas.
+Dejemos el extremo lejano de la línea de transmisión flameando al viento.
+(Hmm&hellip; sospecho que a 17.86 millones de kilómetros en el espacio exterior, no
+debe haber mucho viento que digamos). De todos modos&hellip; tenemos una línea
+ABIERTA allá lejos.</p>
+<p>En el extremo CERCANO pongamos una llave inversora doble, de forma tal que
+convenientemente podamos conectar el transmisor o la lamparita a la línea de
+transmisión.</p>
+<p>Ahora, pongamos la llave del lado del transmisor y enviemos una ráfaga de RF de
+un segundo de duración. Inmediatamente, apaguemos el transmisor y pasemos la
+llave del lado de la lamparita, y esperemos un par de minutos. (En realidad, un
+minuto y 59 segundos).</p>
+<p>Voilá! En el instante mencionado, la lamparita brilla por un segundo. ¿No estás
+asombrado? ¿Que hemos aprendido?</p>
+<p>Bueno, un par de cosas, por lo menos. En primer lugar que la energía REFLEJADA
+es energía REAL. Somos capaces de encender la lamparita con la energía que fue
+reflejada desde el extremo lejano de la línea de transmisión abierta.</p>
+<p>En segundo lugar, aprendimos que la línea de transmisión tiene 17.86 millones
+de kilómetros de longitud. Bueno, ya sabíamos nosotros esto cuando la pusimos
+ahí, no es así? Pero, en caso de que no lo supiéramos, lo podríamos haber
+determinado midiendo cuidadosamente el tiempo de viaje ida y vuelta, sabiendo
+que las corrientes viajan a través de la línea de transmisión a una velocidad
+de aproximadamente 297.600 kilómetros por segundo, mas alguna monedita.</p>
+<p>De hecho, la gente de las telecomunicaciones usa en la práctica este método
+para localizar discontinuidades en líneas de transmisión que son inaccesibles.
+Este método es denominado medición de RDT (Reflexión en el Dominio del Tiempo).
+Como podrás sospechar, en la vida real, no tenemos líneas de trasmisión de
+17.86 millones de kilómetros de largo. Las mediciones RDT verdaderas usan
+ráfagas mucho mas cortas&hellip; generalmente en el orden de los nanosegundos&hellip;  lo
+cual te permite medir líneas de transmisión de unas meras decenas de metros de
+largo. Mientras el pulso que envías cese antes de que el pulso reflejado llegue
+de vuelta, vos podés hacer mediciones RDT.  (Vos tampoco vas a usar lamparitas
+como detector RDT, usarás mejor un osciloscopio).</p>
+<p>Ahora, hablemos un poco sobre las discontinuidades mencionadas en el párrafo
+previo. No necesitás que la línea de transmisión esté completamente en corto o
+abierta para que la energía sea reflejada.  Es que en esas dos condiciones lo
+que tenemos es que TODA la energía es reflejada. (También tendrás una reflexión
+ total si la terminación es una reactancia pura, o sea, un capacitor perfecto o
+un inductor perfecto&hellip; pero nos ocuparemos de esto luego).</p>
+<p>En cualquier caso, una discontinuidad es cualquier cambio brusco de la
+impedancia característica de la línea de transmisión, tal como si los hilos de
+la línea en algún punto son apretados juntos o separados entre sí. (Un doblez
+en ángulo recto también causará una pequeña discontinuidad). Una ráfaga de RF
+será parcialmente reflejada desde cualquier discontinuidad en una línea de
+transmisión. Parte de la energía retornará hacia el emisor; parte será enviada
+hacia la terminación. Cambios muy graduales en la impedancia de la línea no
+producirán discontinuidad. De hecho, líneas de transmisión &ldquo;graduales&rdquo;(tapered)
+ fueron usadas universalmente en las estaciones de radiodifusión y de
+radioaficionados por un buen período de la temprana historia de la radio. (Hay
+una antigua emisora local de AM en Fairbanks (Alaska) que hasta hace un par de
+años usaba una torre puesta a tierra con alimentación de hilo inclinado
+(slant-wire feed). Yo tuve el dudoso honor de trabajar en esa cosa una vez).</p>
+<p>Bueno, ¿en donde estábamos? Ah, si&hellip; discontinuidades y reflexiones parciales.
+¡Necesitamos dejar claro acá mismo esto diciendo que estas no son
+necesariamente malas! Podemos USAR las reflexiones en una línea de transmisión
+para hacer toda clase de cosas útiles y maravillosas. No podemos solo
+IGNORARLAS, pero ¡no necesitamos rasgarnos las vestiduras por ellas tampoco!
+Las cosas son generalmente MAS SIMPLES cuando no hay reflexiones con las que
+lidiar; pero esto de ningún modo sugiere que una línea de transmisión ADAPTADA
+es necesariamente mejor que una DESADAPTADA.  Hablaremos acerca de la
+ADAPTACIÓN CONJUGADA dentro de poco. Como un preludio a este tema, modifiquemos
+una vez mas nuestro experimento.</p>
+<p>Saquemos la lamparita de nuestra llave inversora doble, y conectemos una barra
+de cortocircuito a través de esos dos terminales en lugar de aquella. Pasemos
+la llave a la posición del transmisor. Enviemos una ráfaga de un segundo,
+apaguemos el transmisor, y pasemos la llave hacia al lado del cortocircuito.
+¿Que pasará cuando la ráfaga vuelva de tierras distantes y se encuentre el
+cortocircuito? Porque, ¡es TOTALMENTE REFLEJADA otra vez hacia el extremo
+lejano de la línea! De hecho, se quedará rebotando ida y vuelta entre los dos
+extremos de la línea para siempre&hellip; un extremo ABIERTO es igual de reflectivo
+que un extremo en CORTOCIRCUITO. Mientras haya RESISTENCIA NULA (cero o
+infinita) en la terminación, la reflexión es total.</p>
+<p>Ahora, esperemos que hayas entendido que toda la discusión previa presupone una
+línea de transmisión IDEAL. Nosotros siempre estudiamos componentes ideales
+para poder entender las ediciones del mundo real después. Líneas de transmisión
+verdaderas, prácticas, tienen pérdidas resistivas que complican las cosas un
+poco mas. En realidad, una ráfaga de RF nunca podría ni siquiera alcanzar el
+extremo de una línea de 17.86 millones de kilómetros de largo, (ok, en realidad
+podría, ¡pero la señal sería menos intensa que el ruido cósmico para cuando
+llegue tan lejos!). En realidad, las señales de radio de HF empiezan a tener
+problemas después de unos kilómetros, aún en las mejores líneas humanamente
+realizables. (Entiendo que alguien logró que la Ethernet funcione sobre un par
+de alambres de púa oxidados, pero esto no es realmente recomendable).</p>
+<h4 id="ahora-la-parte-divertida">Ahora la parte divertida</h4>
+<p>Esperemos que hayas sido capaz de seguir y DISFRUTAR un poco de este asunto de
+la línea de transmisión, porque recién estamos listos para entrar en lo jugoso.</p>
+<p>Hemos separado intencionalmente nuestras señales INCIDENTE y REFLEJADA para
+toda la discusión previa. Esto es fácil de hacer con ráfagas cortas, por
+(espero) bien obvias razones.</p>
+<p>Sin embargo, las transmisiones de radioaficionado NO consisten en esa clase de
+cortas ráfagas de RF (relativas al largo de la línea de transmisión, eso es. Un
+&ldquo;dit&rdquo; de CW es mucho mas corto que un segundo&hellip; ¡pero la típica línea de
+transmisión de un radioaficionado es MUCHÍSIMO mas corta que 17.86 millones de
+kilómetros de largo!). En servicios típicos de comunicaciones (en contraste con
+el RADAR), cualquier señal reflejada en una línea de transmisión es casi seguro
+que va a coincidir con, o superponerse con, la señal incidente. Esto abre un
+conjunto COMPLETAMENTE nuevo de fenómenos&hellip; y potencial para la confusión.</p>
+<p>Cuando dos señales eléctricas se superponen una sobre la otra en un conductor,
+existe el potencial de que ocurra un interferencia. Si vos recordás nuestro
+artículo sobre fundamentos de la antena, recordarás que las interferencias
+pueden ser constructivas o destructivas. Las interferencias pueden ocurrir en
+un cable, tal como pueden ocurrir en el espacio libre, con muy similares
+resultados.</p>
+<p>Permitime presentar otro término mas que nos va a ayudar a ordenar todo esto:
+el Teorema de Superposición.
+<em>El Teorema de Superposición es una de esas perogrulladas de la física que
+parecen tan obvias que no debería haber necesidad de mencionarlas, pero tiene
+profundas connotaciones. Puesto de modo simple, es esto:</em></p>
+<pre><code>En cualquier punto en el tiempo, cualquier posición de un cable debe tener
+una y solo una tensión.
+</code></pre>
+<p>Parece muy obvio, ¿no? O, para decirlo mas estúpidamente: Vos no podés tener
+dos tensiones al mismo tiempo en un mismo punto.</p>
+<p>¿Como afecta esto la vida en la Tierra tal como la conocemos?</p>
+<p>Si tenemos dos ondas viajando por un cable&hellip; una yendo al Este y otra yendo al
+Oeste&hellip; en CUALQUIER punto del cable, las ondas DEBEN sumarse o DEBEN
+restarse. No hay otras posibilidades.</p>
+<p>Ahora, el hecho de que se SUMEN o se RESTEN depende de su fase relativa. Para
+el caso de la reflexión total, hay pocas opciones.  Una línea de transmisión
+sin terminación (ABIERTA) va a retornar una señal de radio reflejada EN FASE
+con la onda incidente. Las dos señales van a SUPERPONERSE, o SUMARSE en el
+punto de reflexión. Como las amplitudes de las señales directas y reflejadas
+son iguales, la TENSIÓN en el punto de terminación debe ser el doble que cuando
+no existe reflexión. Vos podés ver realmente esto en una Línea Lecher.  ¿Te
+acordás de la Línea Lecher al comienzo del artículo? Vos SABÍAS que íbamos a
+volver a ella tarde o temprano, ¿no? ¡Bueno, acá estamos!</p>
+<p>¿Y que pasa en el caso de la terminación en cortocircuito?</p>
+<p>De nuevo, tenemos una reflexión total, pero la onda reflejada está 180° FUERA
+DE FASE con la onda incidente. Ahora la tensión SUPERPUESTA es la DIFERENCIA
+entre la señal directa y la señal reflejada, las cuales son, como dijimos
+antes, EXACTAMENTE iguales (pero opuestas). La tensión resultante en ese punto
+va a ser cero, tal como predice el Teorema de Superposición. Pero nosotros ya
+sabíamos eso, ¡porque SIEMPRE tiene que haber cero volts a través de un
+cortocircuito! Entonces, ya sea que tratemos nuestra línea de transmisión como
+una &ldquo;constante concentrada&rdquo; (Ley de Ohm) o como un dispositivo &ldquo;distribuido&rdquo;
+(ondas), ¡obtenemos la misma respuesta!</p>
+<p>Lo cual nos ofrece otra PROFUNDA verdad sobre la física. Nuestro Universo es
+asombrosamente consistente. Si no podemos arribar PRECISAMENTE a la misma
+solución de un problema con dos aproximaciones diferentes, algo estamos
+haciendo MAL! Vos SIEMPRE podés realizar dobles pruebas de estas cosas. No me
+creas a mí. ¡MEDILO vos mismo!</p>
+<p>Este proceso de superponer una onda que viaja hacia el Este con otra onda que
+viaja hacia el Oeste en un par de cables es lo que se conoce como ONDA
+ESTACIONARIA. Es bien obvio por que la llaman así; los valores relativos de la
+tensión (la TENSIÓN SUPERPUESTA) permanecen estacionarios en relación a su
+posición a lo largo de la línea. Se pueden observar ondas estacionarias
+mecánicas en un objeto vibrante, tocando la cuerda de una guitarra, por
+ejemplo. O podés mover un cable espiralado de teléfono y generar una linda onda
+estacionaria (¡si es que encontrás algún teléfono con cable en estos días!). Se
+pueden medir fácilmente las ondas estacionarias eléctricas con una Línea
+Lecher&hellip; de hecho, esa es su principal función.</p>
+<p>Ahora acá tenemos algo muy interesante e importante.</p>
+<p>¿Recordás que demostramos que la onda INCIDENTE en movimiento (onda viajera)
+tenía energía real? Encendimos la lamparita con ella. ¿Te acordás de que
+demostramos que la onda viajera REFLEJADA tenía energía real? Pudimos encender
+la lamparita también con ella.</p>
+<p>Pero adiviná que: ¡una onda estacionaria no tiene energía! Es una construcción
+puramente matemática. Es análoga a las isobaras en un mapa del clima. INDICAN
+que las variaciones de la presión del aire ocurren, PERO NO SON la presión del
+aire por sí mismas.</p>
+<p>Un sistema que SOPORTA ondas estacionarias por cierto almacena energía. Pero
+esa energía está en la  forma de ondas incidente y reflejada que son ondas de
+energía REAL. La onda ESTACIONARIA es la manifestación visible, pero sin
+potencia, de la existencia de las ondas viajeras.</p>
+<p>Y este punto es donde se produce el máximo Intercambio de Estupidez entre
+Radioaficionados. Una onda estacionaria por si misma no puede hacer NADA bueno
+o malo a ningún aparato de radio. Echarle la culpa a las &ldquo;ondas estacionarias&rdquo;
+por un transmisor dañado o cualquier otro problema es como echarle la culpa al
+número Pi porque la rueda de un camión te pasó por arriba del pié. Si, Pi
+describe el diámetro y la circunferencia de la rueda del camión, ¡pero Pi NO ES
+la rueda del camión!</p>
+<p>¿Esto significa que tenemos que ignorar las ondas estacionarias? ¡De ningún
+modo! Pero tenemos que entender que las ondas estacionarias son una
+INDICACIÓN&hellip; no el HECHO EN SÍ. Con la INTERPRETACIÓN ADECUADA, nos pueden
+decir un par de cosas. Desafortunadamente, la mayoría de los aficionados no
+tiene idea que como interpretar apropiadamente las ondas estacionarias.</p>
+<p>Afortunadamente, ¡no NECESITAMOS hacerlo! Hay otros MUCHO mas significativos
+indicadores que la onda estacionaria que podemos usar para saber que está
+realmente ocurriendo. Cosas REALES con efectos REALES.</p>
+<h4 id="derechos-conyugales3">Derechos conyugales<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></h4>
+<p>El Teorema de Superposición nos permite hacer algunas cosas realmente
+asombrosas con una línea de transmisión. Pero para entender esto es necesario
+que tengas ABSOLUTA FÉ en la Ley de Ohm.  Ya hemos visto que nuestro universo
+físico es consistente. Vos no podés violar las leyes de la física&hellip; las leyes
+de la física te violan a VOS. Se aplican en TODAS PARTES, desde todo punto de
+vista.</p>
+<p>Hemos hablado brevemente sobre la impedancia característica de una línea de
+transmisión&hellip; como está incorporada en la construcción física de la línea&hellip;
+como es que resulta totalmente independiente del largo de la línea&hellip; como es
+que no le importa que es lo que hay conectado en el extremo distante.</p>
+<p>Sin embargo, a pesar de esta aparente rigidez, el Teorema de Superposición nos
+permite ALTERAR la impedancia de la línea de transmisión en diferentes lugares,
+usando la magia de la interferencia de ondas.</p>
+<p>Veamos como funciona.</p>
+<p>Volvamos al caso de una línea de transmisión con un cortocircuito como
+terminación. Sabemos que las ondas incidente y reflejada son iguales, pero las
+tensiones están exactamente en oposición de fase (para el obsesivo de la ROE,
+tenemos ROE infinita en esta línea).  Ahora, moviéndonos hacia ATRÁS en la onda
+desde la terminación, podemos observar algo interesante. 90° desde la
+terminación hacia el principio de la línea, la onda reflejada tiene un retraso
+de 90° adicional respecto de la incidente, que a su vez está adelantada 90° con
+respecto a la terminación, es decir, la onda incidente todavía tiene que
+recorrer 90° (un cuarto de onda) para llegar a la terminación, y la onda
+reflejada ha recorrido 90° desde que llegó a la terminación y fue reflejada. En
+total, sumando los 180° de inversión de fase en la terminación (terminación en
+cortocircuito) y estas dos distancias de 90°, tenemos un desfasaje total de
+360° en un punto que está ubicado un cuarto de onda desde la terminación, lo
+que es lo mismo que 0°. En otras palabras, las tensiones en ese punto están EN
+FASE, por lo tanto se suman.</p>
+<p>Ahora tenemos un punto de máxima tensión. Pero cuando miramos la POTENCIA, algo
+no se sumó. ¿O si?</p>
+<p>¿Cuanta potencia es enviada a la carga? Bueno, un cortocircuito no puede
+disipar potencia NINGUNA, así que la respuesta es cero. ¿Cuanta potencia fue
+reflejada? Toda. En cualquier punto de la línea, la potencia reflejada es igual
+a la potencia incidente, o sea que la potencia TOTAL tiene que ser igual a
+cero. Pero estamos midiendo el una GRAN onda de tensión volviendo desde la
+terminación. ¿Como reconciliamos una gran tensión y nada de potencia? La
+respuesta es la Ley de Ohm. ¿Que condición del circuito nos permite una alta
+tensión en combinación con nada de potencia? ¡Resistencia infinita!  Eso es. Un
+cuarto de onda volviendo desde la terminación, tenemos una carga de resistencia
+infinita. Físicamente, es un pedazo de línea de transmisión. Eléctricamente, es
+un pedazo de aire. Muy asombroso, ¿no es así?</p>
+<p>¿Y que pasa si volvemos media onda desde la terminación? Bueno, tenemos un
+desfasaje adicional de 180° entre las tensiones de las ondas incidente y
+reflejada. Las tensiones incidente y reflejada se cancelan, y tenemos un cero.
+Repitamos la prueba: cero volts sobre cero ohms ¿es cuanta potencia? ¡Cero!</p>
+<p>Las líneas de transmisión REPITEN la impedancia de carga cada media onda, e
+INVIERTEN la impedancia cada cuarto de onda. Y también cada múltiplo IMPAR de
+un cuarto de onda. Sin embargo, si tenemos una terminación abierta o en
+cortocircuito, la potencia total es cero.</p>
+<p>Si insertamos un transmisor en cualquier punto de la línea de transmisión,
+¿cuanta potencia el transmisor enviará? ¡Cero!</p>
+<p>¿Que herejía es esta?! ¡La potencia de SALIDA de un transmisor es determinada
+por la impedancia de CARGA! ¿Estamos locos?</p>
+<p>Bueno, ¿vos creés en la Ley de Ohm o no? Según como respondas a las siguientes
+dos preguntas revelará quien es el VERDADERO hereje.</p>
+<p>¿Cuanta potencia puede transferir un transmisor a un cortocircuito?</p>
+<p>(Respuesta: cero).</p>
+<p>¿Cuanta potencia puede transferir un transmisor a un circuito abierto?</p>
+<p>(Respuesta: cero).</p>
+<p>Vos NO PODÉS violar la Ley de Ohm. Ella te viola a vos si tratás de hacerlo.</p>
+<p>Frecuentemente escucho afirmaciones como &ldquo;Si tenés una gran desadaptación, toda
+la potencia reflejada vuelve y termina quemando el transmisor&rdquo;.</p>
+<p>Imposible. Absolutamente imposible&hellip; por lo menos es este mundo. Y seguramente
+en el próximo también. Toda esa potencia reflejada, como demostramos
+claramente, ¡impide que el transmisor genere la potencia en primer lugar!</p>
+<p>Grabate esto en el lado interior de tus párpados:</p>
+<pre><code>DONDE EXISTE UNA LÍNEA DE TRANSMISIÓN, LA POTENCIA GENERADA POR CUALQUIER
+RADIO TRANSMISOR ES IGUAL A LA POTENCIA INCIDENTE MENOS LA POTENCIA
+REFLEJADA EN LA LÍNEA DE TRANSMISIÓN. SIEMPRE.
+</code></pre>
+<p>Es importante notar la cláusula &ldquo;cuando existe una línea de transmisión&rdquo;,
+porque, como hemos mencionado bien al comienzo del artículo, esto está lejos de
+ser siempre el caso. Pensá en todas esas radios portátiles con una colita de
+chancho saliendo directamente de la radio.</p>
+<p>¿Estamos diciendo que es imposible dañar un radio transmisor por tener una
+&ldquo;mala&rdquo; carga? No, nada de eso. Vos podés quemar casi cualquier transmisor
+poniendo un cortocircuito como carga. Y vos podés freír casi cualquier radio
+moderna dejando un circuito abierto como carga, también, mayormente por
+sobretensión en los transistores finales. ¡Pero esto no significa que la ROE
+sea la que produce el daño! NUNCA NUNCA NUNCA. Un transmisor siempre ve una
+IMPEDANCIA; jamás ve una ROE. Y nunca te olvides de esto.</p>
+<p>Hablamos sobre reflexiones. Hablamos sobre MÚLTIPLES reflexiones. Y es en este
+aspecto sobre múltiples reflexiones que las cosas se vuelven realmente útiles e
+inteligentes.</p>
+<p>El teorema de la adaptación conjugada nos dice que la máxima potencia va a ser
+transferida entre un generador (transmisor) y una carga cuando la impedancia de
+carga sea la CONJUGADA COMPLEJA de la impedancia de la fuente. Esto es algo
+bueno para saber. Sin entrar en un montón de matemática esotérica, lo que el
+teorema de la adaptación conjugada nos dice es que nosotros podemos adaptar
+CUALQUIER COSA a CUALQUIER OTRA COSA con solo dos componentes, uno en paralelo
+y otro en serie. Y a veces menos, si tenemos suerte.</p>
+<p>Cuando se trata de líneas de transmisión, se traduce a lo siguiente: cualquier
+reflexión en una línea de transmisión puede ser compensada por otra reflexión
+igual y opuesta en alguna otra parte de la línea.</p>
+<p>Deberíamos, para se honestos, agregar una pequeña advertencia a esto: la
+impedancia de carga debe tener un valor de resistencia real menor a infinito y
+mayor a cero. Esto significa que NO ES POSIBLE adaptar sobre un cortocircuito o
+sobre un circuito abierto&hellip; pero se puede llegar muy muy muy cerca, si los
+componentes de la adaptación son suficientemente grandes. El punto importante
+es que solo se necesitan DOS componentes.</p>
+<p>Veamos un ejemplo práctico para demostrar esto. Digamos que tenemos una antena
+dipolo que tiene una resistencia de radiación de 50 ohms.  Para mantener las
+cosas simples, digamos que la antena es perfectamente resonante. (Las
+terminaciones con reactancia en una línea de transmisión pueden ser muy
+difíciles de analizar). Queremos alimentar esta antena con línea abierta de
+450ohm. Sabemos que tendremos una desadaptación de impedancias de 9:1 en el
+extremo de la línea conectado a la antena. (Si nuestra línea es de muy buena
+calidad, tendremos una desadaptación parecida en el extremo de ENTRADA
+también). Una vez, como deferencia a los preocupados de la ROE, tenemos una ROE
+de 9:1. Ahora, hay un caso donde saber este valor de ROE viene bien. Esto nos
+dice que tenemos un AMPLIO RANGO de impedancias para elegir, dependiendo del
+largo de la línea de transmisión. Sabemos que si tomamos un múltiplo de media
+onda, nuestra línea va a repetir la impedancia de carga. O sea que si cortamos
+la línea para que mida un largo de onda completo, por ejemplo, tendremos 50
+ohms, lo cual hará felices a la mayoría de los transmisores así nomás. ¿Que
+pasa si elegimos un largo de línea de un cuarto de onda? Sabemos que la
+impedancia en un cuarto de onda se invierte. La línea de un cuarto de onda es
+muy útil en algunos casos. Si la carga es resistiva (que en este caso lo es,
+porque la antena es resonante), la impedancia de entrada es igual al cuadrado
+de la impedancia característica de la línea, dividida por la impedancia de la
+carga. (Esto se llama la &ldquo;media geométrica&rdquo;). O sea que esto nos da 450 al
+cuadrado dividido 50 = 202.500/50 = 4050 ohms.</p>
+<p>Bueno, no demasiados transmisores van a ser muy felices con una carga de 4050
+ohms&hellip; ¡aún cuando sea puramente resistiva! O sea que esta no sería una
+elección muy inteligente de largo de línea.</p>
+<p>Por otro lado, ¿que pasa si reemplazamos nuestro dipolo por la venerable Doble
+Zepp, mencionada en el comienzo de este artículo? Resulta que la impedancia en
+el centro de la Doble Zepp está en el orden de los 2500-3000 ohms en la
+frecuencia de resonancia. Usemos un valor de 2500 ohms solo para probar. Si la
+conectamos a una línea de 450 ohms de un cuarto de onda, ¿que esperaríamos ver
+en el extremo de entrada?  Usando la misma fórmula de la media geométrica,
+tendríamos 450 al cuadrado dividido 2500, lo cual da una impedancia de 81 ohms
+en la entrada de la línea. ¡Ah, felicidad, felicidad! Este valor está dentro
+del rango &ldquo;feliz&rdquo; de un transmisor de aficionado típico. Sin otro tipo de
+ajuste, nuestro transmisor transferirá el 96% de la potencia que transferiría a
+una carga de 50ohms. (Tengo que admitir que hice trampa para obtener la
+respuesta&hellip; el venerable Antenna Handbook de la ARRL tiene toda clase de
+útiles gráficos para determinar pérdida de potencia vs. desadaptación de
+impedancias y cosas así. Está bien usar estos gráficos y las computadoras
+mientras no los uses como sustitutos del proceso de pensar).</p>
+<p>¿Que hemos hecho con la inversión de impedancia en la línea de un cuarto de
+onda? Realizamos una adaptación conjugada. La impedancia mirando hacia EL
+TRANSMISOR en la línea de cuarto de onda es la CONJUGADA COMPLEJA de la
+impedancia de la antena.</p>
+<p>Ahora bien, secciones de línea de transmisión no son la única forma de hacer
+adaptaciones conjugadas. De hecho, usando &ldquo;secciones en serie&rdquo; como la
+descripta arriba se ha convertido en un poco en un arte perdido para el
+radioaficionado moderno. La práctica normal ahora es usar &ldquo;constantes
+concentradas&rdquo; en un sintonizador de antena, usando una o mas bobinas y
+capacitores para realizar la adaptación conjugada. Como dijimos antes, NO
+existen diferencias entre constantes concentradas y componentes distribuidos en
+lo que a la física se refiere. Cualquier combinación de constante concentrada y
+distribuida puede ser usada para obtener una adaptación conjugada.  En el
+ejemplo reciente, podría se práctico usar constantes concentradas (sintonizador
+de antena) para mover los 81 ohms a 50 ohms si sos un verdadero obsesivo. En el
+caso mas común, el sintonizador de constante concentrada va a ser utilizado
+para anular las REACTANCIAS a medida que la antena es operada algo lejos de su
+frecuencia de resonancia.</p>
+<p>Debería ser destacado que NINGUNA maniobra en el extremo de entrada de una
+línea de transmisión tiene algún efecto sobre la relación de onda estacionaria
+en la línea. La ROE es determinada solamente por la impedancia de carga en la
+terminación de la línea. El sintonizador de antena solo ajusta la impedancia
+que el transmisor ve.</p>
+<p>Ahora bien, este hecho trae otra cuestión interesante. Digamos que tenemos un
+transmisor de 100 watts, diseñado para una carga de 50 ohms. Tenemos un
+sintonizador de antena de amplio rango inmediatamente después del transmisor.
+Mas allá de eso, tenemos una longitud de línea de transmisión, terminada en una
+desadaptación severa. Usemos nuestro primer ejemplo, con línea de 450 ohms y
+antena de 50 ohms. Tenemos una ROE de 9:1 en la línea. Echando un vistazo a
+otro de los gráficos del Antenna Handbook de la ARRL, vemos que tenemos unos 60
+watts de potencia reflejada en la línea de transmisión.</p>
+<p>Ahora, ¿te acordás lo que te dije que te grabes en el interior de tus párpados?
+La potencia transmitida es igual a la incidente menos la reflejada.</p>
+<p>Ahora, si ajustamos el sintonizador de forma que el transmisor vea 50 ohms,
+sabemos que el transmisor está sacando 100 watts. En el lado opuesto del
+sintonizador (no el lado del transmisor) vemos 60 watts de potencia reflejada
+volviendo desde la antena. ¿Algo se ve raro? ¿Está el transmisor poniendo solo
+40 watts? No&hellip; el transmisor ve 50 ohms&hellip; así que sabemos que está poniendo
+100 watts (asumiendo que el transmisor funciona bien). Ahora veamos la potencia
+INCIDENTE en la línea de transmisión. ¡Es de 160 watts! Bueno, ¿como es esto?
+Ahora la matemática trabaja&hellip; ¿de donde vienen esos 60 watts extra?  Si
+nuestro transmisor puede solo poner 100 watts, ¿que se nos está escapando?</p>
+<p>Es simple. Hay una reflexión DOBLE. Los 60 watts de potencia REFLEJADA son
+RE-REFLEJADOS desde el sintonizador hacia la carga&hellip;   EN FASE con la potencia
+incidente original. ¿Pero POR QUE la doble reflexión?</p>
+<p>Sin SABERLO&hellip; cuando ajustamos el sintonizador para que nuestro transmisor
+fuera &ldquo;feliz&rdquo; creamos una adaptación conjugada en el lado opuesto del
+sintonizador. Eso es realmente una grosera desadaptación mirando desde la línea
+hacia el transmisor&hellip; ¡pero esa grosera desadaptación es exactamente la
+Conjugada Compleja de la impedancia mirando al revés!</p>
+<p>En realidad, en este ejemplo, tenemos DOS pares de conjugadas complejas&hellip; uno
+en la unión del transmisor y la entrada del sintonizador&hellip; y otro en la unión
+de la salida del sintonizador con todo lo que viene después.</p>
+<p>De nuevo, estas son cosas que se pueden DEMOSTRAR CONSISTENTEMENTE en el banco
+de trabajo. Yo siempre disfruto cuando demuestro ante una sala llena de
+escépticos &ldquo;gurúes de la ROE&rdquo; que la potencia incidente en la salida del
+sintonizador EXCEDE la capacidad de potencia del transmisor.</p>
+<p>Bueno, supongo que podría seguir dale y dale con este asunto completamente
+intrigante, pero en lugar de eso voy a referir un par de libros que son lectura
+obligatoria:</p>
+<ul>
+<li>
+<p>&ldquo;Mi línea de transmisión sintoniza mi antena&rdquo;, de Byron Goodman, W1DX (sk).
+Originalmente publicado en QST en 1956, ha sido reimpreso varias veces desde
+entonces. Es un genuino clásico, y un fino ejemplo de pensamiento analítico
+claro&hellip; una rareza en el mundo de la radioafición actual.</p>
+</li>
+<li>
+<p>&ldquo;Reflexiones&rdquo; de Walt Maxwell, W2DU. Este es el mas elocuente y detallado
+trabajo sobre el tema jamás escrito. La mayor parte del material de este
+artículo fué robado, no en prosa pero si en principio, del libro de Walt. Este
+originalmente apareció como una serie de artículos en QST en los '70, pero han
+sido consolidados en un par de libros excelentes, Reflexiones I y Reflexiones
+II.  Entiendo que hay un Reflexiones III listo para salir pronto.</p>
+</li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Alargue para la energía eléctrica. Cable de extensión. (N. del T.)&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>Medidor de consumo de energía eléctrica, “medidor de luz”. (N. del T.)&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p><em>Conjugal rights</em> en el original. El autor realiza un intraducible juego de palabras entre las expresiones <em>conjugal rights</em> (derechos conyugales) y <em>conjugate match</em> (adaptación conjugada).(N. del T.)&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+        </div>
+        <footer class="post__footer">
+            
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/es/tags/antena/" rel="tag">Antena</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/es/tags/radio/" rel="tag">Radio</a>
+		</li>
+	</ul>
+</div>
+        </footer>
+    </article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Fer avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">Sobre el autor Fer</span>
+	</div>
+	<div class="authorbox__description">
+		Radioficionado en La Plata, Buenos Aires
+	</div>
+</div>
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/es/post/2010/f2uhf/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Anterior</span>
+			<p class="pager__title">PL-259 directo a RG-6</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/es/post/2010/20101125_moxgenlinux/" rel="next">
+			<span class="pager__subtitle">Siguiente&thinsp;»</span>
+			<p class="pager__title">Moxon en GNU/Linux</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar">
+<div class="widget-languages widget">
+	<h4 class="widget__title">Idiomas</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget-languages__link widget__link" href="/es/">
+					<span class="widget-languages__link-btn widget__link-btn btn">ES</span>
+					<span class="widget-languages__link-text widget__link-text">Spanish</span>
+				</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget-languages__link widget__link" href="/">
+					<span class="widget-languages__link-btn widget__link-btn btn">EN</span>
+					<span class="widget-languages__link-text widget__link-text">English</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Más Recientes</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/es/post/2024/new-site/">Nuevo sitio</a></li>
+			<li class="widget__item"><a class="widget__link" href="/es/post/2021/20210226_nederland/">Boletín Radio Nederland 1979</a></li>
+			<li class="widget__item"><a class="widget__link" href="/es/post/2016/20160108_bc221/">BC-221 SN 6149 Order no. 4674 PH 42</a></li>
+			<li class="widget__item"><a class="widget__link" href="/es/post/2015/20150502_tk701/">Conversión de Kenwood/Trio TK 701S</a></li>
+			<li class="widget__item"><a class="widget__link" href="/es/post/2015/20150420_pyaprs_pre/">pyaprs. Otro cliente ARPS mas</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categorías</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/es/categories/antenas/">Antenas</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/es/categories/electr%C3%B3nica/">Electrónica</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/es/categories/homebrew/">Homebrew</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/es/categories/misc/">Misc</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/es/categories/noticias/">Noticias</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/es/categories/radio/">Radio</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/es/categories/software/">Software</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Etiquetas</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/es/tags/antena/" title="Antena">Antena</a>
+		<a class="widget-taglist__link widget__link btn" href="/es/tags/aprs/" title="APRS">APRS</a>
+		<a class="widget-taglist__link widget__link btn" href="/es/tags/beh/" title="BEH">BEH</a>
+		<a class="widget-taglist__link widget__link btn" href="/es/tags/boatanchor/" title="Boatanchor">Boatanchor</a>
+		<a class="widget-taglist__link widget__link btn" href="/es/tags/coaxil/" title="Coaxil">Coaxil</a>
+		<a class="widget-taglist__link widget__link btn" href="/es/tags/conector/" title="Conector">Conector</a>
+		<a class="widget-taglist__link widget__link btn" href="/es/tags/digi/" title="Digi">Digi</a>
+		<a class="widget-taglist__link widget__link btn" href="/es/tags/fotos/" title="Fotos">Fotos</a>
+		<a class="widget-taglist__link widget__link btn" href="/es/tags/hammarlund/" title="Hammarlund">Hammarlund</a>
+		<a class="widget-taglist__link widget__link btn" href="/es/tags/homebrew/" title="Homebrew">Homebrew</a>
+		<a class="widget-taglist__link widget__link btn" href="/es/tags/python/" title="Python">Python</a>
+		<a class="widget-taglist__link widget__link btn" href="/es/tags/radio/" title="Radio">Radio</a>
+		<a class="widget-taglist__link widget__link btn" href="/es/tags/radio-club/" title="Radio Club">Radio Club</a>
+		<a class="widget-taglist__link widget__link btn" href="/es/tags/receptor/" title="Receptor">Receptor</a>
+		<a class="widget-taglist__link widget__link btn" href="/es/tags/surplus/" title="Surplus">Surplus</a>
+		<a class="widget-taglist__link widget__link btn" href="/es/tags/swl/" title="SWL">SWL</a>
+		<a class="widget-taglist__link widget__link btn" href="/es/tags/transmisor/" title="Transmisor">Transmisor</a>
+		<a class="widget-taglist__link widget__link btn" href="/es/tags/valvular/" title="Valvular">Valvular</a>
+		<a class="widget-taglist__link widget__link btn" href="/es/tags/vhf/" title="VHF">VHF</a>
+	</div>
+</div>
+<div class="widget-social widget">
+	<h4 class="widget-social__title widget__title">Social</h4>
+	<div class="widget-social__content widget__content">
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/lu2dfm" target="_blank">
+				<svg class="widget-social__link-icon icon icon-github" width="24" height="24" viewBox="0 0 384 374"><path d="m192 0c-106.1 0-192 85.8-192 191.7 0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2 0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8 0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7 0 0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4 0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5 0 25.6-.2 46.3-.2 52.6 0 5.1 3.5 11.1 13.2 9.2 76.2-25.5 131.2-97.3 131.2-182 0-105.9-86-191.7-192-191.7z"/></svg>
+				<span>GitHub</span>
+			</a>
+		</div>
+
+		
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Youtube"  rel="noopener noreferrer" href="https://youtube.com/user/lu2dfm" target="_blank">
+					<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="24" height="24"><linearGradient id="~ZEDpqmbqU5aeVFMXpznxa" x1=".439" x2="44.632" y1="-.097" y2="45.101" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f52537"/><stop offset=".293" stop-color="#f32536"/><stop offset=".465" stop-color="#ea2434"/><stop offset=".605" stop-color="#dc2231"/><stop offset=".729" stop-color="#c8202c"/><stop offset=".841" stop-color="#ae1e25"/><stop offset=".944" stop-color="#8f1a1d"/><stop offset="1" stop-color="#7a1818"/></linearGradient><path fill="url(#~ZEDpqmbqU5aeVFMXpznxa)" d="M40,42H8c-1.105,0-2-0.895-2-2V8c0-1.105,0.895-2,2-2h32c1.105,0,2,0.895,2,2v32 C42,41.105,41.105,42,40,42z"/><path fill="#fff" d="M14.878,8h1.788l1.227,4.596L19.029,8h1.805l-2.067,6.834v4.664h-1.777v-4.664L14.878,8z M23.064,10.946c-1.389,0-2.31,0.919-2.31,2.278v4.158c0,1.495,0.781,2.273,2.31,2.273c1.269,0,2.267-0.848,2.267-2.273v-4.158 C25.331,11.897,24.341,10.946,23.064,10.946z M23.723,17.311c0,0.462-0.236,0.802-0.66,0.802c-0.436,0-0.688-0.356-0.688-0.802 v-3.947c0-0.464,0.214-0.808,0.657-0.808c0.484,0,0.691,0.334,0.691,0.808C23.723,13.364,23.723,17.311,23.723,17.311z M29.594,11.017v6.438c-0.192,0.241-0.621,0.636-0.927,0.636c-0.336,0-0.42-0.231-0.42-0.571v-6.503H26.67v7.089 c0,0.838,0.256,1.515,1.101,1.515c0.477,0,1.14-0.248,1.822-1.059v0.936h1.577v-8.48H29.594z M32.329,28.221 c-0.556,0-0.672,0.391-0.672,0.947v0.818h1.327v-0.819C32.986,28.621,32.87,28.221,32.329,28.221z M26.49,28.271 c-0.104,0.053-0.207,0.135-0.31,0.246v5.034c0.123,0.132,0.241,0.226,0.356,0.284c0.245,0.124,0.602,0.133,0.768-0.083 c0.087-0.114,0.13-0.299,0.13-0.557v-4.17c0-0.273-0.053-0.479-0.16-0.621C27.092,28.164,26.754,28.138,26.49,28.271z M32.483,21.821c-3.233-0.22-13.738-0.22-16.966,0c-3.493,0.238-3.906,2.349-3.932,7.904c0.026,5.546,0.435,7.666,3.932,7.904 c3.228,0.22,13.733,0.22,16.966,0c3.493-0.238,3.906-2.35,3.932-7.904C36.389,24.18,35.98,22.06,32.483,21.821z M17.183,35.087 h-1.692v-9.361h-1.75v-1.589h5.192v1.589h-1.75v9.361H17.183z M23.199,35.087h-1.502v-0.891c-0.277,0.329-0.565,0.58-0.864,0.751 c-0.809,0.464-1.921,0.453-1.921-1.186V27.01h1.501v6.192c0,0.325,0.078,0.544,0.4,0.544c0.293,0,0.7-0.376,0.883-0.605V27.01 h1.502v8.077L23.199,35.087z M28.981,33.414c0,0.999-0.374,1.777-1.373,1.777c-0.55,0-1.008-0.201-1.426-0.724v0.621h-1.516v-10.95 h1.516v3.526c0.339-0.413,0.799-0.755,1.336-0.755c1.1,0,1.465,0.93,1.465,2.025v4.48H28.981z M34.531,31.239h-2.873v1.525 c0,0.606,0.052,1.13,0.655,1.13c0.634,0,0.672-0.427,0.672-1.13v-0.561h1.546v0.607c0,1.556-0.668,2.499-2.251,2.499 c-1.434,0-2.168-1.045-2.168-2.499v-3.626c0-1.402,0.926-2.376,2.281-2.376c1.441,0,2.137,0.916,2.137,2.376v2.056L34.531,31.239z"/><path d="M23.998,21.656c3.434,0,6.868,0.055,8.485,0.165c3.497,0.238,3.906,2.359,3.932,7.904 c-0.026,5.554-0.438,7.666-3.932,7.904c-1.616,0.11-5.051,0.165-8.485,0.165c-3.434,0-6.867-0.055-8.481-0.165 c-3.497-0.238-3.906-2.359-3.932-7.904c0.026-5.556,0.438-7.666,3.932-7.904C17.131,21.711,20.564,21.656,23.998,21.656 M23.998,21.156c-3.749,0-7.011,0.064-8.515,0.166c-4.157,0.284-4.373,3.226-4.398,8.401c0.024,5.18,0.241,8.122,4.398,8.406 c1.504,0.102,4.766,0.166,8.515,0.166s7.013-0.064,8.519-0.166c4.157-0.284,4.374-3.226,4.398-8.401 c-0.024-5.18-0.241-8.122-4.398-8.406C31.011,21.22,27.747,21.156,23.998,21.156L23.998,21.156z" opacity=".07"/><path fill="#1b1464" d="M20.834,8l-2.067,6.834v4.664h-1.777v-4.664L14.878,8h1.788l1.227,4.596L19.029,8H20.834 M23.064,10.946c1.277,0,2.267,0.951,2.267,2.278v4.158c0,1.425-0.998,2.273-2.267,2.273c-1.529,0-2.31-0.778-2.31-2.273v-4.158 C20.754,11.865,21.675,10.946,23.064,10.946 M23.063,18.113c0.425,0,0.66-0.34,0.66-0.802v-3.947c0-0.474-0.207-0.808-0.691-0.808 c-0.443,0-0.657,0.344-0.657,0.808v3.947C22.375,17.757,22.627,18.113,23.063,18.113 M31.171,11.017v8.48h-1.577v-0.936 c-0.683,0.811-1.346,1.059-1.822,1.059c-0.845,0-1.101-0.677-1.101-1.515v-7.089h1.577v6.503c0,0.34,0.083,0.571,0.42,0.571 c0.307,0,0.735-0.395,0.927-0.636v-6.438H31.171 M21.508,7.5h-0.674h-1.805h-0.391l-0.094,0.38l-0.67,2.708l-0.725-2.717 L17.05,7.5h-0.384h-1.788H14.2l0.2,0.648l2.091,6.762v4.589v0.5h0.5h1.777h0.5v-0.5v-4.59l2.046-6.763L21.508,7.5L21.508,7.5z M23.064,10.446c-1.655,0-2.81,1.142-2.81,2.778v4.158c0,1.788,0.998,2.773,2.81,2.773c1.629,0,2.767-1.14,2.767-2.773v-4.158 C25.831,11.64,24.641,10.446,23.064,10.446L23.064,10.446z M23.063,17.613c-0.163,0-0.188-0.189-0.188-0.302v-3.947 c0-0.308,0.106-0.308,0.157-0.308c0.103,0,0.191,0,0.191,0.308v3.947C23.223,17.511,23.169,17.613,23.063,17.613L23.063,17.613z M31.671,10.517h-0.5h-1.577h-0.5v0.5v6.249c-0.117,0.12-0.25,0.227-0.347,0.283c0-0.009,0-0.019,0-0.03v-6.503v-0.5h-0.5H26.67 h-0.5v0.5v7.089c0,1.818,1.12,2.015,1.601,2.015c0.289,0,0.768-0.071,1.322-0.435v0.312h0.5h1.577h0.5v-0.5v-8.48V10.517 L31.671,10.517z" opacity=".05"/><g opacity=".05"><path d="M32.551,20.823c-1.517-0.103-4.794-0.167-8.553-0.167c-3.759,0-7.035,0.064-8.549,0.167 c-4.824,0.329-4.841,4.11-4.864,8.897c0.023,4.795,0.04,8.578,4.864,8.907c1.514,0.103,4.79,0.167,8.549,0.167 s7.036-0.064,8.553-0.167c4.824-0.329,4.841-4.11,4.864-8.897C37.392,24.936,37.374,21.152,32.551,20.823z M32.517,38.129 c-1.506,0.102-4.77,0.166-8.519,0.166c-3.749,0-7.011-0.064-8.515-0.166c-4.157-0.283-4.373-3.225-4.398-8.406 c0.024-5.175,0.241-8.117,4.398-8.401c1.504-0.102,4.766-0.166,8.515-0.166s7.013,0.064,8.519,0.166 c4.157,0.283,4.373,3.225,4.398,8.406C36.89,34.903,36.674,37.845,32.517,38.129z"/><path d="M13.922,8.295l2.068,6.69v4.513v0.5v0.5h0.5h0.5h1.777h0.5h0.5v-0.5v-0.5v-1.943c0.071,1.94,1.286,3.099,3.297,3.099 c1.212,0,2.205-0.568,2.767-1.471c0.335,1.034,1.156,1.436,1.94,1.436c0.213,0,0.496-0.03,0.823-0.138v0.015h0.5h0.5h1.577h0.5 h0.5v-0.5v-0.5v-8.48v-0.5v-0.5h-0.5h-0.5h-1.577h-0.347h-0.5h-0.5H26.67h-0.5h-0.5v0.5v0.5v0.204 c-0.586-0.78-1.512-1.275-2.606-1.275c-0.749,0-1.413,0.215-1.95,0.585l0.678-2.241l0.195-0.645L22.181,7h-0.674h-0.674h-1.805 h-0.391h-0.391l-0.094,0.38l-0.094,0.38l-0.203,0.821l-0.224-0.838l-0.099-0.371L17.434,7h-0.384h-0.384h-1.788H14.2h-0.678 l0.2,0.648L13.922,8.295z M26.17,11.017v-0.5h0.5h1.577h0.5v0.5v6.503c0,0.011,0,0.021,0,0.03c0.097-0.057,0.23-0.163,0.347-0.283 v-6.25v-0.5h0.5h1.577h0.5v0.5v8.48v0.5h-0.5h-1.577h-0.5v-0.312c-0.555,0.364-1.034,0.435-1.323,0.435 c-0.481,0-1.601-0.196-1.601-2.015V11.017z M23.064,10.446c1.577,0,2.767,1.194,2.767,2.778v4.158 c0,1.633-1.138,2.773-2.767,2.773c-1.812,0-2.81-0.985-2.81-2.773v-4.158C20.254,11.588,21.409,10.446,23.064,10.446z M14.878,7.5 h1.788h0.384l0.099,0.371l0.725,2.717l0.67-2.708l0.094-0.38h0.391h1.805h0.674l-0.195,0.645l-2.046,6.763v4.59v0.5h-0.5h-1.777 h-0.5v-0.5V14.91L14.4,8.148L14.2,7.5H14.878z"/></g><g><linearGradient id="~ZEDpqmbqU5aeVFMXpznxb" x1=".439" x2="44.632" y1="-.097" y2="45.101" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f52537"/><stop offset=".293" stop-color="#f32536"/><stop offset=".465" stop-color="#ea2434"/><stop offset=".605" stop-color="#dc2231"/><stop offset=".729" stop-color="#c8202c"/><stop offset=".841" stop-color="#ae1e25"/><stop offset=".944" stop-color="#8f1a1d"/><stop offset="1" stop-color="#7a1818"/></linearGradient><path fill="url(#~ZEDpqmbqU5aeVFMXpznxb)" d="M40,42H8c-1.105,0-2-0.895-2-2V8c0-1.105,0.895-2,2-2h32c1.105,0,2,0.895,2,2v32 C42,41.105,41.105,42,40,42z"/><path fill="#fff" d="M14.878,8h1.788l1.227,4.596L19.029,8h1.805l-2.067,6.834v4.664h-1.777v-4.664L14.878,8z M23.064,10.946c-1.389,0-2.31,0.919-2.31,2.278v4.158c0,1.495,0.781,2.273,2.31,2.273c1.269,0,2.267-0.848,2.267-2.273v-4.158 C25.331,11.897,24.341,10.946,23.064,10.946z M23.723,17.311c0,0.462-0.236,0.802-0.66,0.802c-0.436,0-0.688-0.356-0.688-0.802 v-3.947c0-0.464,0.214-0.808,0.657-0.808c0.484,0,0.691,0.334,0.691,0.808C23.723,13.364,23.723,17.311,23.723,17.311z M29.594,11.017v6.438c-0.192,0.241-0.621,0.636-0.927,0.636c-0.336,0-0.42-0.231-0.42-0.571v-6.503H26.67v7.089 c0,0.838,0.256,1.515,1.101,1.515c0.477,0,1.14-0.248,1.822-1.059v0.936h1.577v-8.48H29.594z M32.329,28.221 c-0.556,0-0.672,0.391-0.672,0.947v0.818h1.327v-0.819C32.986,28.621,32.87,28.221,32.329,28.221z M26.49,28.271 c-0.104,0.053-0.207,0.135-0.31,0.246v5.034c0.123,0.132,0.241,0.226,0.356,0.284c0.245,0.124,0.602,0.133,0.768-0.083 c0.087-0.114,0.13-0.299,0.13-0.557v-4.17c0-0.273-0.053-0.479-0.16-0.621C27.092,28.164,26.754,28.138,26.49,28.271z M32.483,21.821c-3.233-0.22-13.738-0.22-16.966,0c-3.493,0.238-3.906,2.349-3.932,7.904c0.026,5.546,0.435,7.666,3.932,7.904 c3.228,0.22,13.733,0.22,16.966,0c3.493-0.238,3.906-2.35,3.932-7.904C36.389,24.18,35.98,22.06,32.483,21.821z M17.183,35.087 h-1.692v-9.361h-1.75v-1.589h5.192v1.589h-1.75v9.361H17.183z M23.199,35.087h-1.502v-0.891c-0.277,0.329-0.565,0.58-0.864,0.751 c-0.809,0.464-1.921,0.453-1.921-1.186V27.01h1.501v6.192c0,0.325,0.078,0.544,0.4,0.544c0.293,0,0.7-0.376,0.883-0.605V27.01 h1.502v8.077L23.199,35.087z M28.981,33.414c0,0.999-0.374,1.777-1.373,1.777c-0.55,0-1.008-0.201-1.426-0.724v0.621h-1.516v-10.95 h1.516v3.526c0.339-0.413,0.799-0.755,1.336-0.755c1.1,0,1.465,0.93,1.465,2.025v4.48H28.981z M34.531,31.239h-2.873v1.525 c0,0.606,0.052,1.13,0.655,1.13c0.634,0,0.672-0.427,0.672-1.13v-0.561h1.546v0.607c0,1.556-0.668,2.499-2.251,2.499 c-1.434,0-2.168-1.045-2.168-2.499v-3.626c0-1.402,0.926-2.376,2.281-2.376c1.441,0,2.137,0.916,2.137,2.376v2.056L34.531,31.239z"/><path d="M23.998,21.656c3.434,0,6.868,0.055,8.485,0.165c3.497,0.238,3.906,2.359,3.932,7.904 c-0.026,5.554-0.438,7.666-3.932,7.904c-1.616,0.11-5.051,0.165-8.485,0.165c-3.434,0-6.867-0.055-8.481-0.165 c-3.497-0.238-3.906-2.359-3.932-7.904c0.026-5.556,0.438-7.666,3.932-7.904C17.131,21.711,20.564,21.656,23.998,21.656 M23.998,21.156c-3.749,0-7.011,0.064-8.515,0.166c-4.157,0.284-4.373,3.226-4.398,8.401c0.024,5.18,0.241,8.122,4.398,8.406 c1.504,0.102,4.766,0.166,8.515,0.166s7.013-0.064,8.519-0.166c4.157-0.284,4.374-3.226,4.398-8.401 c-0.024-5.18-0.241-8.122-4.398-8.406C31.011,21.22,27.747,21.156,23.998,21.156L23.998,21.156z" opacity=".07"/><path fill="#1b1464" d="M20.834,8l-2.067,6.834v4.664h-1.777v-4.664L14.878,8h1.788l1.227,4.596L19.029,8H20.834 M23.064,10.946c1.277,0,2.267,0.951,2.267,2.278v4.158c0,1.425-0.998,2.273-2.267,2.273c-1.529,0-2.31-0.778-2.31-2.273v-4.158 C20.754,11.865,21.675,10.946,23.064,10.946 M23.063,18.113c0.425,0,0.66-0.34,0.66-0.802v-3.947c0-0.474-0.207-0.808-0.691-0.808 c-0.443,0-0.657,0.344-0.657,0.808v3.947C22.375,17.757,22.627,18.113,23.063,18.113 M31.171,11.017v8.48h-1.577v-0.936 c-0.683,0.811-1.346,1.059-1.822,1.059c-0.845,0-1.101-0.677-1.101-1.515v-7.089h1.577v6.503c0,0.34,0.083,0.571,0.42,0.571 c0.307,0,0.735-0.395,0.927-0.636v-6.438H31.171 M21.508,7.5h-0.674h-1.805h-0.391l-0.094,0.38l-0.67,2.708l-0.725-2.717 L17.05,7.5h-0.384h-1.788H14.2l0.2,0.648l2.091,6.762v4.589v0.5h0.5h1.777h0.5v-0.5v-4.59l2.046-6.763L21.508,7.5L21.508,7.5z M23.064,10.446c-1.655,0-2.81,1.142-2.81,2.778v4.158c0,1.788,0.998,2.773,2.81,2.773c1.629,0,2.767-1.14,2.767-2.773v-4.158 C25.831,11.64,24.641,10.446,23.064,10.446L23.064,10.446z M23.063,17.613c-0.163,0-0.188-0.189-0.188-0.302v-3.947 c0-0.308,0.106-0.308,0.157-0.308c0.103,0,0.191,0,0.191,0.308v3.947C23.223,17.511,23.169,17.613,23.063,17.613L23.063,17.613z M31.671,10.517h-0.5h-1.577h-0.5v0.5v6.249c-0.117,0.12-0.25,0.227-0.347,0.283c0-0.009,0-0.019,0-0.03v-6.503v-0.5h-0.5H26.67 h-0.5v0.5v7.089c0,1.818,1.12,2.015,1.601,2.015c0.289,0,0.768-0.071,1.322-0.435v0.312h0.5h1.577h0.5v-0.5v-8.48V10.517 L31.671,10.517z" opacity=".05"/><g opacity=".05"><path d="M32.551,20.823c-1.517-0.103-4.794-0.167-8.553-0.167c-3.759,0-7.035,0.064-8.549,0.167 c-4.824,0.329-4.841,4.11-4.864,8.897c0.023,4.795,0.04,8.578,4.864,8.907c1.514,0.103,4.79,0.167,8.549,0.167 s7.036-0.064,8.553-0.167c4.824-0.329,4.841-4.11,4.864-8.897C37.392,24.936,37.374,21.152,32.551,20.823z M32.517,38.129 c-1.506,0.102-4.77,0.166-8.519,0.166c-3.749,0-7.011-0.064-8.515-0.166c-4.157-0.283-4.373-3.225-4.398-8.406 c0.024-5.175,0.241-8.117,4.398-8.401c1.504-0.102,4.766-0.166,8.515-0.166s7.013,0.064,8.519,0.166 c4.157,0.283,4.373,3.225,4.398,8.406C36.89,34.903,36.674,37.845,32.517,38.129z"/><path d="M13.922,8.295l2.068,6.69v4.513v0.5v0.5h0.5h0.5h1.777h0.5h0.5v-0.5v-0.5v-1.943c0.071,1.94,1.286,3.099,3.297,3.099 c1.212,0,2.205-0.568,2.767-1.471c0.335,1.034,1.156,1.436,1.94,1.436c0.213,0,0.496-0.03,0.823-0.138v0.015h0.5h0.5h1.577h0.5 h0.5v-0.5v-0.5v-8.48v-0.5v-0.5h-0.5h-0.5h-1.577h-0.347h-0.5h-0.5H26.67h-0.5h-0.5v0.5v0.5v0.204 c-0.586-0.78-1.512-1.275-2.606-1.275c-0.749,0-1.413,0.215-1.95,0.585l0.678-2.241l0.195-0.645L22.181,7h-0.674h-0.674h-1.805 h-0.391h-0.391l-0.094,0.38l-0.094,0.38l-0.203,0.821l-0.224-0.838l-0.099-0.371L17.434,7h-0.384h-0.384h-1.788H14.2h-0.678 l0.2,0.648L13.922,8.295z M26.17,11.017v-0.5h0.5h1.577h0.5v0.5v6.503c0,0.011,0,0.021,0,0.03c0.097-0.057,0.23-0.163,0.347-0.283 v-6.25v-0.5h0.5h1.577h0.5v0.5v8.48v0.5h-0.5h-1.577h-0.5v-0.312c-0.555,0.364-1.034,0.435-1.323,0.435 c-0.481,0-1.601-0.196-1.601-2.015V11.017z M23.064,10.446c1.577,0,2.767,1.194,2.767,2.778v4.158 c0,1.633-1.138,2.773-2.767,2.773c-1.812,0-2.81-0.985-2.81-2.773v-4.158C20.254,11.588,21.409,10.446,23.064,10.446z M14.878,7.5 h1.788h0.384l0.099,0.371l0.725,2.717l0.67-2.708l0.094-0.38h0.391h1.805h0.674l-0.195,0.645l-2.046,6.763v4.59v0.5h-0.5h-1.777 h-0.5v-0.5V14.91L14.4,8.148L14.2,7.5H14.878z"/></g></g></svg>
+
+				<span>Youtube</span>
+			</a>
+		</div>
+		
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Home Page"  rel="noopener noreferrer" href="https://lu2dfm.github.io" target="_blank">
+				<span>Home Page</span>
+			</a>
+		</div>
+		
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+<div class="footer__links">
+	<a class="footer__link" href="/es/about/">Acerca de</a>
+</div>
+		<div class="footer__copyright">
+			&copy; 2024 LU2DFM.
+			<span class="footer__copyright-credits">Generado con <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> y <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a>.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

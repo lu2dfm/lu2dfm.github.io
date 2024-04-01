@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News on LU2DFM</title>
+    <link>http://lu2dfm.github.io/tags/news/</link>
+    <description>Recent content in News on LU2DFM</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language><atom:link href="http://lu2dfm.github.io/tags/news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>placeholder</title>
+      <link>http://lu2dfm.github.io/post/placeholder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://lu2dfm.github.io/post/placeholder/</guid>
+      <description>This post is only intended to get the .en language content up.</description>
+    </item>
+    
+  </channel>
+</rss>

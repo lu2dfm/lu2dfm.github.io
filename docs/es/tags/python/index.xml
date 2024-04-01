@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on LU2DFM</title>
+    <link>http://lu2dfm.github.io/es/tags/python/</link>
+    <description>Recent content in Python on LU2DFM</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Mon, 20 Apr 2015 00:00:00 +0000</lastBuildDate><atom:link href="http://lu2dfm.github.io/es/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>pyaprs. Otro cliente ARPS mas</title>
+      <link>http://lu2dfm.github.io/es/post/2015/20150420_pyaprs_pre/</link>
+      <pubDate>Mon, 20 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://lu2dfm.github.io/es/post/2015/20150420_pyaprs_pre/</guid>
+      <description>** Nota: Este proyecto no despertó interés. Xastir sigue funcionando bien. Si alguien está interesado sigo dispuesto a meterle algunas horas.***
+pyaprs: otro cliente APRS mas&amp;hellip; Notas, alpha. Estos días me dió por reactivar el iGate de mi estación y el del club (que está de QRT por destrucción del coaxil de bajada: se aceptan donaciones :)
+Lo primero que hice fué abrir XASTIR y mirar un poco el tráfico cercano.</description>
+    </item>
+    
+  </channel>
+</rss>

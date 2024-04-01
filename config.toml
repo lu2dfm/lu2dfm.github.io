@@ -1,0 +1,184 @@
+baseURL = 'http://lu2dfm.github.io/'
+languageCode = 'es-ar'
+title = 'LU2DFM'
+theme = 'mainroad'
+#whiteplain'
+publishDir = "docs"
+
+[ markup.goldmark ]
+[ markup.goldmark.extensions]
+    table = true
+
+[Author] # Used in authorbox
+  name = "Fer"
+  bio = "Radioficionado en La Plata, Buenos Aires"
+  avatar = "img/avatar.png"
+
+[params.author]
+  name = "Fer"
+  # Gravatar or Abatar image
+  gravatar = "lu2dfm@gmail.com"
+  #avatar = "/path/to/avatar"
+#  email = "lu2dfm@gmail.com"
+  github = "lu2dfm"
+  youtube = "lu2dfm"
+
+[Params]
+  description = "LU2DFM website & blog" # Site description. Used in meta description
+  copyright = "LU2DFM" # Footer copyright holder, otherwise will use site title
+# opengraph = true # Enable OpenGraph if true
+# schema = true # Enable Schema
+# twitter_cards = true # Enable Twitter Cards if true
+  readmore = false # Show "Read more" button in list if true
+  authorbox = true # Show authorbox at bottom of pages if true
+  toc = false # Enable Table of Contents
+  pager = true # Show pager navigation (prev/next links) at the bottom of pages if true
+  post_meta = ["author", "date", "categories", "translations"] # Order of post meta information
+  mainSections = ["post", "blog", "news"] # Specify section pages to show on home page and the "Recent articles" widget
+  dateformat = "02-01-2006" # Change the format of dates
+  mathjax = true # Enable MathJax
+  mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path
+  mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
+  googleFontsLink = "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" # Load Google Fonts
+  customCSS = ["css/custom.css"] # Include custom CSS files
+  customJS = ["js/custom.js"] # Include custom JS files
+
+
+[Params.style.vars]
+#  highlightColor = "#0A7A98" # Override highlight color
+
+  # Override font-family sets
+  # Take care of different quotes OR escaping symbols in these params if necessary
+  fontFamilyPrimary = "'Open Sans', Helvetica, Arial, sans-serif"
+  # Secondary font-family set responsible for pre, code, kbd, and samp tags font
+  fontFamilySecondary = "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
+
+#[Params.logo]
+#  image = "img/placeholder.png" # Logo image. Path relative to "static"
+#  title = "Mainroad" # Logo title, otherwise will use site title
+#  subtitle = "Just another site" # Logo subtitle
+
+[Params.thumbnail]
+  visibility = ["list", "post"] # Control thumbnail visibility
+
+[Params.widgets]
+  recent_num = 5 # Set the number of articles in the "Recent articles" widget
+  categories_counter = false # Enable counter for each category in "Categories" widget
+  tags_counter = false # Enable counter for each tag in "Tags" widget
+
+[Params.widgets.social]
+  cached = false # activate cache if true
+  # Enable parts of social widget
+  github = "lu2dfm"
+  #mail = '{{< relref "es/contacto.md" >}}'
+
+# Custom social links
+[[Params.widgets.social.custom]]
+  title = "Youtube"
+  url = "https://youtube.com/user/lu2dfm"
+  icon = "svg/youtube.svg" # Optional. Path relative to "layouts/partials"
+  rel = "noopener noreferrer" # Set to false to remove the rel attribute
+
+[[Params.widgets.social.custom]]
+  title = "Home Page"
+  url = "https://lu2dfm.github.io"
+
+
+#############
+[[params.author.social]]
+  name = "GitHub"
+  iclass = "fa-brands fa-github"
+  url = "https://github.com/lu2dfm"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+[Params.sidebar]
+  home = "right"
+  list = "right"
+  single = "right"
+
+widgets = ["languages", "recent", "categories", "taglist", "social" ]
+
+defaultContentLanguage = 'es'
+defaultContentLanguageInSubdir = false
+[languages]
+  [languages.es]
+    contentDir = 'content/es'
+    disabled = false
+    languageCode = 'es'
+    languageDirection = 'ltr'
+    languageName = 'Spanish'
+    title = 'LU2DFM'
+    weight = 1
+    [languages.es.params]
+      subtitle = 'Radio, electrónica, software libre'
+
+ [languages.es.menus]
+#    [[languages.es.menus.main]]
+#      name = 'Categorías'
+#      identifier = "categories"
+#      url = "/categories/"
+#      weight = 1
+#    [[languages.es.menus.main]]
+#      name = "Tags"
+#      identifier = "tags"
+#      url = "/tags/"
+#      weight = 2
+#    [[languages.es.menus.main]]
+#      name = "Archivos"
+#      identifier = "archives"
+#      url = "/archives/"
+#      weight = 3
+    [[languages.es.menus.main]]
+      name = "Blog"
+      identifier = "blog"
+      url = "/es/post/"
+      weight = 2
+    [[languages.es.menus.footer]]
+      name = "Acerca de"
+      weight = 20
+      identifier = "about"
+      url = "/es/about/"
+
+
+  [languages.en]
+    contentDir = 'content/en'
+    disabled = false
+    languageCode = 'en-US'
+    languageDirection = 'ltr'
+    languageName = 'English'
+    title = 'LU2DFM'
+    weight = 2
+    [languages.en.params]
+      subtitle = 'Amateur Radio Station'
+    [languages.en.menus]
+#        [[languages.en.menus.main]]
+#          name = "Categories"
+#          identifier = "categories"
+#          url = "/categories/"
+#          weight = 1
+#        [[languages.en.menus.main]]
+#          name = "Tags"
+#          identifier = "tags"
+#          url = "/tags/"
+#          weight = 2
+#        [[languages.en.menus.main]]
+#          name = "Archives"
+#          identifier = "archives"
+#          url = "/archives/"
+#          weight = 3
+#        [[languages.en.menus.main]]
+#          name = "Blog"
+#          identifier = "blog"
+#          url = "/es/post/"
+#          weight = 2
+        # Footer Menu
+        [[languages.en.menus.footer]]
+          name = "About"
+          weight = 20
+          identifier = "about"
+          url = "/en/about/"
+

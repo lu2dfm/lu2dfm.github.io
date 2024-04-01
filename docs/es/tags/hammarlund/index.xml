@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hammarlund on LU2DFM</title>
+    <link>http://lu2dfm.github.io/es/tags/hammarlund/</link>
+    <description>Recent content in Hammarlund on LU2DFM</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Fri, 08 Jan 2016 00:00:00 +0000</lastBuildDate><atom:link href="http://lu2dfm.github.io/es/tags/hammarlund/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BC-221 SN 6149 Order no. 4674 PH 42</title>
+      <link>http://lu2dfm.github.io/es/post/2016/20160108_bc221/</link>
+      <pubDate>Fri, 08 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://lu2dfm.github.io/es/post/2016/20160108_bc221/</guid>
+      <description>BC-221 Este es un medidor de frecuencias BC221 de 1942 fabricado por Philco. Estas son algunas fotos crudas del aparato tal como llegó en enero de 2016.
+Este equipo pertenció a un radioaficionado de la zona de Belgrano, del cual no poseo otros datos.</description>
+    </item>
+    
+    <item>
+      <title>Fotos SP-400-X</title>
+      <link>http://lu2dfm.github.io/es/post/2010/sp400xfotos/</link>
+      <pubDate>Thu, 11 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://lu2dfm.github.io/es/post/2010/sp400xfotos/</guid>
+      <description>El artículo en este mismo blog.
+Así estaba cuando los recibí. Click sobre las fotos para ver en tamaño completo.
+Chasis, vista inferior. En el centro, la unidad de sintonía.
+Detalle de la unidad de sintonía, vista inferior, sin tapa. Se puede ver cada trimmer y bobina en las placas de isolanita.
+Detalle de la llave de cambio de banda, y su árbol de mando. Vista superior.
+Detalle de la llave de cambio de banda.</description>
+    </item>
+    
+    <item>
+      <title>Hammarlund Super Pro SP-400-X</title>
+      <link>http://lu2dfm.github.io/es/post/2010/20100703_sp400x/</link>
+      <pubDate>Thu, 11 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://lu2dfm.github.io/es/post/2010/20100703_sp400x/</guid>
+      <description>Algunas notas acerca del receptor. El número de serie es 4-4633. El número de serie podría indicar 1946 como año de fabricación. Este modelo se fabricó solo entre 1946 y 1948, aunque podría haber algunos posteriores.
+Este receptor no es un SP-400 standard. Parece que se trata de una versión especialmente diseñada para RTTY o servicio similar. Tiene 13 válvulas:
+RF: 2 x 6K7 MIX: 6L7 OSC: 6J5 (std. 6J7) 1° IF: 6K7 2° y 3° IF: 6SK7 DET: 6H6 BFO: 6SJ7 AVC Amplifier: 6SK7 AVC Rectifier: 6H6 Pre Audio: 6J5 Audio Out: 6V6 Aparte de 2 rectificadoras (5Y3 y 80 o 1V) en la fuente, que es separada.</description>
+    </item>
+    
+  </channel>
+</rss>
