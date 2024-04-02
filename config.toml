@@ -1,4 +1,4 @@
-baseURL = 'http://lu2dfm.github.io/'
+baseURL = 'https://lu2dfm.github.io/'
 languageCode = 'es-ar'
 title = 'LU2DFM'
 theme = 'mainroad'
