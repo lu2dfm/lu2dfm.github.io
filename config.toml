@@ -3,7 +3,7 @@ languageCode = 'es-ar'
 title = 'LU2DFM'
 theme = 'mainroad'
 #whiteplain'
-publishDir = "docs"
+#publishDir = "docs"
 
 [ markup.goldmark ]
 [ markup.goldmark.extensions]
@@ -165,16 +165,22 @@ defaultContentLanguageInSubdir = false
 #          identifier = "tags"
 #          url = "/tags/"
 #          weight = 2
-#        [[languages.en.menus.main]]
-#          name = "Archives"
-#          identifier = "archives"
-#          url = "/archives/"
-#          weight = 3
+        [[languages.en.menus.main]]
+          name = "Archives"
+          identifier = "archives"
+          url = "/archives/"
+          weight = 3
 #        [[languages.en.menus.main]]
 #          name = "Blog"
 #          identifier = "blog"
 #          url = "/es/post/"
 #          weight = 2
+        [[languages.en.menus.main]]
+          name = "Maps"
+          identifier = "maps"
+          url = "/maps/"
+          weight = 4
+
         # Footer Menu
         [[languages.en.menus.footer]]
           name = "About"

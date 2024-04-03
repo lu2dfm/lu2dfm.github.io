@@ -2,71 +2,71 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on LU2DFM</title>
-    <link>http://lu2dfm.github.io/es/categories/</link>
+    <link>https://lu2dfm.github.io/es/categories/</link>
     <description>Recent content in Categories on LU2DFM</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Mon, 25 Mar 2024 14:33:50 -0300</lastBuildDate><atom:link href="http://lu2dfm.github.io/es/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Mar 2024 14:33:50 -0300</lastBuildDate><atom:link href="https://lu2dfm.github.io/es/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Noticias</title>
-      <link>http://lu2dfm.github.io/es/categories/noticias/</link>
+      <link>https://lu2dfm.github.io/es/categories/noticias/</link>
       <pubDate>Mon, 25 Mar 2024 14:33:50 -0300</pubDate>
       
-      <guid>http://lu2dfm.github.io/es/categories/noticias/</guid>
+      <guid>https://lu2dfm.github.io/es/categories/noticias/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Radio</title>
-      <link>http://lu2dfm.github.io/es/categories/radio/</link>
+      <link>https://lu2dfm.github.io/es/categories/radio/</link>
       <pubDate>Fri, 26 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://lu2dfm.github.io/es/categories/radio/</guid>
+      <guid>https://lu2dfm.github.io/es/categories/radio/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Software</title>
-      <link>http://lu2dfm.github.io/es/categories/software/</link>
+      <link>https://lu2dfm.github.io/es/categories/software/</link>
       <pubDate>Mon, 20 Apr 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://lu2dfm.github.io/es/categories/software/</guid>
+      <guid>https://lu2dfm.github.io/es/categories/software/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Misc</title>
-      <link>http://lu2dfm.github.io/es/categories/misc/</link>
+      <link>https://lu2dfm.github.io/es/categories/misc/</link>
       <pubDate>Tue, 25 Jun 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://lu2dfm.github.io/es/categories/misc/</guid>
+      <guid>https://lu2dfm.github.io/es/categories/misc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Antenas</title>
-      <link>http://lu2dfm.github.io/es/categories/antenas/</link>
+      <link>https://lu2dfm.github.io/es/categories/antenas/</link>
       <pubDate>Thu, 25 Nov 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://lu2dfm.github.io/es/categories/antenas/</guid>
+      <guid>https://lu2dfm.github.io/es/categories/antenas/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Electrónica</title>
-      <link>http://lu2dfm.github.io/es/categories/electr%C3%B3nica/</link>
+      <link>https://lu2dfm.github.io/es/categories/electr%C3%B3nica/</link>
       <pubDate>Wed, 25 Aug 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://lu2dfm.github.io/es/categories/electr%C3%B3nica/</guid>
+      <guid>https://lu2dfm.github.io/es/categories/electr%C3%B3nica/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Homebrew</title>
-      <link>http://lu2dfm.github.io/es/categories/homebrew/</link>
+      <link>https://lu2dfm.github.io/es/categories/homebrew/</link>
       <pubDate>Wed, 25 Aug 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://lu2dfm.github.io/es/categories/homebrew/</guid>
+      <guid>https://lu2dfm.github.io/es/categories/homebrew/</guid>
       <description></description>
     </item>
     

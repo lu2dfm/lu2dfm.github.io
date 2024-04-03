@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Electrónica on LU2DFM</title>
-    <link>http://lu2dfm.github.io/es/categories/electr%C3%B3nica/</link>
+    <link>https://lu2dfm.github.io/es/categories/electr%C3%B3nica/</link>
     <description>Recent content in Electrónica on LU2DFM</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Wed, 25 Aug 2010 00:00:00 +0000</lastBuildDate><atom:link href="http://lu2dfm.github.io/es/categories/electr%C3%B3nica/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Aug 2010 00:00:00 +0000</lastBuildDate><atom:link href="https://lu2dfm.github.io/es/categories/electr%C3%B3nica/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PL-259 directo a RG-6</title>
-      <link>http://lu2dfm.github.io/es/post/2010/f2uhf/</link>
+      <link>https://lu2dfm.github.io/es/post/2010/f2uhf/</link>
       <pubDate>Wed, 25 Aug 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://lu2dfm.github.io/es/post/2010/f2uhf/</guid>
+      <guid>https://lu2dfm.github.io/es/post/2010/f2uhf/</guid>
       <description>Coaxil RG6 (CATV) directo a PL-259 Rev. 20120911 - agr. fotos Rev. 20120124
 Gracias a las empresas distribuidoras de CATV por estos lares, abunda el cable tipo RG6 de buena calidad, que usan para llegar desde el poste hasta los televisores de los usuarios. Típicamente es un foam de dos a cuatro foils con buena camisa externa, algunos embebidos con gel hidrofóbico.
 Los inconvenientes que presentan estos cables (salvando que son de 75 ohms) es que el metal de la malla no es soldable y que no hay fácilmente disponibles (léase baratos :) conectores PL-259, BNC o incluso adaptadores apropiados.</description>

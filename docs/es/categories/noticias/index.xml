@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Noticias on LU2DFM</title>
-    <link>http://lu2dfm.github.io/es/categories/noticias/</link>
+    <link>https://lu2dfm.github.io/es/categories/noticias/</link>
     <description>Recent content in Noticias on LU2DFM</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Mon, 25 Mar 2024 14:33:50 -0300</lastBuildDate><atom:link href="http://lu2dfm.github.io/es/categories/noticias/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Mar 2024 14:33:50 -0300</lastBuildDate><atom:link href="https://lu2dfm.github.io/es/categories/noticias/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nuevo sitio</title>
-      <link>http://lu2dfm.github.io/es/post/2024/new-site/</link>
+      <link>https://lu2dfm.github.io/es/post/2024/new-site/</link>
       <pubDate>Mon, 25 Mar 2024 14:33:50 -0300</pubDate>
       
-      <guid>http://lu2dfm.github.io/es/post/2024/new-site/</guid>
+      <guid>https://lu2dfm.github.io/es/post/2024/new-site/</guid>
       <description>Después de un hiato de algunos años estoy por fin tratando de retomar alguna forma de actividad.
 De momento me estoy concentrando en dos o tres proyectos básicos y sencillos como para no pecar de ambicioso, por aquello de que el que mucho abarca poco aprieta.
 Está en la lista paulatinamente poner en condiciones primero que nada el laboratorio, instrumentos, herramientas y otras yerbas esenciales, y luego ir conformando algo que parezca una estación.</description>

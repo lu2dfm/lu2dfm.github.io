@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>VHF on LU2DFM</title>
-    <link>http://lu2dfm.github.io/es/tags/vhf/</link>
+    <link>https://lu2dfm.github.io/es/tags/vhf/</link>
     <description>Recent content in VHF on LU2DFM</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Sat, 02 May 2015 00:00:00 +0000</lastBuildDate><atom:link href="http://lu2dfm.github.io/es/tags/vhf/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 May 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://lu2dfm.github.io/es/tags/vhf/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Conversión de Kenwood/Trio TK 701S</title>
-      <link>http://lu2dfm.github.io/es/post/2015/20150502_tk701/</link>
+      <link>https://lu2dfm.github.io/es/post/2015/20150502_tk701/</link>
       <pubDate>Sat, 02 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://lu2dfm.github.io/es/post/2015/20150502_tk701/</guid>
+      <guid>https://lu2dfm.github.io/es/post/2015/20150502_tk701/</guid>
       <description>Conversión de Kenwood/Trio TK 701S Conversión a banda amateur. Esta radio me la regalaron o la levanté en alguna compraventa, y estuvo arrinconada hasta ahora; decidí ponerla en funcionamiento para un digipeater/iGate APRS.
 La radio originalmente es para la banda móvil terrestre 150-174 MHz. Es canalera (6 canales) y se programa mediante un par de integrados ignotos que desde una llave/encoder frontal codifican los contadores del PLL. El PLL es tipo N-fraccional, basado en un MC145152 y usa un prescaler de doble módulo (%64-65) UPB571C (bueno hasta 500 MHz aparentemente); con el LO en 10.</description>
     </item>

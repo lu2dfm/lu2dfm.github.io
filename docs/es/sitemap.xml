@@ -2,248 +2,268 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://lu2dfm.github.io/es/busco/</loc>
+    <loc>https://lu2dfm.github.io/es/busco/</loc>
   </url><url>
-    <loc>http://lu2dfm.github.io/es/about/</loc>
+    <loc>https://lu2dfm.github.io/es/about/</loc>
     <lastmod>2022-01-25T14:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://lu2dfm.github.io/about/"
+                href="https://lu2dfm.github.io/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://lu2dfm.github.io/es/about/"
+                href="https://lu2dfm.github.io/es/about/"
                 />
   </url><url>
-    <loc>http://lu2dfm.github.io/es/links/</loc>
+    <loc>https://lu2dfm.github.io/es/links/</loc>
     <lastmod>2022-01-25T14:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lu2dfm.github.io/es/categories/</loc>
+    <loc>https://lu2dfm.github.io/es/categories/</loc>
     <lastmod>2024-03-25T14:33:50-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://lu2dfm.github.io/categories/"
+                href="https://lu2dfm.github.io/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://lu2dfm.github.io/es/categories/"
+                href="https://lu2dfm.github.io/es/categories/"
                 />
   </url><url>
-    <loc>http://lu2dfm.github.io/es/</loc>
+    <loc>https://lu2dfm.github.io/es/</loc>
     <lastmod>2024-03-25T14:33:50-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://lu2dfm.github.io/"
+                href="https://lu2dfm.github.io/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://lu2dfm.github.io/es/"
+                href="https://lu2dfm.github.io/es/"
                 />
   </url><url>
-    <loc>http://lu2dfm.github.io/es/categories/noticias/</loc>
+    <loc>https://lu2dfm.github.io/es/categories/noticias/</loc>
     <lastmod>2024-03-25T14:33:50-03:00</lastmod>
   </url><url>
-    <loc>http://lu2dfm.github.io/es/post/2024/new-site/</loc>
+    <loc>https://lu2dfm.github.io/es/post/2024/new-site/</loc>
     <lastmod>2024-03-25T14:33:50-03:00</lastmod>
   </url><url>
-    <loc>http://lu2dfm.github.io/es/post/</loc>
+    <loc>https://lu2dfm.github.io/es/post/</loc>
     <lastmod>2024-03-25T14:33:50-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://lu2dfm.github.io/post/"
+                href="https://lu2dfm.github.io/post/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://lu2dfm.github.io/es/post/"
+                href="https://lu2dfm.github.io/es/post/"
                 />
   </url><url>
-    <loc>http://lu2dfm.github.io/es/post/2021/20210226_nederland/</loc>
+    <loc>https://lu2dfm.github.io/es/post/2021/20210226_nederland/</loc>
     <lastmod>2021-02-26T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://lu2dfm.github.io/post/2021/20210226_nederland/"
+                href="https://lu2dfm.github.io/post/2021/20210226_nederland/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://lu2dfm.github.io/es/post/2021/20210226_nederland/"
+                href="https://lu2dfm.github.io/es/post/2021/20210226_nederland/"
                 />
   </url><url>
-    <loc>http://lu2dfm.github.io/es/categories/radio/</loc>
+    <loc>https://lu2dfm.github.io/es/categories/radio/</loc>
     <lastmod>2021-02-26T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://lu2dfm.github.io/categories/radio/"
+                href="https://lu2dfm.github.io/categories/radio/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://lu2dfm.github.io/es/categories/radio/"
+                href="https://lu2dfm.github.io/es/categories/radio/"
                 />
   </url><url>
-    <loc>http://lu2dfm.github.io/es/tags/swl/</loc>
+    <loc>https://lu2dfm.github.io/es/tags/swl/</loc>
     <lastmod>2021-02-26T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://lu2dfm.github.io/tags/swl/"
+                href="https://lu2dfm.github.io/tags/swl/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://lu2dfm.github.io/es/tags/swl/"
+                href="https://lu2dfm.github.io/es/tags/swl/"
                 />
   </url><url>
-    <loc>http://lu2dfm.github.io/es/tags/</loc>
+    <loc>https://lu2dfm.github.io/es/tags/</loc>
     <lastmod>2021-02-26T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://lu2dfm.github.io/tags/"
+                href="https://lu2dfm.github.io/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://lu2dfm.github.io/es/tags/"
+                href="https://lu2dfm.github.io/es/tags/"
                 />
   </url><url>
-    <loc>http://lu2dfm.github.io/es/post/2016/20160108_bc221/</loc>
+    <loc>https://lu2dfm.github.io/es/post/2016/20160108_bc221/</loc>
     <lastmod>2016-01-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lu2dfm.github.io/es/tags/boatanchor/</loc>
+    <loc>https://lu2dfm.github.io/es/tags/boatanchor/</loc>
     <lastmod>2016-01-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lu2dfm.github.io/es/tags/hammarlund/</loc>
+    <loc>https://lu2dfm.github.io/es/tags/hammarlund/</loc>
     <lastmod>2016-01-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lu2dfm.github.io/es/tags/receptor/</loc>
+    <loc>https://lu2dfm.github.io/es/tags/receptor/</loc>
     <lastmod>2016-01-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lu2dfm.github.io/es/tags/valvular/</loc>
+    <loc>https://lu2dfm.github.io/es/tags/valvular/</loc>
     <lastmod>2016-01-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lu2dfm.github.io/es/tags/aprs/</loc>
+    <loc>https://lu2dfm.github.io/es/tags/aprs/</loc>
     <lastmod>2015-05-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lu2dfm.github.io/es/post/2015/20150502_tk701/</loc>
+    <loc>https://lu2dfm.github.io/es/post/2015/20150502_tk701/</loc>
     <lastmod>2015-05-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lu2dfm.github.io/es/tags/digi/</loc>
+    <loc>https://lu2dfm.github.io/es/tags/digi/</loc>
     <lastmod>2015-05-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lu2dfm.github.io/es/tags/homebrew/</loc>
+    <loc>https://lu2dfm.github.io/es/tags/homebrew/</loc>
     <lastmod>2015-05-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lu2dfm.github.io/es/tags/surplus/</loc>
+    <loc>https://lu2dfm.github.io/es/tags/surplus/</loc>
     <lastmod>2015-05-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lu2dfm.github.io/es/tags/vhf/</loc>
+    <loc>https://lu2dfm.github.io/es/tags/vhf/</loc>
     <lastmod>2015-05-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://lu2dfm.github.io/tags/vhf/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://lu2dfm.github.io/es/tags/vhf/"
+                />
   </url><url>
-    <loc>http://lu2dfm.github.io/es/post/2015/20150420_pyaprs_pre/</loc>
+    <loc>https://lu2dfm.github.io/es/post/2015/20150420_pyaprs_pre/</loc>
     <lastmod>2015-04-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lu2dfm.github.io/es/tags/python/</loc>
+    <loc>https://lu2dfm.github.io/es/tags/python/</loc>
     <lastmod>2015-04-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lu2dfm.github.io/es/categories/software/</loc>
+    <loc>https://lu2dfm.github.io/es/categories/software/</loc>
     <lastmod>2015-04-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lu2dfm.github.io/es/post/2013/20130914_bc348bfo/</loc>
+    <loc>https://lu2dfm.github.io/es/post/2013/20130914_bc348bfo/</loc>
     <lastmod>2013-09-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lu2dfm.github.io/es/categories/misc/</loc>
+    <loc>https://lu2dfm.github.io/es/categories/misc/</loc>
     <lastmod>2013-06-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lu2dfm.github.io/es/tags/radio-club/</loc>
+    <loc>https://lu2dfm.github.io/es/tags/radio-club/</loc>
     <lastmod>2013-06-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lu2dfm.github.io/es/post/2013/esp_rcbera/</loc>
+    <loc>https://lu2dfm.github.io/es/post/2013/esp_rcbera/</loc>
     <lastmod>2013-06-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lu2dfm.github.io/es/tags/beh/</loc>
+    <loc>https://lu2dfm.github.io/es/tags/beh/</loc>
     <lastmod>2012-02-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lu2dfm.github.io/es/post/2012/201202027_beh/</loc>
+    <loc>https://lu2dfm.github.io/es/post/2012/201202027_beh/</loc>
     <lastmod>2012-02-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lu2dfm.github.io/es/tags/transmisor/</loc>
+    <loc>https://lu2dfm.github.io/es/tags/transmisor/</loc>
     <lastmod>2012-02-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lu2dfm.github.io/es/tags/antena/</loc>
+    <loc>https://lu2dfm.github.io/es/tags/antena/</loc>
     <lastmod>2010-11-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lu2dfm.github.io/es/categories/antenas/</loc>
+    <loc>https://lu2dfm.github.io/es/categories/antenas/</loc>
     <lastmod>2010-11-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lu2dfm.github.io/es/post/2010/20101125_moxgenlinux/</loc>
+    <loc>https://lu2dfm.github.io/es/post/2010/20101125_moxgenlinux/</loc>
     <lastmod>2010-11-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lu2dfm.github.io/es/tags/radio/</loc>
+    <loc>https://lu2dfm.github.io/es/tags/radio/</loc>
     <lastmod>2010-11-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://lu2dfm.github.io/tags/radio/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://lu2dfm.github.io/es/tags/radio/"
+                />
   </url><url>
-    <loc>http://lu2dfm.github.io/es/post/2010/kl7aj_swr_meters_make_you_stupid_sp/</loc>
+    <loc>https://lu2dfm.github.io/es/post/2010/kl7aj_swr_meters_make_you_stupid_sp/</loc>
     <lastmod>2010-11-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lu2dfm.github.io/es/tags/coaxil/</loc>
+    <loc>https://lu2dfm.github.io/es/tags/coaxil/</loc>
     <lastmod>2010-08-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lu2dfm.github.io/es/tags/conector/</loc>
+    <loc>https://lu2dfm.github.io/es/tags/conector/</loc>
     <lastmod>2010-08-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lu2dfm.github.io/es/categories/electr%C3%B3nica/</loc>
+    <loc>https://lu2dfm.github.io/es/categories/electr%C3%B3nica/</loc>
     <lastmod>2010-08-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lu2dfm.github.io/es/categories/homebrew/</loc>
+    <loc>https://lu2dfm.github.io/es/categories/homebrew/</loc>
     <lastmod>2010-08-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lu2dfm.github.io/es/post/2010/f2uhf/</loc>
+    <loc>https://lu2dfm.github.io/es/post/2010/f2uhf/</loc>
     <lastmod>2010-08-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lu2dfm.github.io/es/post/2010/20100818_agc/</loc>
+    <loc>https://lu2dfm.github.io/es/post/2010/20100818_agc/</loc>
     <lastmod>2010-08-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lu2dfm.github.io/es/tags/fotos/</loc>
+    <loc>https://lu2dfm.github.io/es/tags/fotos/</loc>
     <lastmod>2010-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lu2dfm.github.io/es/post/2010/sp400xfotos/</loc>
+    <loc>https://lu2dfm.github.io/es/post/2010/sp400xfotos/</loc>
     <lastmod>2010-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lu2dfm.github.io/es/post/2010/20100703_sp400x/</loc>
+    <loc>https://lu2dfm.github.io/es/post/2010/20100703_sp400x/</loc>
     <lastmod>2010-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lu2dfm.github.io/es/contacto/</loc>
+    <loc>https://lu2dfm.github.io/es/contacto/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://lu2dfm.github.io/contacto/"
+                href="https://lu2dfm.github.io/contacto/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://lu2dfm.github.io/es/contacto/"
+                href="https://lu2dfm.github.io/es/contacto/"
                 />
   </url><url>
-    <loc>http://lu2dfm.github.io/es/series/</loc>
+    <loc>https://lu2dfm.github.io/es/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://lu2dfm.github.io/series/"
+                href="https://lu2dfm.github.io/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://lu2dfm.github.io/es/series/"
+                href="https://lu2dfm.github.io/es/series/"
                 />
   </url>
 </urlset>
