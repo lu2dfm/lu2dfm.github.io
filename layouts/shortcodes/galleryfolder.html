@@ -1,0 +1,15 @@
+{{ $path := .Get "path" }}
+{{ $images := readDir (printf "static/%s" $path) }}
+<div class="gallery">
+  {{ range $images }}
+    {{ $filename := .Name }}
+    {{ if (or (strings.HasSuffix $filename ".jpg") (strings.HasSuffix $filename ".jpeg") (strings.HasSuffix $filename ".png")) }}
+      {{ $rotated := (findRE "r\\.(jpg|jpeg|png)$" $filename) }}
+      {{ $rotatedInverse := (findRE "ir\\.(jpg|jpeg|png)$" $filename) }}
+      <a href="/{{ $path }}/{{ $filename }}" target="_blank" rel="noopener noreferrer">
+        <img src="/{{ $path }}/{{ $filename }}" alt="{{ $filename }}" loading="lazy"
+             class="{{ if $rotated }}rotated-90{{ end }}{{ if $rotatedInverse }}rotated-270{{ end }}" />
+      </a>
+    {{ end }}
+  {{ end }}
+</div>

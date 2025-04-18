@@ -1,0 +1,30 @@
+
+
+img.rotated-90 {
+  transform: rotate(90deg);
+  max-height: 100%;
+  max-width: 80%;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+}
+img.rotated-270 {
+  transform: rotate(-90deg); /* o 270deg */
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+}
+
+.gallery a {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
