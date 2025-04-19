@@ -15,7 +15,7 @@ tiene alguna foto de lo que me ofrece.
 - Radios viejas
     Particularmente valvulares con transformador, no tanto ambas corrientes(AA5)
 
-- Drake R4C
+- Drake R4B 
 
 - Componentes
     Electrónica antigua, partes de radios y otros artefactos
@@ -26,6 +26,6 @@ tiene alguna foto de lo que me ofrece.
 
 - Instrumental
     Instrumental antiguo de electrónica y comunicaciones
-    
+
 
 

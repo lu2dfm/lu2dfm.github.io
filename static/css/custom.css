@@ -28,3 +28,22 @@ img.rotated-270 {
   width: 100%;
   height: auto;
 }
+
+
+.catalogo-daxon {
+  font-family: var(--body-font);
+}
+.producto {
+  background: var(--card-bg);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+.meta {
+  list-style: none;
+  padding-left: 0;
+}
+.meta li {
+  display: inline-block;
+  margin-right: 1rem;
+}

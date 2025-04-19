@@ -103,7 +103,9 @@ theme = 'mainroad'
 widgets = ["languages", "recent", "categories", "taglist", "social" ]
 
 defaultContentLanguage = 'es'
-defaultContentLanguageInSubdir = false
+defaultContentLanguageInSubdir = true
+disableDefaultLanguageRedirect = false
+
 [languages]
   [languages.es]
     contentDir = 'content/es'
