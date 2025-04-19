@@ -1,5 +1,4 @@
 baseURL = 'https://lu2dfm.github.io/'
-languageCode = 'es-ar'
 title = 'LU2DFM'
 theme = 'mainroad'
 #whiteplain'
@@ -105,14 +104,15 @@ widgets = ["languages", "recent", "categories", "taglist", "social" ]
 defaultContentLanguage = 'es'
 defaultContentLanguageInSubdir = true
 disableDefaultLanguageRedirect = false
+languageCode = "es"
 
 [languages]
   [languages.es]
+    languageName = 'Castellano'
     contentDir = 'content/es'
     disabled = false
     languageCode = 'es'
     languageDirection = 'ltr'
-    languageName = 'Spanish'
     title = 'LU2DFM'
     weight = 1
     [languages.es.params]
@@ -137,7 +137,7 @@ disableDefaultLanguageRedirect = false
     [[languages.es.menus.main]]
       name = "Blog"
       identifier = "blog"
-      url = "/es/post/"
+      url = "/es"
       weight = 2
     [[languages.es.menus.footer]]
       name = "Acerca de"

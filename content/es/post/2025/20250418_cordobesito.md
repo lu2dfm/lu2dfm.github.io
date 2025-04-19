@@ -1,6 +1,6 @@
 ---
 title: 'Transmisor AM pantallero una 6DQ6 por otra, el "Cordobesito" '
-lead: 'Radiocomunicaciones pag. 13'
+lead: 'Circuito AM tx'
 date: 2025-04-18
 categories:
   - "Radio"
@@ -12,6 +12,7 @@ tags:
   - "Documento"
   - "Circuito"
   - "Esquema"
+thumbnail: /post-images/2025/cordobes_th.jpg
 
 ---
 
