@@ -3,6 +3,10 @@ title = 'LU2DFM'
 theme = 'mainroad'
 #whiteplain'
 #publishDir = "docs"
+defaultContentLanguage = 'es'
+defaultContentLanguageInSubdir = true
+disableDefaultLanguageRedirect = false
+languageCode = "es"
 
 [ markup.goldmark ]
 [ markup.goldmark.extensions]
@@ -101,10 +105,6 @@ theme = 'mainroad'
 
 widgets = ["languages", "recent", "categories", "taglist", "social" ]
 
-defaultContentLanguage = 'es'
-defaultContentLanguageInSubdir = true
-disableDefaultLanguageRedirect = false
-languageCode = "es"
 
 [languages]
   [languages.es]
