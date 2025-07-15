@@ -12,7 +12,7 @@ tags:
   - "Documento"
   - "Circuito"
   - "Esquema"
-thumbnail: /post-images/2025/pointreyesRCA.webp
+thumbnail: /post-images/2025/cordobesito.jpeg
 
 ---
 
