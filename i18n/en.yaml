@@ -6,3 +6,11 @@
     one: "One minute read"
     other: "{{.Count}} minutes read"
 
+- id: apps_title
+  translation: Applications
+- id: app_bandas
+  translation: Band Plan
+- id: app_propagacion
+  translation: Propagation
+- id: app_log
+  translation: Logbook

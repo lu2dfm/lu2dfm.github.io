@@ -103,7 +103,7 @@ languageCode = "es"
   list = "right"
   single = "right"
 
-widgets = ["languages", "recent", "categories", "taglist", "social" ]
+widgets = ["languages", "apps", "recent", "categories", "taglist", "social" ]
 
 
 [languages]

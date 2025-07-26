@@ -1,2 +1,11 @@
 - id: about
   translation: "Acerda de"
+
+- id: apps_title
+  translation: Aplicaciones
+- id: app_bandas
+  translation: Plan de Bandas
+- id: app_propagacion
+  translation: Propagación
+- id: app_log
+  translation: Libro de Guardia
