@@ -1,0 +1,92 @@
+{{ define "main" }}
+
+{{- $unit := .Params.unit -}}
+{{- $data := index site.Data $unit -}}
+
+
+{{ with .Params.section_epigrafe }}
+  {{ . | markdownify }}
+{{ end }}
+
+
+{{ with .Params.section_title }}
+  <h2>{{ . }}</h2>
+{{ end }}
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Tipo</th>
+      <th>Part Number</th>
+      <th>Valor</th>
+      <th>Unidad</th>
+      <th>Tolerancia</th>
+      <th>Rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ range $data.resistors }}
+    <tr>
+      <td>Resistor</td>
+      <td>{{ .part_number }}</td>
+      <td>{{ .resistance }}</td>
+      <td>{{ .unit }}</td>
+      <td>{{ .tolerance }}</td>
+      <td>{{ .power }}</td>
+    </tr>
+    {{ end }}
+    {{ range $data.capacitors }}
+    <tr>
+      <td>Capacitor</td>
+      <td>{{ .part_number }}</td>
+      <td>{{ .capacitance }}</td>
+      <td>{{ .unit }}</td>
+      <td>{{ .tolerance }}</td>
+      <td>{{ or .voltage .power }}</td>
+    </tr>
+    {{ end }}
+    {{ range $data.variable_resistors }}
+    <tr>
+      <td>Variable Resistor</td>
+      <td>{{ .part_number }}</td>
+      <td>{{ .resistance }}</td>
+      <td>{{ .unit }}</td>
+      <td></td>
+      <td>{{ .model }}</td>
+    </tr>
+    {{ end }}
+    {{ range $data.trimmer_capacitors }}
+    <tr>
+      <td>Trimmer Capacitor</td>
+      <td>{{ .part_number }}</td>
+      <td>{{ .capacitance }}</td>
+      <td>{{ .unit }}</td>
+      <td></td>
+      <td>{{ .model }}</td>
+    </tr>
+    {{ end }}
+    {{ range $data.inductors }}
+    <tr>
+      <td>Inductor</td>
+      <td>{{ .part_number }}</td>
+      <td>{{ .inductance }}</td>
+      <td>{{ .unit }}</td>
+      <td></td>
+      <td></td>
+    </tr>
+    {{ end }}
+  </tbody>
+</table>
+
+{{ with .Params.image }}
+  <figure>
+    <img src="{{ . }}" alt="{{ $.Params.image_alt }}" style="max-width:100%; height:auto;">
+    {{ with $.Params.image_caption }}
+      <figcaption style="font-style: italic; text-align: center;">{{ . }}</figcaption>
+    {{ end }}
+  </figure>
+
+{{ end }}
+
+{{ end }}
