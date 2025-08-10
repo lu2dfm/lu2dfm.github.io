@@ -1,0 +1,215 @@
+{
+  "resistors": [
+    {
+      "part_number": "4, 7",
+      "type": "carbon film",
+      "power": "¼W",
+      "value": "100",
+      "unit": "Ω",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "3",
+      "type": "carbon film",
+      "power": "¼W",
+      "value": "270",
+      "unit": "Ω",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "3, 6",
+      "type": "carbon film",
+      "power": "¼W",
+      "value": "330",
+      "unit": "Ω",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "8",
+      "type": "carbon film",
+      "power": "¼W",
+      "value": "8.2",
+      "unit": "kΩ",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "9",
+      "type": "carbon film",
+      "power": "¼W",
+      "value": "10",
+      "unit": "kΩ",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "1",
+      "type": "carbon film",
+      "power": "¼W",
+      "value": "22",
+      "unit": "kΩ",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "2, 5",
+      "type": "carbon film",
+      "power": "½W",
+      "value": "100",
+      "unit": "kΩ",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "11 (L5)",
+      "type": "carbon composition",
+      "power": "½W",
+      "value": "1",
+      "unit": "kΩ",
+      "tolerance": "±10%"
+    }
+  ],
+  "diodes": [
+    {
+      "part_number": "1",
+      "type": "varactor",
+      "model": "1S145"
+    }
+  ],
+  "transistors": [
+    {
+      "part_number": "3",
+      "type": "transistor",
+      "model": "2SC372Y"
+    },
+    {
+      "part_number": "1, 2",
+      "type": "fet",
+      "model": "2SK19GR"
+    }
+  ],
+  "capacitors": [
+    {
+      "part_number": "16",
+      "type": "dipped mica",
+      "voltage": "50V",
+      "value": 20,
+      "unit": "pF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "8, 10",
+      "type": "dipped mica",
+      "voltage": "50V",
+      "value": 100,
+      "unit": "pF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "1, 2",
+      "type": "dipped mica",
+      "voltage": "50V",
+      "value": 650,
+      "unit": "pF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "11",
+      "type": "dipped mica",
+      "voltage": "50V",
+      "value": 1000,
+      "unit": "pF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "6, 7, 9, 12, 15",
+      "type": "ceramic disc",
+      "voltage": "50V",
+      "value": 0.01,
+      "unit": "μF",
+      "tolerance": "±20%"
+    },
+    {
+      "part_number": "3, 5, 13",
+      "type": "ceramic disc",
+      "voltage": "500V",
+      "value": 0.01,
+      "unit": "μF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "14",
+      "type": "ceramic tc",
+      "temp_coeff": "NP0",
+      "value": 6,
+      "unit": "pF",
+      "tolerance": "±0.5PF"
+    },
+    {
+      "part_number": "19",
+      "type": "ceramic tc",
+      "temp_coeff": "NP0",
+      "value": 10,
+      "unit": "pF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "20",
+      "type": "ceramic tc",
+      "temp_coeff": "NP0",
+      "value": 82,
+      "unit": "pF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "17",
+      "type": "ceramic tc",
+      "temp_coeff": "N750",
+      "value": 2,
+      "unit": "pF",
+      "tolerance": "±0.5PF"
+    },
+    {
+      "part_number": "18",
+      "type": "ceramic tc",
+      "temp_coeff": "N750",
+      "value": 27,
+      "unit": "pF",
+      "tolerance": "±0.5PF"
+    },
+    {
+      "part_number": "21",
+      "type": "ceramic tc",
+      "temp_coeff": "N750",
+      "value": 20,
+      "unit": "pF",
+      "tolerance": "±10%"
+    }
+  ],
+  "variable_capacitors": [
+    {
+      "part_number": "1",
+      "type": "air",
+      "model": "RT188J300VC",
+      "value": 300,
+      "unit": "pF"
+    }
+  ],
+  "trimmer_capacitors": [
+    {
+      "part_number": "2",
+      "type": "air",
+      "model": "C123A129",
+      "value": 30,
+      "unit": "pF"
+    }
+  ],
+  "inductors": [
+    {
+      "part_number": "2-4, 6, 7",
+      "type": "rf choke",
+      "value": "250",
+      "unit":"\u03bcH"
+    },
+    {
+      "part_number": "5(R11)",
+      "type": "rf choke"
+    }
+  ]
+}

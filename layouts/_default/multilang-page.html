@@ -2,15 +2,10 @@
 {{ $currentLang := .Language.Lang }}
 
 {{- $contentKey :=  .File.BaseFileName -}}
-{{- $contentData := index .Site.Data.content $contentKey -}}
+{{- $contentData := index .Site.Data.pages $contentKey -}}
 
 <!--
 <pre>
-{{ printf "Current template: %s" . }}
-{{ printf "Kind: %s" .Kind }}
-{{ printf "Type: %s" .Type }}
-{{ printf "Layout: %s" .Layout }}
-{{ printf "CurrentContentFile: %s" .File.Path }}
 Current Language: {{ .Site.Language.Lang }}
 Page URL: {{ .RelPermalink }}
 IsTranslated: {{ .IsTranslated }}
@@ -31,18 +26,19 @@ Mount Info:
 {{- range .Site.AllPages -}}
   {{- if eq .File.LogicalName "contact.md" -}}
     File: {{ .File.Path }} | Lang: {{ .Language.Lang }} | URL: {{ .RelPermalink }}
- {{ else }}
-    File: {{ .File.Path }} | Lang: {{ .Language.Lang }} | URL: {{ .RelPermalink }}
   {{- end -}}
 {{- end -}}
+
 </pre>
+
 -->
 
 
 {{ if $contentData }}
     <article class="post">
+    <!--
       <header class="post__header">
-          <h1 class="post__title">{{ .Title }}</h1>
+          <h1 class="post__title">AA{{ .Title }}</h1>
           {{- with .Params.lead }}
           <p class="post__lead">{{ . }}</p>
           {{- end }}
@@ -50,6 +46,7 @@ Mount Info:
           <div class="post__meta meta">{{ . }}</div>
           {{- end }}
       </header>
+      -->
       <!-- Epigrafe -->
       {{ with index $contentData.epigrafe $currentLang }}
       <div class="epigrafe">

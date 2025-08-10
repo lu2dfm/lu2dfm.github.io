@@ -1,0 +1,381 @@
+{
+"pb": "1315(A-Z)",
+  "transistors_and_ics": [
+    {
+      "part_number": "2, 3",
+      "type": "q-fet, ic & transistor",
+      "model": "2sc3727"
+    },
+    {
+      "part_number": "6, 7",
+      "type": "q-fet, ic & transistor",
+      "model": "2sc373"
+    },
+    {
+      "part_number": "9",
+      "type": "q-fet, ic & transistor",
+      "model": "2sc1000"
+    },
+    {
+      "part_number": "1",
+      "type": "q-fet, ic & transistor",
+      "model": "2sk19gr"
+    },
+    {
+      "part_number": "5",
+      "type": "q-fet, ic & transistor",
+      "model": "2sk19y"
+    },
+    {
+      "part_number": "8",
+      "type": "q-fet, ic & transistor",
+      "model": "an214"
+    },
+    {
+      "part_number": "4",
+      "type": "q-fet, ic & transistor",
+      "model": "ta-7045m"
+    }
+  ],
+  "diodes": [
+    {
+      "part_number": "1, 2, 3, 4",
+      "type": "diode",
+      "model": "1s1555"
+    },
+    {
+      "part_number": "5",
+      "type": "diode",
+      "model": "wz-090"
+    }
+  ],
+  "resistors": [
+    {
+      "part_number": "13, 14",
+      "type": "resistor",
+      "power": "1/4w",
+      "value": "100",
+      "unit": "\u03a9",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "53",
+      "type": "resistor",
+      "power": "1/4w",
+      "value": "120",
+      "unit": "\u03a9",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "41",
+      "type": "resistor",
+      "power": "1/4w",
+      "value": "220",
+      "unit": "\u03a9",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "12",
+      "type": "resistor",
+      "power": "1/4w",
+      "value": "330",
+      "unit": "\u03a9",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "16, 17, 33",
+      "type": "resistor",
+      "power": "1/4w",
+      "value": "470",
+      "unit": "\u03a9",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "45",
+      "type": "resistor",
+      "power": "1/4w",
+      "value": "560",
+      "unit": "\u03a9",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "27",
+      "type": "resistor",
+      "power": "1/4w",
+      "value": "680",
+      "unit": "\u03a9",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "5, 8, 15, 45, 49",
+      "type": "resistor",
+      "power": "1/4w",
+      "value": "1",
+      "unit": "k\u03a9",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "21",
+      "type": "resistor",
+      "power": "1/4w",
+      "value": "1.5",
+      "unit": "k\u03a9",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "20, 28, 34",
+      "type": "resistor",
+      "power": "1/4w",
+      "value": "2.2",
+      "unit": "k\u03a9",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "6",
+      "type": "resistor",
+      "power": "1/4w",
+      "value": "3.3",
+      "unit": "k\u03a9",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "1, 3, 14, 29-31, 38, 39, 40",
+      "type": "resistor",
+      "power": "1/4w",
+      "value": "4.7",
+      "unit": "k\u03a9",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "4, 48",
+      "type": "resistor",
+      "power": "1/4w",
+      "value": "5.6",
+      "unit": "k\u03a9",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "9, 10, 35",
+      "type": "resistor",
+      "power": "1/4w",
+      "value": "10",
+      "unit": "k\u03a9",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "51",
+      "type": "resistor",
+      "power": "1/4w",
+      "value": "12",
+      "unit": "k\u03a9",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "11, 18",
+      "type": "resistor",
+      "power": "1/4w",
+      "value": "15",
+      "unit": "k\u03a9",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "7, 52",
+      "type": "resistor",
+      "power": "1/4w",
+      "value": "22",
+      "unit": "k\u03a9",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "43, 47",
+      "type": "resistor",
+      "power": "1/4w",
+      "value": "27",
+      "unit": "k\u03a9",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "32, 42",
+      "type": "resistor",
+      "power": "1/4w",
+      "value": "33",
+      "unit": "k\u03a9",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "50",
+      "type": "resistor",
+      "power": "1/4w",
+      "value": "39",
+      "unit": "k\u03a9",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "2, 36, 37, 46",
+      "type": "resistor",
+      "power": "1/4w",
+      "value": "47",
+      "unit": "k\u03a9",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "22",
+      "type": "resistor",
+      "power": "1/4w",
+      "value": "470",
+      "unit": "k\u03a9",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "23, 24",
+      "type": "resistor",
+      "power": "1/4w",
+      "value": "1.3",
+      "unit": "M\u03a9",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "25",
+      "type": "resistor",
+      "power": "1/4w",
+      "value": "3.6",
+      "unit": "M\u03a9",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "26",
+      "type": "thermistor",
+      "model": "sdt250"
+    }
+  ],
+  "variable_resistors": [
+    {
+      "part_number": "3, 4",
+      "type": "vr-variable resistor",
+      "model": "tr-11r",
+      "value": "10",
+      "unit": "k\u03a9"
+    },
+    {
+      "part_number": "1, 5",
+      "type": "vr-variable resistor",
+      "model": "v160krz-1",
+      "value": "1",
+      "unit": "M\u03a9"
+    },
+    {
+      "part_number": "2",
+      "type": "vr-variable resistor",
+      "model": "v160krz-1",
+      "value": "2",
+      "unit": "M\u03a9"
+    }
+  ],
+  "capacitors": [
+    {
+      "part_number": "46",
+      "type": "dipped mica",
+      "voltage": "500v",
+      "value": "100",
+      "unit": "pf",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "15, 27, 31, 52",
+      "type": "mylar",
+      "voltage": "500v",
+      "value": "0.001",
+      "unit": "μf",
+      "tolerance": "±20%"
+    },
+    {
+      "part_number": "4",
+      "type": "mylar",
+      "voltage": "500v",
+      "value": "0.0047",
+      "unit": "μf",
+      "tolerance": "±20%"
+    },
+    {
+      "part_number": "1, 9, 12, 17, 22, 33, 34",
+      "type": "mylar",
+      "voltage": "500v",
+      "value": "0.01",
+      "unit": "μf",
+      "tolerance": "±20%"
+    },
+    {
+      "part_number": "24, 28, 29, 30, 39",
+      "type": "mylar",
+      "voltage": "500v",
+      "value": "0.022",
+      "unit": "μf",
+      "tolerance": "±20%"
+    },
+    {
+      "part_number": "3, 25, 26, 48, 50",
+      "type": "mylar",
+      "voltage": "500v",
+      "value": "0.047",
+      "unit": "μf",
+      "tolerance": "±20%"
+    },
+    {
+      "part_number": "23, 32, 37, 43, 45",
+      "type": "mylar",
+      "voltage": "500v",
+      "value": "0.1",
+      "unit": "μf",
+      "tolerance": "±20%"
+    },
+    {
+      "part_number": "5, 6, 7, 10, 14, 21",
+      "type": "electrolytic",
+      "voltage": "16v",
+      "value": "1",
+      "unit": "μf"
+    },
+    {
+      "part_number": "11",
+      "type": "electrolytic",
+      "voltage": "16v",
+      "value": "2.2",
+      "unit": "μf"
+    },
+    {
+      "part_number": "2, 16, 19, 20, 31, 36",
+      "type": "electrolytic",
+      "voltage": "16v",
+      "value": "10",
+      "unit": "μf"
+    },
+    {
+      "part_number": "8, 35",
+      "type": "electrolytic",
+      "voltage": "16v",
+      "value": "22",
+      "unit": "μf"
+    },
+    {
+      "part_number": "40",
+      "type": "electrolytic",
+      "voltage": "16v",
+      "value": "33",
+      "unit": "μf"
+    },
+    {
+      "part_number": "4, 18, 38, 42, 49",
+      "type": "electrolytic",
+      "voltage": "16v",
+      "value": "100",
+      "unit": "μf"
+    },
+    {
+      "part_number": "13, 41, 44",
+      "type": "electrolytic",
+      "voltage": "16v",
+      "value": "220",
+      "unit": "μf"
+    }
+  ]
+}

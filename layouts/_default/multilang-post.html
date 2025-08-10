@@ -1,0 +1,105 @@
+{{ define "main" }}
+{{ $currentLang := .Language.Lang }}
+{{ $contentData := index .Site.Data.content .Params.contentKey }}
+
+{{ if $contentData }}
+
+  
+  <!-- Contenido principal -->
+  <!--
+  <div class="content">
+    {{ index $contentData.content $currentLang | markdownify }}
+  </div>
+  -->
+      <article class="post">
+        <header class="post__header">
+            <h1 class="post__title">{{ .Title }}</h1>
+            {{- with .Params.lead }}
+            <p class="post__lead">{{ . }}</p>
+            {{- end }}
+            {{ with partial "post_meta.html" . -}}
+            <div class="post__meta meta">{{ . }}</div>
+            {{- end }}
+        </header>
+  <!-- language selector si tiene > 1 lang -->
+    {{/* Orden fijo: es, pt, en */}}
+    {{ $fixedOrder := slice "es" "pt" "en" }}
+    {{ $availableCount := 0 }}
+
+    <!--
+    {{/* Contar idiomas disponibles */}}
+    {{ range $fixedOrder }}
+      {{ if index $contentData.title . }}
+        {{ $availableCount = add $availableCount 1 }}
+      {{ end }}
+    {{ end }}
+
+    {{/* Mostrar solo si hay más de un idioma disponible */}}
+    {{ if gt $availableCount 1 }}
+    <div class="language-selector" style="background: #e8f4f8; padding: 10px; margin: 15px 0; border-radius: 5px; border-left: 4px solid #007acc;">
+        <strong>🌎 {{ T "available_in" | default "Disponible en" }}: </strong>
+      {{ range $fixedOrder }}
+        {{ $targetLang := . }}
+        {{ if and (index $contentData.title $targetLang) (ne $targetLang $.Language.Lang) }}
+          <a href="{{ printf "/%s%s" $targetLang ($.RelPermalink | replaceRE "^/[a-z]{2}" "") }}" 
+                 style="background: #007acc; color: white; padding: 3px 8px; margin: 0 3px; text-decoration: none; border-radius: 3px; font-size: 0.9em;">
+            {{ if eq $targetLang "es" }}Castellano{{ else if eq $targetLang "pt" }}Português{{ else if eq $targetLang "en" }}English{{ end }}
+          </a>
+        {{ else }}
+           <span style="background: #28a745; color: white; padding: 3px 8px; margin: 0 3px; border-radius: 3px; font-size: 0.9em;">
+             {{ if eq $.Language.Lang "es" }}Castellano{{ else if eq $.Language.Lang "pt" }}Português{{ else if eq $.Language.Lang "en" }}English{{ end }} ✓
+           </span>
+        {{ end }}
+      {{ end }}
+    </div>
+    {{ end }}
+    -->
+  <!-- Epigrafe -->
+  {{ with index $contentData.epigrafe $currentLang }}
+  <div class="epigrafe">
+    <blockquote>
+      {{ .texto | markdownify }}
+      {{ with .autor }}<cite>— {{ . }}</cite>{{ end }}
+    </blockquote>
+  </div>
+  {{ end }}
+
+        {{- partial "post_toc.html" . -}}
+        <div class="content post__content clearfix">
+            {{ $mas_content := index $contentData.content $currentLang | markdownify }}
+            {{ $content := $mas_content }}
+            {{ $content = replaceRE `<a href="(https?://.+)">` `<a href="$1" target="_blank">` $content | safeHTML }}
+            {{ $content = replaceRE `<a href="(mailto:.+)">` `<a href="$1" target="_blank">` $content | safeHTML }}
+            {{ $content | safeHTML }}
+        </div>
+        {{- if .Params.tags }}
+        <footer class="post__footer">
+            {{ partial "post_tags.html" . }}
+        </footer>
+        {{- end }}
+    </article>
+
+  <!-- Navegación de series (tu código existente) -->
+  {{ if .Params.series }}
+    {{ $serie_actual := index .Params.series 0 }}
+    {{ $posts_serie := where .Site.RegularPages ".Params.series" "intersect" (slice $serie_actual) }}
+    {{ $posts_filtrados := where $posts_serie ".Params.serie_role" "ne" "index" }}
+    {{ $mismo_idioma := where $posts_filtrados ".Language.Lang" .Language.Lang }}
+    
+    {{ if $mismo_idioma }}
+    <nav class="series-navigation">
+      <h3>Otros artículos de {{ upper $serie_actual }}:</h3>
+      <ul>
+      {{ range $mismo_idioma }}
+        {{ if ne .Permalink $.Permalink }}
+          <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      {{ end }}
+      </ul>
+    </nav>
+    {{ end }}
+  {{ end }}
+{{ else }}
+<p>Error: No se encontró contenido para "{{ .Params.contentKey }}"</p>
+{{ end }}
+{{ end }}

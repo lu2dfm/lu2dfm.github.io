@@ -1,0 +1,214 @@
+{{ define "main" }}
+
+<pre>
+{{ printf "Current template: %s" . }}
+{{ printf "Kind: %s" .Kind }}
+{{ printf "Type: %s" .Type }}
+{{ printf "Layout: %s" .Layout }}
+{{ printf "CurrentContentFile: %s" .File.Path }}
+</pre>
+
+
+{{- $unit := .Params.unit -}}
+{{- $data := index site.Data $unit -}}
+
+{{ with .Params.section_title }}
+  <h2>Yaesu FT-101B - {{ . }}</h2>
+{{ end }}
+
+
+{{ if .Params.epigrafe_key }}
+    {{ $epigrafe := index .Site.Data.epigrafes .Params.epigrafe_key }}
+    {{ if $epigrafe }}
+    <div class="epigrafe">
+      <blockquote>
+        {{ $epigrafe.texto | markdownify }}
+        {{ if $epigrafe.autor }}
+          <cite>— {{ $epigrafe.autor }}</cite>
+        {{ end }}
+      </blockquote>
+    </div>
+    {{ end }}
+{{ end }}
+
+{{ $serie := "ft101" }}
+{{ range .Site.RegularPages }}
+  {{ if and (.Params.series) (in .Params.series $serie) (eq .Params.serie_role "index") }}
+  <h3> <a href="{{ .Permalink }}">← Índice de la serie FT-101</a></h3>
+    {{ break }}
+  {{ end }}
+{{ end }}
+
+
+    <article class="post">
+      <header class="post__header">
+          <h1 class="post__title">{{ .Title }}</h1>
+          {{- with .Params.lead }}
+          <p class="post__lead">{{ . }}</p>
+          {{- end }}
+          {{ with partial "post_meta.html" . -}}
+          <div class="post__meta meta">{{ . }}</div>
+          {{- end }}
+      </header>
+      <!-- Epigrafe -->
+      {{ with index $contentData.epigrafe $currentLang }}
+      <div class="epigrafe">
+        <blockquote>
+          {{ .texto | markdownify }}
+          {{ with .autor }}<cite>— {{ . }}</cite>{{ end }}
+        </blockquote>
+      </div>
+      {{ end }}
+      {{- partial "post_toc.html" . -}}
+      <div class="content post__content clearfix">
+          {{ $mas_content := index $contentData.content $currentLang | markdownify }}
+          {{ $content := $mas_content }}
+          {{ $content = replaceRE `<a href="(https?://.+)">` `<a href="$1" target="_blank">` $content | safeHTML }}
+          {{ $content = replaceRE `<a href="(mailto:.+)">` `<a href="$1" target="_blank">` $content | safeHTML }}
+          {{ $content | safeHTML }}
+      </div>
+      {{- if .Params.tags }}
+      <footer class="post__footer">
+          {{ partial "post_tags.html" . }}
+      </footer>
+      {{- end }}
+    </article>
+
+      <!-- Navegación de series (tu código existente) -->
+      {{ if .Params.series }}
+        {{ $serie_actual := index .Params.series 0 }}
+        {{ $posts_serie := where .Site.RegularPages ".Params.series" "intersect" (slice $serie_actual) }}
+        {{ $posts_filtrados := where $posts_serie ".Params.serie_role" "ne" "index" }}
+        {{ $mismo_idioma := where $posts_filtrados ".Language.Lang" .Language.Lang }}
+        
+        {{ if $mismo_idioma }}
+        <nav class="series-navigation">
+          <h3>Otros artículos de {{ upper $serie_actual }}:</h3>
+          <ul>
+          {{ range $mismo_idioma }}
+            {{ if ne .Permalink $.Permalink }}
+              <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+            {{ end }}
+          {{ end }}
+          </ul>
+        </nav>
+        {{ end }}
+      {{ end }}
+{{ else }}
+
+<!-- Fallback completo para páginas sin data file -->
+<div class="container flex">
+  <div class="content">
+    <main class="main">
+      <article class="post">
+        <header class="post__header">
+          <h1 class="post__title">{{ .Title }}</h1>
+        </header>
+        <div class="post__content content">
+          <div class="post__text">
+            {{ .Content }}
+          </div>
+        </div>
+      </article>
+    </main>
+  </div>
+</div>
+{{ end }}
+{{ end }}
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Componente</th>
+      <th>PN</th>
+      <th>Tipo</th>
+      <th align="right">Valor</th>
+      <th>Unidad</th>
+      <th>Tol.</th>
+      <th>Rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ range $data.transistors }}
+    <tr>
+      <td>Transistor/FET</td>
+      <td>{{ .part_number }}</td>
+      <td>{{ .type }}</td>
+      <td>{{ .model }}</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    {{ end }}
+
+    {{ range $data.resistors }}
+    <tr>
+      <td>Resistor</td>
+      <td>{{ .part_number }}</td>
+      <td>{{ .type }}</td>
+      <td align="right">{{ .value }}</td>
+      <td>{{ .unit }}</td>
+      <td>{{ .tolerance }}</td>
+      <td>{{ .power }}</td>
+    </tr>
+    {{ end }}
+    {{ range $data.capacitors }}
+    <tr>
+      <td>Capacitor</td>
+      <td>{{ .part_number }}</td>
+      <td>{{ .type }}</td>
+      <td align="right">{{ .value }}</td>
+      <td>{{ .unit }}</td>
+      <td>{{ .tolerance }}</td>
+      <td>{{ or .voltage .power }}</td>
+    </tr>
+    {{ end }}
+    {{ range $data.variable_resistors }}
+    <tr>
+      <td>Variable Resistor</td>
+      <td>{{ .part_number }}</td>
+      <td>{{ .type }}</td>
+      <td align="right">{{ .value }}</td>
+      <td>{{ .unit }}</td>
+      <td></td>
+      <td>{{ .model }}</td>
+    </tr>
+    {{ end }}
+    {{ range $data.trimmer_capacitors }}
+    <tr>
+      <td>Trimmer Capacitor</td>
+      <td>{{ .part_number }}</td>
+      <td>{{ .type }}</td>
+      <td align="right">{{ .value }}</td>
+      <td>{{ .unit }}</td>
+
+      <td></td>
+      <td>{{ .model }}</td>
+    </tr>
+    {{ end }}
+    {{ range $data.inductors }}
+    <tr>
+      <td>Inductor</td>
+      <td>{{ .part_number }}</td>
+      <td>{{ .type }}</td>
+      <td align="right">{{ .value }}</td>
+      <td>{{ .unit }}</td>
+      <td></td>
+      <td></td>
+    </tr>
+    {{ end }}
+  </tbody>
+</table>
+
+{{ with .Params.image }}
+  <figure>
+    <img src="{{ . }}" alt="{{ $.Params.image_alt }}" style="max-width:100%; height:auto;">
+    {{ with $.Params.image_caption }}
+      <figcaption style="font-style: italic; text-align: center;">{{ . }}</figcaption>
+    {{ end }}
+  </figure>
+
+{{ end }}
+
+{{ end }}

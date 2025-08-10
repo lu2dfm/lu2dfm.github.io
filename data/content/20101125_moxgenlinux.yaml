@@ -1,0 +1,92 @@
+title:
+  es:  'Moxon en GNU/Linux'
+  en:  'Moxon in GNU/Linux'
+  pt:  'Moxon no GNU/Linux'
+
+content:
+  es: |
+    La moxon es una direccional simple de dos elementos, compacta, liviana y fácil
+    de construir. 
+
+    Se puede fabricar de muchas maneras.  [Hay un sitio
+    dedicado](http://www.moxonantennaproject.com) a estas antenas donde
+    pueden verse ejemplos de los mas diversos métodos constructivos.
+
+    Yo he estado modelando una moxon para 6 metros y comparando diferentes
+    relaciones entre las dimensiones.
+
+    Por lo que he visto el algoritmo desarrollado hace unos años por
+    [Cebik](http://www.cebik.com/) es aparentemente el óptimo, por lo menos
+    en cuanto a tres parámetros importantes: relación adelante-atrás (F/B),
+    impedancia del punto de alimentación y ancho de banda útil (ROE 2:1).  
+
+    La antena exhibe una ganancia moderada pero la relación adelante-atrás es
+    excelente (en los modelos va de 30 a 60 dB) para una antena de este tamaño y
+    solo dos elementos.  Andy Stwart, KB1OIQ, ha desarrollado y publicado una
+    versión para GNU/Linux del popular programa MoxGen, el cual es Software Libre
+    (lic. GNU v3 o superior).
+
+    El programa hace extremadamente fácil experimentar con la moxon ya que aparte
+    de mostrar en pantalla el croquis de la antena con las dimensiones calculadas
+    para una frecuencia y diámetro del conductor de los elementos (que debe ser
+    uniforme para toda la antenna) produce un plano en formato PDF de la antena *y
+    un archivo .NEC* para trabajar el modelo en un NEC2 (en GNU/Linux se puede usar
+    xnec2c, antennavis, qantenna).
+
+    En un rato se pueden probar varias
+    configuraciones, apilarlas, hacer versiones multibanda y bidireccionales
+    gracias a esta aplicación que elimina la necesidad de realizar cálculos.  Las
+    ecuaciones en que se basa MoxGen producen un resultado subóptimo en cuanto al
+    F/B cuando se usa un conductor de diámetro grande en relación al largo de onda
+    de la antena (hasta cierto punto. Con diámetros realmente *grandes*
+    empieza este parámetro no se desvía demasiado). En este caso el punto de mejor
+    relación F/B está un poco mas alto que la frecuencia de cálculo. Esto es debido
+    a que las ecuaciones originales de Cebik son aproximaciones regresivas sobre
+    modelos en NEC. Por ejemplo, diseñando para frecuencia de 51.1 MHz con diámetro
+    de conductor de 12.7 mm (1/2") el punto de mejor relación F/B está alrededor de
+    los 51.5 MHz. Cabe señalar que de todas maneras el modelo predice una
+    respetable relación F/B > 25dB en la frecuencia de diseño.
+    fl_moxgen se puede [descargar desde aquí](http://sourceforge.net/projects/flmoxgen/files/)
+
+  en: |
+    The Moxon is a simple two-element directional antenna that is compact, lightweight, and easy to build.
+
+    It can be manufactured in many ways. There is a dedicated website for these antennas where examples of the most diverse construction methods can be seen.
+
+    I have been modeling a Moxon for 6 meters and comparing different dimensional relationships.
+
+    From what I have observed, the algorithm developed a few years ago by Cebik is apparently optimal, at least in terms of three important parameters: front-to-back ratio (F/B), feed point impedance, and useful bandwidth (2:1 SWR).
+
+    The antenna exhibits moderate gain but the front-to-back ratio is excellent (in models it ranges from 30 to 60 dB) for an antenna of this size with only two elements.
+
+    Andy Stewart, KB1OIQ, has developed and published a GNU/Linux version of the popular MoxGen program, which is Free Software (GNU v3 license or higher).
+
+    The program makes experimenting with the Moxon extremely easy since, apart from displaying the antenna sketch on screen with dimensions calculated for a frequency and element conductor diameter (which must be uniform throughout the antenna), it produces a PDF plan of the antenna *and a .NEC file* for working with the model in NEC2 (on GNU/Linux you can use xnec2c, antennavis, qantenna).
+
+    In a short time you can test various configurations, stack them, create multiband and bidirectional versions thanks to this application that eliminates the need to perform calculations.
+
+    The equations on which MoxGen is based produce a suboptimal result in terms of F/B when using a conductor with a large diameter relative to the antenna's wavelength (up to a certain point. With really *large* diameters, this parameter doesn't deviate too much). In this case, the point of best F/B ratio is slightly higher than the design frequency. This is because Cebik's original equations are regressive approximations over NEC models.
+
+    For example, when designing for a frequency of 51.1 MHz with a conductor diameter of 12.7 mm (1/2"), the point of best F/B ratio is around 51.5 MHz. It should be noted that the model still predicts a respectable F/B ratio > 25dB at the design frequency.
+
+    fl_moxgen can [be downloaded from here](http://sourceforge.net/projects/flmoxgen/files/)
+
+  pt: |
+    A Moxon é uma antena direcional simples de dois elementos, compacta, leve e fácil de construir.
+
+    Pode ser fabricada de muitas maneiras. [Há um site dedicado](http://www.moxonantennaproject.com) a essas antenas onde podem ser vistos exemplos dos mais diversos métodos construtivos.
+
+    Tenho modelado uma Moxon para 6 metros e comparando diferentes relações entre as dimensões.
+
+    Pelo que observei, o algoritmo desenvolvido há alguns anos por [Cebik](http://www.cebik.com/) é aparentemente o ótimo, pelo menos em termos de três parâmetros importantes: relação frente-trás (F/B), impedância do ponto de alimentação e largura de banda útil (ROE 2:1).
+
+    A antena exibe um ganho moderado, mas a relação frente-trás é excelente (nos modelos varia de 30 a 60 dB) para uma antena deste tamanho e apenas dois elementos. Andy Stewart, KB1OIQ, desenvolveu e publicou uma versão para GNU/Linux do popular programa MoxGen, que é Software Livre (lic. GNU v3 ou superior).
+
+    O programa torna extremamente fácil experimentar com a Moxon, já que além de mostrar na tela o esboço da antena com as dimensões calculadas para uma frequência e diâmetro do condutor dos elementos (que deve ser uniforme para toda a antena), produz um plano em formato PDF da antena *e um arquivo .NEC* para trabalhar o modelo em um NEC2 (no GNU/Linux pode-se usar xnec2c, antennavis, qantenna).
+
+    Em pouco tempo é possível testar várias configurações, empilhá-las, fazer versões multibanda e bidirecionais graças a esta aplicação que elimina a necessidade de realizar cálculos. As equações nas quais o MoxGen se baseia produzem um resultado subótimo em termos de F/B quando se usa um condutor de diâmetro grande em relação ao comprimento de onda da antena (até certo ponto. Com diâmetros realmente *grandes*, este parâmetro não se desvia muito). Neste caso, o ponto de melhor relação F/B está um pouco mais alto que a frequência de cálculo. Isso se deve ao fato de que as equações originais de Cebik são aproximações regressivas sobre modelos em NEC.
+
+    Por exemplo, projetando para frequência de 51.1 MHz com diâmetro de condutor de 12.7 mm (1/2"), o ponto de melhor relação F/B está em torno dos 51.5 MHz. Cabe assinalar que de qualquer forma o modelo prediz uma respeitável relação F/B > 25dB na frequência de projeto.
+
+    fl_moxgen pode ser [baixado daqui](http://sourceforge.net/projects/flmoxgen/files/)
+

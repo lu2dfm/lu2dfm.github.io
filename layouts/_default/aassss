@@ -1,0 +1,57 @@
+{{ define "main" }}
+{{ $currentLang := .Language.Lang }}
+
+{{- $contentKey :=  .File.BaseFileName -}}
+{{- $contentData := index .Site.Data.content $contentKey -}}
+{{ if $contentData }}
+<div class="container flex">
+  <div class="content">
+    <main class="main">
+      <article class="post">
+        <header class="post__header">
+          <!-- Título dinámico desde data -->
+          <h1 class="post__title">{{ index $contentData.title $currentLang | default .Title }}</h1>
+
+        <div class="post__content content">
+          <!-- Contenido principal desde data file -->
+          {{ with index $contentData.content $currentLang }}
+            <div class="post__text">
+              {{ . | markdownify }}
+            </div>
+          {{ else }}
+            <!-- Fallback al contenido del markdown si no hay data -->
+            <div class="post__text">
+              {{ .Content }}
+            </div>
+            {{ if ne $currentLang "es" }}
+            <div style="background: #fff3cd; border: 1px solid #ffeaa7; padding: 15px; margin: 20px 0; border-radius: 5px;">
+              <strong>ℹ️ Nota:</strong> El contenido para {{ .Language.LanguageName }} no está disponible.
+              <a href="{{ $.RelPermalink | replaceRE "^/(es|en)/" "/es/" }}" style="color: #007acc;">Ver en español</a>
+            </div>
+            {{ end }}
+          {{ end }}
+        </div>
+      </article>
+    </main>
+  </div>
+</div>
+{{ else }}
+<!-- Fallback completo para páginas sin data file -->
+<div class="container flex">
+  <div class="content">
+    <main class="main">
+      <article class="post">
+        <header class="post__header">
+          <h1 class="post__title">{{ .Title }}</h1>
+        </header>
+        <div class="post__content content">
+          <div class="post__text">
+            {{ .Content }}
+          </div>
+        </div>
+      </article>
+    </main>
+  </div>
+</div>
+{{ end }}
+{{ end }}

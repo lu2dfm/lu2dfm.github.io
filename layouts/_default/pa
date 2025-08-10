@@ -1,0 +1,66 @@
+{{ define "main" }}
+{{ $currentLang := .Language.Lang }}
+{{ $contentData := index .Site.Data.content .Params.contentKey }}
+
+{{ if $contentData }}
+<main class="main">
+  <div class="primary">
+    <article class="post">
+      <header class="post__header">
+        <h1 class="post__title">{{ index $contentData.title $currentLang }}</h1>
+        
+        <div class="post__meta meta">
+          {{ with .Params.author }}
+          <div class="meta__item">
+            <span class="meta__text">Por {{ . }}</span>
+          </div>
+          {{ end }}
+          {{ with .Date }}
+          <div class="meta__item">
+            <time class="meta__text" datetime="{{ .Format "2006-01-02" }}">{{ .Format "January 02, 2006" }}</time>
+          </div>
+          {{ end }}
+        </div>
+        
+        {{ if .IsTranslated }}
+        <div class="post__translations" style="margin: 1rem 0; padding: 0.5rem; background: #f0f0f0; border-radius: 4px;">
+          <strong>Disponible en: </strong>
+          {{ range .Translations }}
+            <a href="{{ .Permalink }}" style="margin-right: 1rem;">{{ .Language.LanguageName }}</a>
+          {{ end }}
+        </div>
+        {{ end }}
+      </header>
+
+      <div class="post__content content">
+        {{ with index $contentData.epigrafe $currentLang }}
+        <div class="epigrafe" style="border-left: 4px solid #007acc; padding: 1rem; margin: 2rem 0; background: #f8f9fa; font-style: italic;">
+          <blockquote style="margin: 0;">
+            {{ .texto | markdownify }}
+            {{ with .autor }}
+              <footer style="margin-top: 0.5rem; font-size: 0.9em; color: #666;">
+                <cite>— {{ . }}</cite>
+              </footer>
+            {{ end }}
+          </blockquote>
+        </div>
+        {{ end }}
+        
+        <div class="post__text">
+          {{ index $contentData.content $currentLang | markdownify }}
+        </div>
+      </div>
+    </article>
+  </div>
+</main>
+{{ else }}
+<main class="main">
+  <div class="primary">
+    <div class="content">
+      <h1>Error</h1>
+      <p>No se encontró contenido para "{{ .Params.contentKey }}"</p>
+    </div>
+  </div>
+</main>
+{{ end }}
+{{ end }}

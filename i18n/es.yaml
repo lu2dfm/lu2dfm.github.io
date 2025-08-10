@@ -1,11 +1,25 @@
-- id: about
-  translation: "Acerda de"
+other_languages: "Otros idiomas"
+series_articles: "Artículos de la serie"
+available_in: "Disponible en"
+series: "serie"
+meta_translations: "Traducciones"
+no_translation_available: "Sin traducciones"
 
-- id: apps_title
-  translation: Aplicaciones
-- id: app_bandas
-  translation: Plan de Bandas
-- id: app_propagacion
-  translation: Propagación
-- id: app_log
-  translation: Libro de Guardia
+
+# Nuevas traducciones para series
+series_index: "Índice de la serie"
+component: "Componente"
+part_number: "PN"
+type: "Tipo"
+value: "Valor"
+unit: "Unidad"
+tolerance: "Tol."
+rating: "Rating"
+transistor: "Transistor/FET"
+resistor: "Resistor"
+capacitor: "Capacitor"
+variable_resistor: "Resistor Variable"
+trimmer_capacitor: "Capacitor Trimmer"
+inductor: "Inductor"
+
+series_articles_title: "Artículos de la serie:"

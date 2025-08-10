@@ -1,0 +1,23 @@
+
+<pre>
+Current Language: {{ .Site.Language.Lang }}
+Page URL: {{ .RelPermalink }}
+IsTranslated: {{ .IsTranslated }}
+Translations count: {{ len .Translations }}
+AllTranslations count: {{ len .AllTranslations }}
+Translations: {{ range .Translations }}{{ .Language.Lang }}: {{ .RelPermalink }} | {{ end }}
+Section: {{ .Section }}
+Type: {{ .Type }}
+</pre>
+<pre>
+File Path: {{ .File.Path }}
+File Dir: {{ .File.Dir }}
+Language Lang: {{ .Language.Lang }}
+Language ContentDir: {{ .Language.ContentDir }}
+</pre>
+
+{{- if .IsTranslated }}
+    {{- partial "multilang-post.html" . }}
+{{- else }}
+    {{- partial "singlelang-post.html" . }}
+{{- end }}

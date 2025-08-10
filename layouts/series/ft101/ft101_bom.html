@@ -1,0 +1,192 @@
+{{ define "main" }}
+
+{{- $slug := .File.BaseFileName }}
+{{- $unit := .Params.unit }}
+{{- $serie := .Params.series }}
+{{- $data := index .Site.Data.series $serie "components" $unit }}
+{{- $contentData := index .Site.Data.content $slug }}
+{{- $currentLang := .Site.Language.Lang }}
+
+
+{{- /* Obtener título desde data multiidioma o fallback a front matter */ -}}
+{{- $title := .Title }}
+{{- if $contentData }}
+  {{- if $contentData.title }}
+    {{- $dataTitle := index $contentData.title $currentLang }}
+    {{- if $dataTitle }}
+      {{- $title = $dataTitle }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+
+{{- /* Obtener section_title desde data multiidioma */ -}}
+{{- $sectionTitle := .Params.section_title }}
+{{- if $contentData }}
+  {{- if $contentData.section_title }}
+    {{- $dataSectionTitle := index $contentData.section_title $currentLang }}
+    {{- if $dataSectionTitle }}
+      {{- $sectionTitle = $dataSectionTitle }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+
+<h1>{{ $title }} </h1>
+
+{{ with $sectionTitle }}
+  <h2>Yaesu FT-101B - {{ . }}</h2>
+{{ end }}
+
+{{- /* Epígrafes random por serie */ -}}
+{{ if .Params.series }}
+  {{- $serie := .Params.series }}
+  {{- $epigrafeSerie := .Params.epigrafe_serie | default "general" }}
+  {{- $epigrafeKey := .Params.epigrafe_key }}
+  {{- $epigrafes := index .Site.Data.series $serie "epigrafes" $epigrafeSerie }}
+  
+  {{- if $epigrafes }}
+    {{- if not $epigrafeKey }}
+      {{- /* Elegir uno random */ -}}
+      {{- $keys := slice }}
+      {{- range $key, $value := $epigrafes }}
+        {{- $keys = $keys | append $key }}
+      {{- end }}
+      {{- if gt (len $keys) 0 }}
+        {{- $randomIndex := mod now.Unix (len $keys) }}
+        {{- $epigrafeKey = index $keys $randomIndex }}
+      {{- end }}
+    {{- end }}
+    
+    {{- if $epigrafeKey }}
+      {{- $epigrafe := index $epigrafes $epigrafeKey }}
+      {{- if $epigrafe }}
+        {{- $epigrafeData := index $epigrafe $currentLang }}
+        {{- if $epigrafeData }}
+          <div class="epigrafe">
+            <blockquote>
+              {{ $epigrafeData.texto | markdownify }}
+              {{ if $epigrafeData.autor }}
+                <cite>— {{ $epigrafeData.autor }}</cite>
+              {{ end }}
+            </blockquote>
+          </div>
+        {{- end }}
+      {{- end }}
+    {{- end }}
+  {{- end }}
+{{ end }}
+
+AAA
+{{- /* Link al índice de la serie */ -}}
+{{ if .Params.series }}
+  {{- $serie := .Params.series }}
+  {{- range .Site.RegularPages }}
+    {{- if and (.Params.series) (eq .Params.series $serie) (eq .Params.series_role "index") }}
+      <h3>🔗 <a href="{{ .RelPermalink }}">← {{ T "series_index" }} {{ upper $serie }}</a></h3>
+      {{- break }}
+    {{- end }}
+  {{- end }}
+{{ end }}
+
+
+
+
+{{- /* Tabla de componentes */ -}}
+{{ if $data }}
+<table>
+  <thead>
+    <tr>
+      <th>{{ T "component" }}</th>
+      <th>{{ T "part_number" }}</th>
+      <th>{{ T "type" }}</th>
+      <th align="right">{{ T "value" }}</th>
+      <th>{{ T "unit" }}</th>
+      <th>{{ T "tolerance" }}</th>
+      <th>{{ T "rating" }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ range $data.transistors }}
+    <tr>
+      <td>{{ T "transistor" }}</td>
+      <td>{{ .part_number }}</td>
+      <td>{{ .type }}</td>
+      <td>{{ .model }}</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    {{ end }}
+
+    {{ range $data.resistors }}
+    <tr>
+      <td>{{ T "resistor" }}</td>
+      <td>{{ .part_number }}</td>
+      <td>{{ .type }}</td>
+      <td align="right">{{ .value }}</td>
+      <td>{{ .unit }}</td>
+      <td>{{ .tolerance }}</td>
+      <td>{{ .power }}</td>
+    </tr>
+    {{ end }}
+    
+    {{ range $data.capacitors }}
+    <tr>
+      <td>{{ T "capacitor" }}</td>
+      <td>{{ .part_number }}</td>
+      <td>{{ .type }}</td>
+      <td align="right">{{ .value }}</td>
+      <td>{{ .unit }}</td>
+      <td>{{ .tolerance }}</td>
+      <td>{{ or .voltage .power }}</td>
+    </tr>
+    {{ end }}
+    
+    {{ range $data.variable_resistors }}
+    <tr>
+      <td>{{ T "variable_resistor" }}</td>
+      <td>{{ .part_number }}</td>
+      <td>{{ .type }}</td>
+      <td align="right">{{ .value }}</td>
+      <td>{{ .unit }}</td>
+      <td></td>
+      <td>{{ .model }}</td>
+    </tr>
+    {{ end }}
+    
+    {{ range $data.trimmer_capacitors }}
+    <tr>
+      <td>{{ T "trimmer_capacitor" }}</td>
+      <td>{{ .part_number }}</td>
+      <td>{{ .type }}</td>
+      <td align="right">{{ .value }}</td>
+      <td>{{ .unit }}</td>
+      <td></td>
+      <td>{{ .model }}</td>
+    </tr>
+    {{ end }}
+    
+    {{ range $data.inductors }}
+    <tr>
+      <td>{{ T "inductor" }}</td>
+      <td>{{ .part_number }}</td>
+      <td>{{ .type }}</td>
+      <td align="right">{{ .value }}</td>
+      <td>{{ .unit }}</td>
+      <td></td>
+      <td></td>
+    </tr>
+    {{ end }}
+  </tbody>
+</table>
+{{ end }}
+
+{{ with .Params.image }}
+  <figure>
+    <img src="{{ . }}" alt="{{ $.Params.image_alt }}" style="max-width:100%; height:auto;">
+    {{ with $.Params.image_caption }}
+      <figcaption style="font-style: italic; text-align: center;">{{ . }}</figcaption>
+    {{ end }}
+  </figure>
+{{ end }}
+
+{{ end }}

@@ -1,0 +1,27 @@
+other_languages: "Other languages"
+series_articles: "Series articles"
+available_in: "Disponível em"
+series: "série"
+meta_translations: "Traduções"
+no_translation_available: "Nenhuma tradução disponível"
+
+
+
+# Novas traduções para séries
+series_index: "Índice da série"
+component: "Componente"
+part_number: "PN"
+type: "Tipo"
+value: "Valor"
+unit: "Unidade"
+tolerance: "Tol."
+rating: "Rating"
+transistor: "Transistor/FET"
+resistor: "Resistor"
+capacitor: "Capacitor"
+variable_resistor: "Resistor Variável"
+trimmer_capacitor: "Capacitor Trimmer"
+inductor: "Indutor"
+
+series_articles_title: "Artigos da série:"
+

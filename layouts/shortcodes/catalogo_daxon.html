@@ -1,0 +1,22 @@
+<section class="catalogo-daxon">
+  {{ $data := index .Site.Data "daxon88" }}
+  {{ range $data }}
+    <article class="pagina">
+      <h3>Página {{ .pagina }} <small>({{ .imagen }})</small></h3>
+      <div class="productos">
+        {{ range .productos }}
+          <div class="producto">
+            <h4>{{ .nombre }}</h4>
+            <ul class="meta">
+              <li><strong>Categoría:</strong> {{ .categoria }}</li>
+              {{ if .marca }}<li><strong>Marca:</strong> {{ .marca }}</li>{{ end }}
+              {{ if .modelo }}<li><strong>Modelo:</strong> {{ .modelo }}</li>{{ end }}
+              <li><strong>Precio:</strong> {{ .precio }}</li>
+            </ul>
+            {{ if .descripcion }}<p class="descripcion">{{ .descripcion }}</p>{{ end }}
+          </div>
+        {{ end }}
+      </div>
+    </article>
+  {{ end }}
+</section>

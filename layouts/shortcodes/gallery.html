@@ -1,0 +1,7 @@
+{{ $dir := .Get "dir" }}
+<br>dir {{ $dir }} <br>
+{{ range .Page.Resources.Match (printf "%s/*" $dir) }}
+aaa<br>
+    <img src="{{ .RelPermalink }}" />
+{{ end }}
+

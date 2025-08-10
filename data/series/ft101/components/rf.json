@@ -1,0 +1,182 @@
+{
+  "resistors": [
+    {
+      "part_number": "22",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": 56,
+      "unit": "\u03a9",
+      "tolerance": "\u00b110%"
+    },
+    {
+      "part_number": "23",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": 100,
+      "unit": "\u03a9",
+      "tolerance": "\u00b110%"
+    },
+    {
+      "part_number": "16, 24",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": 220,
+      "unit": "\u03a9",
+      "tolerance": "\u00b110%"
+    },
+    {
+      "part_number": "6",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": 330,
+      "unit": "\u03a9",
+      "tolerance": "\u00b110%"
+    },
+    {
+      "part_number": "10, 19",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": 470,
+      "unit": "\u03a9",
+      "tolerance": "\u00b110%"
+    },
+    {
+      "part_number": "11",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": 560,
+      "unit": "\u03a9",
+      "tolerance": "\u00b110%"
+    },
+    {
+      "part_number": "9, 13",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": 1,
+      "unit": "k\u03a9",
+      "tolerance": "\u00b110%"
+    },
+    {
+      "part_number": "7",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": 1.8,
+      "unit": "k\u03a9",
+      "tolerance": "\u00b110%"
+    },
+    {
+      "part_number": "8",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": 2.2,
+      "unit": "k\u03a9",
+      "tolerance": "\u00b110%"
+    },
+    {
+      "part_number": "17, 20",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": 3.3,
+      "unit": "k\u03a9",
+      "tolerance": "\u00b110%"
+    },
+    {
+      "part_number": "21",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": 8.2,
+      "unit": "k\u03a9",
+      "tolerance": "\u00b110%"
+    },
+    {
+      "part_number": "14, 18",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": 15,
+      "unit": "k\u03a9",
+      "tolerance": "\u00b110%"
+    },
+    {
+      "part_number": "2",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": 22,
+      "unit": "k\u03a9",
+      "tolerance": "\u00b110%"
+    },
+    {
+      "part_number": "4",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": 82,
+      "unit": "k\u03a9",
+      "tolerance": "\u00b110%"
+    },
+    {
+      "part_number": "1, 3, 5, 12",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": 100,
+      "unit": "k\u03a9",
+      "tolerance": "\u00b110%"
+    }
+  ],
+  "capacitors": [
+    {
+      "part_number": "17",
+      "type": "dipped mica",
+      "voltage": "50V",
+      "value": 6,
+      "unit": "pF",
+      "tolerance": "\u00b10.5pF"
+    },
+    {
+      "part_number": "5",
+      "type": "dipped mica",
+      "voltage": "50V",
+      "value": 50,
+      "unit": "pF",
+      "tolerance": "\u00b110%"
+    },
+    {
+      "part_number": "1, 11",
+      "type": "dipped mica",
+      "voltage": "50V",
+      "value": 100,
+      "unit": "pF",
+      "tolerance": "\u00b110%"
+    },
+    {
+      "part_number": "3",
+      "type": "ceramic disc",
+      "voltage": "50V",
+      "value": 0.001,
+      "unit": "\u03bcF",
+      "tolerance": "\u00b120%"
+    },
+    {
+      "part_number": "2, 4, 7\u201310, 12\u201316",
+      "type": "ceramic disc",
+      "voltage": "50V",
+      "value": 0.01,
+      "unit": "\u03bcF",
+      "tolerance": "\u00b120%"
+    },
+    {
+      "part_number": "6, 18",
+      "type": "ceramic disc",
+      "voltage": "50V",
+      "value": 0.047,
+      "unit": "\u03bcF",
+      "tolerance": "\u00b120%"
+    },
+    {
+      "part_number": "19",
+      "type": "electrolytic",
+      "voltage": "16V",
+      "value": 47,
+      "unit": "\u03bcF",
+      "tolerance": null
+    }
+  ]
+}

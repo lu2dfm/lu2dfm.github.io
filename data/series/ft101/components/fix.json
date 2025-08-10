@@ -1,0 +1,229 @@
+{
+  "transistors": [
+    {
+      "part_number": "1, 6",
+      "type": "TR",
+      "model": "2SC372Y"
+    },
+    {
+      "part_number": "4",
+      "type": "TR",
+      "model": "2SC784R"
+    },
+    {
+      "part_number": "2, 3, 5",
+      "type": "FET",
+      "model": "2SK19GR"
+    }
+  ],
+  "diodes": [
+    {
+      "part_number": "1-3",
+      "type": "Si",
+      "model": "1S1555"
+    },
+    {
+      "part_number": "4",
+      "type": "Zener",
+      "model": "WZ090"
+    }
+  ],
+  "resistors": [
+    {
+      "part_number": "4, 13",
+      "type": "carbon film",
+      "power": "¼W",
+      "value": "100",
+      "unit": "Ω",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "16",
+      "type": "carbon film",
+      "power": "¼W",
+      "value": "330",
+      "unit": "Ω",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "3",
+      "type": "carbon film",
+      "power": "¼W",
+      "value": "560",
+      "unit": "Ω",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "6, 8, 12, 19",
+      "type": "carbon film",
+      "power": "¼W",
+      "value": "1",
+      "unit": "KΩ",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "18",
+      "type": "carbon film",
+      "power": "¼W",
+      "value": "1.5",
+      "unit": "KΩ",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "15",
+      "type": "carbon film",
+      "power": "¼W",
+      "value": "2.2",
+      "unit": "KΩ",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "9, 11, 21, 22",
+      "type": "carbon film",
+      "power": "¼W",
+      "value": "3.3",
+      "unit": "KΩ",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "1",
+      "type": "carbon film",
+      "power": "¼W",
+      "value": "4.7",
+      "unit": "KΩ",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "23",
+      "type": "carbon film",
+      "power": "¼W",
+      "value": "15",
+      "unit": "KΩ",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "2, 10",
+      "type": "carbon film",
+      "power": "¼W",
+      "value": "22",
+      "unit": "KΩ",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "5, 7, 14, 17, 20",
+      "type": "carbon film",
+      "power": "¼W",
+      "value": "100",
+      "unit": "KΩ",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "1",
+      "type": "variable resistor",
+      "model": "TR11R",
+      "value": "10",
+      "unit": "KΩ"
+    }
+  ],
+  "capacitors": [
+    {
+      "part_number": "1",
+      "type": "dipped mica",
+      "voltage": "50V",
+      "value": "3",
+      "unit" : "pF",
+      "tolerance": "±0.5"
+    },
+    {
+      "part_number": "13",
+      "type": "dipped mica",
+      "voltage": "50V",
+      "value": "6",
+      "unit" : "pF",
+      "tolerance": "±1"
+    },
+    {
+      "part_number": "3, 9, 16, 18",
+      "type": "dipped mica",
+      "voltage": "50V",
+      "value": "30",
+      "unit" : "pF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "12",
+      "type": "dipped mica",
+      "voltage": "50V",
+      "value": "50",
+      "unit" : "pF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "11, 21, 22",
+      "type": "dipped mica",
+      "voltage": "50V",
+      "value": "100",
+      "unit" : "pF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "2, 4, 8, 15",
+      "type": "dipped mica",
+      "voltage": "50V",
+      "value": "130",
+      "unit" : "pF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "5, 10, 14, 17, 19, 20, 24, 25, 28, 29",
+      "type": "ceramic disc",
+      "voltage": "50V",
+      "value": "0.01",
+      "unit":"µF",
+      "tolerance": "+80% -20%"
+    },
+    {
+      "part_number": "6, 26, 27",
+      "type": "ceramic disc",
+      "voltage": "50V",
+      "value": "0.047",
+      "unit":"µF",
+      "tolerance": "+80% -20%"
+    },
+    {
+      "part_number": "7, 23",
+      "type": "electrolytic",
+      "voltage": "16V",
+      "value": "1",
+      "unit":"µF"
+    },
+    {
+      "part_number": "1-4",
+      "type": "trimmer capacitor (ceramic)",
+      "model": "ECVIZW50P40",
+      "value": "50",
+      "unit":"pF"
+    }
+  ],
+  "inductors": [
+    {
+      "part_number": "2",
+      "type": "RF choke",
+      "value": "250",
+      "unit": "µH"
+    },
+    {
+      "part_number": "1, 3-5",
+      "type": "RF choke",
+      "value": "1",
+      "unit": "mH"
+    }
+  ],
+  "transformers": [
+    {
+      "part_number": "1, 6-11, 9",
+      "type": "IF transformer",
+      "model": "R124129"
+    }
+  ]
+}

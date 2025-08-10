@@ -1,16 +1,14 @@
-baseURL = 'https://lu2dfm.github.io/'
+baseURL = "http://localhost:1313"
 title = 'LU2DFM'
 theme = 'mainroad'
 #whiteplain'
 #publishDir = "docs"
-defaultContentLanguage = 'es'
+defaultContentLanguage = 'en'
 defaultContentLanguageInSubdir = true
-disableDefaultLanguageRedirect = false
-languageCode = "es"
+disableDefaultLanguageRedirect = true
+languageCode = "en"
 
-[ markup.goldmark ]
-[ markup.goldmark.extensions]
-    table = true
+
 
 [Author] # Used in authorbox
   name = "Fer"
@@ -29,15 +27,15 @@ languageCode = "es"
 [Params]
   description = "LU2DFM website & blog" # Site description. Used in meta description
   copyright = "LU2DFM" # Footer copyright holder, otherwise will use site title
-# opengraph = true # Enable OpenGraph if true
-# schema = true # Enable Schema
-# twitter_cards = true # Enable Twitter Cards if true
+### opengraph = true # Enable OpenGraph if true
+### schema = true # Enable Schema
+### twitter_cards = true # Enable Twitter Cards if true
   readmore = false # Show "Read more" button in list if true
   authorbox = true # Show authorbox at bottom of pages if true
-  toc = false # Enable Table of Contents
+##  toc = false # Enable Table of Contents
   pager = true # Show pager navigation (prev/next links) at the bottom of pages if true
   post_meta = ["author", "date", "categories", "translations"] # Order of post meta information
-  mainSections = ["post", "blog", "news"] # Specify section pages to show on home page and the "Recent articles" widget
+  mainSections = ["post", "series", "blog", "news"] # Specify section pages to show on home page and the "Recent articles" widget
   dateformat = "02-01-2006" # Change the format of dates
   mathjax = true # Enable MathJax
   mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path
@@ -65,38 +63,9 @@ languageCode = "es"
   visibility = ["list", "post"] # Control thumbnail visibility
 
 [Params.widgets]
-  recent_num = 5 # Set the number of articles in the "Recent articles" widget
+  recent_num = 4 # Set the number of articles in the "Recent articles" widget
   categories_counter = false # Enable counter for each category in "Categories" widget
   tags_counter = false # Enable counter for each tag in "Tags" widget
-
-[Params.widgets.social]
-  cached = false # activate cache if true
-  # Enable parts of social widget
-  github = "lu2dfm"
-  #mail = '{{< relref "es/contacto.md" >}}'
-
-# Custom social links
-[[Params.widgets.social.custom]]
-  title = "Youtube"
-  url = "https://youtube.com/user/lu2dfm"
-  icon = "svg/youtube.svg" # Optional. Path relative to "layouts/partials"
-  rel = "noopener noreferrer" # Set to false to remove the rel attribute
-
-[[Params.widgets.social.custom]]
-  title = "Home Page"
-  url = "https://lu2dfm.github.io"
-
-
-#############
-[[params.author.social]]
-  name = "GitHub"
-  iclass = "fa-brands fa-github"
-  url = "https://github.com/lu2dfm"
-
-[taxonomies]
-  category = "categories"
-  tag = "tags"
-  series = "series"
 
 [Params.sidebar]
   home = "right"
@@ -106,87 +75,83 @@ languageCode = "es"
 widgets = ["languages", "apps", "recent", "categories", "taglist", "social" ]
 
 
-[languages]
-  [languages.es]
-    languageName = 'Castellano'
-    contentDir = 'content/es'
-    disabled = false
-    languageCode = 'es'
-    languageDirection = 'ltr'
-    title = 'LU2DFM'
-    weight = 1
-    [languages.es.params]
-      subtitle = 'Radio, electrónica, software libre'
-
- [languages.es.menus]
-#    [[languages.es.menus.main]]
-#      name = 'Categorías'
-#      identifier = "categories"
-#      url = "/categories/"
-#      weight = 1
-#    [[languages.es.menus.main]]
-#      name = "Tags"
-#      identifier = "tags"
-#      url = "/tags/"
-#      weight = 2
-#    [[languages.es.menus.main]]
-#      name = "Archivos"
-#      identifier = "archives"
-#      url = "/archives/"
-#      weight = 3
-    [[languages.es.menus.main]]
-      name = "Blog"
-      identifier = "blog"
-      url = "/es"
-      weight = 2
-    [[languages.es.menus.footer]]
-      name = "Acerca de"
-      weight = 20
-      identifier = "about"
-      url = "/es/about/"
 
 
-  [languages.en]
-    contentDir = 'content/en'
-    disabled = false
-    languageCode = 'en-US'
-    languageDirection = 'ltr'
-    languageName = 'English'
-    title = 'LU2DFM'
-    weight = 2
-    [languages.en.params]
-      subtitle = 'Amateur Radio Station'
-    [languages.en.menus]
-#        [[languages.en.menus.main]]
-#          name = "Categories"
-#          identifier = "categories"
-#          url = "/categories/"
-#          weight = 1
-#        [[languages.en.menus.main]]
-#          name = "Tags"
-#          identifier = "tags"
-#          url = "/tags/"
-#          weight = 2
-#        [[languages.en.menus.main]]
-#          name = "Archives"
-#          identifier = "archives"
-#          url = "/archives/"
-#          weight = 3
-#        [[languages.en.menus.main]]
-#          name = "Blog"
-#          identifier = "blog"
-#          url = "/es/post/"
-#          weight = 2
-#        [[languages.en.menus.main]]
-#          name = "Maps"
-#          identifier = "maps"
-#          url = "/maps/"
-#          weight = 4
+#------------------------------------------------------------------------------
+# Languages
+#------------------------------------------------------------------------------
 
-        # Footer Menu
-        [[languages.en.menus.footer]]
-          name = "About"
-          weight = 20
-          identifier = "about"
-          url = "/en/about/"
+[languages.es]
+languageName = 'Castellano'
+weight = 1
+subtitle = 'Radio' 
+##, electrónica, software libre'
 
+[languages.pt-br]
+languageName = 'Português'
+weight = 2
+subtitle = 'Radio' 
+
+[languages.en]
+languageName = 'English'
+weight = 3
+subtitle = 'Radio' 
+
+
+#------------------------------------------------------------------------------
+# Content mounts
+#------------------------------------------------------------------------------
+
+# EN content
+[[module.mounts]]
+source = 'content/en'
+target = 'content'
+lang = 'en'
+
+# PT content
+[[module.mounts]]
+source = 'content/pt-br'
+target = 'content'
+lang = 'pt-br'
+
+# ES content
+[[module.mounts]]
+source = 'content/es'
+target = 'content'
+lang = 'es'
+
+#------------------------------------------------------------------------------
+# Fill in the missing translations
+#------------------------------------------------------------------------------
+
+# This fills in the gaps in DE content with EN content
+[[module.mounts]]
+source = 'content/es'
+target = 'content'
+lang = 'pt-br'
+
+# This fills in the gaps in NL content with EN content.
+[[module.mounts]]
+source = 'content/es'
+target = 'content'
+lang = 'en'
+
+
+
+[[menu.main]]
+  name = "Blog"
+  identifier = "blog"
+  weight = 2
+[[menu.footer]]
+  name = "Acerca de"
+  weight = 20
+  identifier = "about"
+
+
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      footnote = true
+    [markup.goldmark.renderer]
+      unsafe = true

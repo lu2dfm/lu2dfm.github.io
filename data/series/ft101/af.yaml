@@ -1,0 +1,71 @@
+title:
+  es: "FT-101B: AF Unit BOM"
+  en: "FT-101B: AF Unit BOM"
+  pt-br: "FT-101B: AF Unit BOM"
+
+lead:
+  es: 'Serie acerca de mi Yaesu FT-101B'
+  en: 'Series about my Yaesu FT-101B'
+  pt-br: 'Série sobre meu Yaesu FT-101B'
+
+image: "/post-images/2025/ft101/bom/af_unit.png"
+image_alt: "AF Unit"
+
+image_caption: 
+  es: "Vista del manual, sección AF (PB-1181(A-Z))"
+  en: "Manual view, AF section (PB-1181(A-Z))"
+  pt-br: "Vista do manual, seção AF (PB-1181(A-Z))"
+
+pcb: "PB-1315(A-Z)"
+content:
+ es: |
+   #### Esta es una serie de artículos sobre mi Yaesu FT-101B
+
+   Para esto usé el service manual que está en 
+   <a href="http://www.foxtango.org/ft-library/FT-Library/FT101/FT101.htm">Fox Tango International</a>
+   Mi ejemplar es de mayo 1974. Usé estas listas para la restauración.
+   Espero sea útil para alguien más, a mí me vino bien.
+
+   Dejo en cada caso la imagen que usé para el OCR, por si hay errores. Si Ud. 
+   encuentra algún error u omisión
+   le agradezco me lo comunique a lu2dfm-gmail.com.
+
+   _Nota: esta información fue obtenida de documentación pública; cualquier 
+   error u omisión es involuntaria. Verifique cualquier dato que aquí obtenga y úselo bajo
+   su propia cuenta y riesgo._
+
+   Componentes de la sección.
+ en: |
+   #### This is a series of articles about my Yaesu FT-101B
+   For this I used the serviceimanual available at 
+   <a href="http://www.foxtango.org/ft-library/FT-Library/FT101/FT101.htm">Fox Tango International</a>
+   My unit is from May 1974. I've used these lists restoring it.
+   I hope it will be useful for someone else; it was helpful to me.
+
+   In each case I include the image I used for OCR, in case there are errors. If you 
+   find any error or omission,
+   I would appreciate it if you let me know at lu2dfm-gmail.com.
+
+   _Note: this information was obtained from public documentation; any 
+   errors or omissions are unintentional. Please verify any data you obtain here and use it
+   at your own risk._
+
+   Components of section.
+ pt-br: |
+   #### Esta é uma série de artigos sobre meu Yaesu FT-101B
+
+   Para isso usei oimanual de serviço disponível em 
+   <a href="http://www.foxtango.org/ft-library/FT-Library/FT101/FT101.htm">Fox Tango International</a>
+   Meu exemplar é deimaio de 1974.  Usé estas listas para la restauración. 
+   Espero que seja útil paraimais alguém; para mim foi muito útil.
+
+   Em cada caso deixo a imagem que usei para o OCR, caso haja erros. Se você 
+   encontrar algum erro ou omissão,
+   agradeço se me avisar pelo e-mail lu2dfm-gmail.com.
+
+   _Nota: esta informação foi obtida de documentação pública; quaisquer 
+   erros ou omissões são involuntários. Verifique qualquer dado obtido aqui e use-o
+   por sua própria conta e risco._
+
+   Componentes da seção.
+

@@ -1,0 +1,25 @@
+title:
+  es: "FT-101B: FIX Unit BOM"
+  en: "FT-101B: FIX Unit BOM"
+  pt-br: "FT-101B: FIX Unit BOM"
+lead: 
+  es: 'Serie acerca de mi Yaesu FT-101B'
+  en: 'Series about my Yaesu FT-101B'
+  pt-br: 'Série sobre meu Yaesu FT-101B'
+
+image: "/post-images/2025/ft101/bom/fix_unit.png"
+image_alt: "FIX Unit"
+
+image_caption: 
+  es: "Vista del manual, sección FIX (PB-1344(A-Z))"
+  en: "Manual view, FIX section (PB-1344(A-Z))"
+  pt-br: "Vista do manual, seção FIX (PB-1344(A-Z))"
+pcb: "PB-1344(A-Z)"
+
+content:
+  es: |
+    Componentes de la sección.
+  en: |
+    Components of section.
+  pt-br: |
+    Componentes da seção.

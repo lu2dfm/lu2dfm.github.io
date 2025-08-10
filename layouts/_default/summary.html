@@ -1,0 +1,101 @@
+{{ $currentLang := .Language.Lang }}
+{{- $contentKey := .File.BaseFileName -}}
+
+{{ if and .Params.series (eq .Type "series") }}
+    {{/* Manejo para páginas de series usando data files */}}
+    {{ $seriesData := index .Site.Data.series .Params.series }}
+    {{ $contentData := index $seriesData $contentKey }}
+
+    {{ if $contentData }}
+        {{/* Usar data de la serie */}}
+        {{ $title := index $contentData.title $currentLang }}
+        {{ $lead := index $contentData.lead $currentLang }}
+        {{ $summary := index $contentData.summary $currentLang }}
+        {{/* Si no hay summary en data, usar los primeros 150 chars del content */}}
+        {{ if not $summary }}
+            {{ $content := index $contentData.content $currentLang }}
+            {{ $summary = $content | markdownify | plainify | truncate 150 }}
+        {{ end }}
+
+        <article class="list__item post">
+            {{ partial "post_thumbnail.html" (dict "class" "list" "page" .) }}
+            <header class="list__header">
+                <h2 class="list__title post__title">
+                    <a href="{{ .RelPermalink }}" rel="bookmark">
+                        {{ $title }}
+                    </a>
+                </h2>
+                {{- with $lead }}
+                <p class="list__lead post__lead">{{ . }}</p>
+                {{- end }}
+                {{ with partial "post_meta.html" . -}}
+                <div class="list__meta meta">{{ . }}</div>
+                {{- end }}
+            </header>
+            <div class="content list__excerpt post__content clearfix">
+                {{ $summary | markdownify }}
+            </div>
+            {{- if .Site.Params.readmore }}
+            <div class="list__footer clearfix">
+                <a class="list__footer-readmore btn" href="{{ .RelPermalink }}">{{ T "read_more" }}</a>
+            </div>
+            {{- end }}
+        </article>
+    {{ else }}
+        {{/* Fallback si no existe la data de la serie */}}
+        <article class="list__item post">
+            {{ partial "post_thumbnail.html" (dict "class" "list" "page" .) }}
+            <header class="list__header">
+                <h2 class="list__title post__title">
+                    <a href="{{ .RelPermalink }}" rel="bookmark">
+                        {{ .Title }}
+                    </a>
+                </h2>
+                {{- with .Params.lead }}
+                <p class="list__lead post__lead">{{ . }}</p>
+                {{- end }}
+                {{ with partial "post_meta.html" . -}}
+                <div class="list__meta meta">{{ . }}</div>
+                {{- end }}
+            </header>
+            <div class="content list__excerpt post__content clearfix">
+                {{ .Summary }}
+            </div>
+            {{- if .Site.Params.readmore }}
+            {{- if .Truncated }}
+            <div class="list__footer clearfix">
+                <a class="list__footer-readmore btn" href="{{ .RelPermalink }}">{{ T "read_more" }}</a>
+            </div>
+            {{- end }}
+            {{- end }}
+        </article>
+    {{ end }}
+{{ else }}
+    {{/* Manejo normal para posts de blog (código original) */}}
+    <article class="list__item post">
+        {{ partial "post_thumbnail.html" (dict "class" "list" "page" .) }}
+        <header class="list__header">
+            <h2 class="list__title post__title">
+                <a href="{{ .RelPermalink }}" rel="bookmark">
+                {{ .Title }}
+                </a>
+            </h2>
+            {{- with .Params.lead }}
+            <p class="list__lead post__lead">{{ . }}</p>
+            {{- end }}
+            {{ with partial "post_meta.html" . -}}
+            <div class="list__meta meta">{{ . }}</div>
+            {{- end }}
+        </header>
+        <div class="content list__excerpt post__content clearfix">
+            {{ .Summary }}
+        </div>
+        {{- if .Site.Params.readmore }}
+        {{- if .Truncated }}
+        <div class="list__footer clearfix">
+            <a class="list__footer-readmore btn" href="{{ .RelPermalink }}">{{ T "read_more" }}</a>
+        </div>
+        {{- end }}
+        {{- end }}
+    </article>
+{{ end }}

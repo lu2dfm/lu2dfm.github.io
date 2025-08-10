@@ -1,0 +1,44 @@
+
+{{- $slug := .File.BaseFileName }}
+{{- $currentLang := .Site.Language.Lang }}
+{{- $availableLanguages := slice }}
+
+
+{{- $articleData := dict }}
+{{- with .Params.series }}
+  {{- $seriesData := index $.Site.Data.series . }}
+  {{- $articleData = index $seriesData $slug }}
+{{- else }}
+  {{- $articleData = index $.Site.Data.content $slug }}
+{{- end }}
+
+{{- /* Verificar qué idiomas están disponibles en data para ESTE post */ -}}
+{{- if $articleData }}
+  {{- $titles := $articleData.title }}
+  {{- if $titles }}
+    {{- range $lang, $title := $titles }}
+      {{- if and $title (ne $lang $currentLang) }}{{/* Solo idiomas diferentes al actual */}}
+        {{- $availableLanguages = $availableLanguages | append $lang }}
+      {{- end }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+
+{{- if or (gt (len $availableLanguages) 0) $articleData }}
+<div class="meta__item-translations meta__item">
+    <span class="meta__text">
+        {{- if gt (len $availableLanguages) 0 }}
+          🌍 {{ T "meta_translations" }}: {{ range $index, $lang := $availableLanguages }}
+            {{- if gt $index 0 }}, {{ end -}}
+            {{- /* Método 2: Usar replace para quitar /idioma/ del inicio */ -}}
+            {{- $pattern := printf "^/%s/" $currentLang }}
+            {{- $pathWithoutLang := replaceRE $pattern "" $.RelPermalink }}
+            {{- $translationURL := printf "/%s/%s" $lang $pathWithoutLang }}
+            <a class="meta__link" href="{{ $translationURL }}">{{ $lang | upper }}</a>
+          {{- end }}
+        {{- else }}
+          ⚠️ {{ T "no_translation_available" }}
+        {{- end }}
+    </span>
+</div>
+{{- end }}

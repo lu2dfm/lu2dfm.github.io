@@ -1,0 +1,38 @@
+{{ $currentLang := .Language.Lang }}
+{{- $contentKey := .File.BaseFileName -}}
+
+{{/* Página índice de serie usando data files */}}
+{{ $seriesData := index .Site.Data.series .Params.series }}
+{{ $contentData := index $seriesData $contentKey }}
+
+{{/* Lista de artículos de la serie */}}
+{{ $serie_actual := .Params.series }}
+<h3>Artículos de la serie {{ upper $serie_actual }}:</h3>
+<ul>
+    {{ range .Site.RegularPages }}
+        {{ $es_misma_serie := and (.Params.series) (eq .Params.series $serie_actual) }}
+        {{ $es_indice := and .Params.serie_role (eq .Params.serie_role "index") }}
+        {{ $mismo_idioma := eq .Language.Lang $currentLang }}
+
+        {{ if and $es_misma_serie (not $es_indice) $mismo_idioma (ne .Permalink $.Permalink) }}
+            {{ $articleKey := .File.BaseFileName }}
+            {{ $articleSeriesData := index $.Site.Data.series .Params.series }}
+            {{ $articleContentData := index $articleSeriesData $articleKey }}
+
+            {{ $articleTitle := .Title }}
+            {{ if $articleContentData }}
+                {{ $articleTitle = index $articleContentData.title $currentLang }}
+            {{ end }}
+
+            <li>
+                <a href="{{ .Permalink }}">{{ $articleTitle }}</a>
+                {{ if $articleContentData }}
+                    {{ $lead := index $articleContentData.lead $currentLang }}
+                    {{ with $lead }}
+                        <span class="article-lead"> - {{ . }}</span>
+                    {{ end }}
+                {{ end }}
+            </li>
+        {{ end }}
+    {{ end }}
+</ul>

@@ -1,16 +1,25 @@
-- id: about
-  translation: "About de"
+other_languages: "Other languages"
+series_articles: "Series articles"
+available_in: "Available in"
+series: "series"
+meta_translations: "Translations"
+no_translation_available: "No translations available"
 
-- id: readingTime
-  translation: 
-    one: "One minute read"
-    other: "{{.Count}} minutes read"
 
-- id: apps_title
-  translation: Applications
-- id: app_bandas
-  translation: Band Plan
-- id: app_propagacion
-  translation: Propagation
-- id: app_log
-  translation: Logbook
+# New translations for series
+series_index: "Series index"
+component: "Component"
+part_number: "PN"
+type: "Type"
+value: "Value"
+unit: "Unit"
+tolerance: "Tol."
+rating: "Rating"
+transistor: "Transistor/FET"
+resistor: "Resistor"
+capacitor: "Capacitor"
+variable_resistor: "Variable Resistor"
+trimmer_capacitor: "Trimmer Capacitor"
+inductor: "Inductor"
+
+series_articles_title: "Articles in series:"

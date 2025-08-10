@@ -1,0 +1,32 @@
+layouts/series/ft101/ft101bom.html
+data/series/ft101/epigrafes/general.yaml
+data/content/af-unit.yaml
+content/es/series/ft101/af-unit.md
+i18n/es.yaml
+i18n/en.yaml
+i18n/pt.yaml
+hugo.yaml (configuración de mounts)
+
+
+//
+
+layouts/
+├── _default/
+│   └── single.html          # Base para todo el sitio
+│
+├── posts/
+│   └── single.html          # Plantilla base para posts
+│
+└── posts/series/
+    ├── single.html          # Plantilla base para todas las series
+    │
+    ├── ft101/               # Serie específica FT101
+    │   ├── single.html      # Template específico para FT101
+    │   └── partials/
+    │       ├── lesson.html  # Template para lecciones
+    │       └── exam.html    # Template para exámenes
+    │
+    └── ft102/               # Serie específica FT102
+        ├── single.html
+        └── partials/
+            └── module.html

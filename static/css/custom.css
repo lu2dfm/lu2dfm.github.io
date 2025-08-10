@@ -1,4 +1,31 @@
+.container, .main-content-wrap {
+    max-width: 98% !important;
+    width: 98% !important;
+}
 
+/* Estilo para el idioma activo */
+.widget-languages__link.curr-lang-widget {
+    background-color: #e22d30;
+    color: #fff !important;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.widget-languages__link.curr-lang-widget .widget-languages__link-btn {
+    background-color: #e22d30;
+    color: #fff;
+}
+
+.widget-languages__link.curr-lang-widget .widget-languages__link-text {
+    color: #fff;
+}
+
+/* Hover para los otros idiomas */
+.widget-languages__link:not(.curr-lang-widget):hover {
+    background-color: #f0f0f0;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
 
 img.rotated-90 {
   transform: rotate(90deg);
@@ -46,4 +73,148 @@ img.rotated-270 {
 .meta li {
   display: inline-block;
   margin-right: 1rem;
+}
+
+
+
+
+/* CSS para selector de idiomas multilang */
+.language-selector {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9em;
+  background: #f8f9fa;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #e9ecef;
+  margin: 0.5rem 0;
+}
+
+.language-selector span {
+  color: #495057;
+}
+
+.language-selector .lang-link {
+  color: #007bff;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.language-selector .lang-link:hover {
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+}
+
+.language-selector .current-lang {
+  color: #28a745;
+  font-weight: bold;
+  background: #d4edda;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+/* Estilos para el widget de idiomas en sidebar */
+.widget-languages .language-selector {
+  background: transparent;
+  border: none;
+  padding: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.widget-languages .language-selector .lang-link {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  text-align: center;
+  background: white;
+}
+
+.widget-languages .language-selector .lang-link:hover {
+  border-color: #007bff;
+  background: #f8f9fa;
+  color: #007bff;
+}
+
+.widget-languages .language-selector .current-lang {
+  width: 100%;
+  text-align: center;
+  background: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .language-selector {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .language-selector .lang-link {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* Integración con tema Mainroad */
+.post__meta .language-selector {
+  margin: 0;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.post__meta .language-selector .lang-link {
+  color: inherit;
+  background: none;
+  padding: 0 0.25rem;
+}
+
+.post__meta .language-selector .lang-link:hover {
+  color: #007bff;
+  background: none;
+  text-decoration: underline;
+}
+
+.post__meta .language-selector .current-lang {
+  background: none;
+  color: #28a745;
+  padding: 0 0.25rem;
+}
+
+/* Banderas de países (opcional) */
+.language-selector .lang-link::before {
+  margin-right: 0.25rem;
+}
+
+.language-selector .lang-link[href*="/es/"]:before {
+  content: "🇪🇸 ";
+}
+
+.language-selector .lang-link[href*="/en/"]:before {
+  content: "🇺🇸 ";
+}
+
+.language-selector .lang-link[href*="/pt/"]:before {
+  content: "🇧🇷 ";
+}
+
+.language-selector .current-lang:before {
+  margin-right: 0.25rem;
+}
+
+.language-selector .current-lang:before {
+  content: "🌐 ";
 }

@@ -1,11 +1,15 @@
 {{ define "main" }}
 {{ $currentLang := .Language.Lang }}
 
-{{- $contentKey :=  .File.BaseFileName -}}
-{{- $contentData := index .Site.Data.content $contentKey -}}
+{{- $contentKey :=  .File.BaseFileName -}} 
+
+{{ $seriesData := index .Site.Data.series .Params.series }}
+{{ $contentData := index $seriesData $contentKey }}
+
 
 <!--
 <pre>
+
 {{ printf "Current template: %s" . }}
 {{ printf "Kind: %s" .Kind }}
 {{ printf "Type: %s" .Type }}
@@ -19,6 +23,7 @@ AllTranslations count: {{ len .AllTranslations }}
 Translations: {{ range .Translations }}{{ .Language.Lang }}: {{ .RelPermalink }} | {{ end }}
 Section: {{ .Section }}
 Type: {{ .Type }}
+serie: {{ .Params.series }}
 </pre>
 <pre>
 File Path: {{ .File.Path }}
@@ -39,17 +44,24 @@ Mount Info:
 -->
 
 
+{{ $nav :=  "navigation" }}
+{{ with .Params.series_partial }}
+{{ end }}
+
 {{ if $contentData }}
+    {{ $title := index $contentData.title $currentLang }}
     <article class="post">
       <header class="post__header">
-          <h1 class="post__title">{{ .Title }}</h1>
-          {{- with .Params.lead }}
+          <h1 class="post__title">{{ $title }}</h1>
+          {{- with index $contentData.lead $currentLang }}
           <p class="post__lead">{{ . }}</p>
           {{- end }}
           {{ with partial "post_meta.html" . -}}
           <div class="post__meta meta">{{ . }}</div>
           {{- end }}
       </header>
+
+
       <!-- Epigrafe -->
       {{ with index $contentData.epigrafe $currentLang }}
       <div class="epigrafe">
@@ -61,12 +73,31 @@ Mount Info:
       {{ end }}
       {{- partial "post_toc.html" . -}}
       <div class="content post__content clearfix">
+
+
           {{ $mas_content := index $contentData.content $currentLang | markdownify }}
           {{ $content := $mas_content }}
           {{ $content = replaceRE `<a href="(https?://.+)">` `<a href="$1" target="_blank">` $content | safeHTML }}
           {{ $content = replaceRE `<a href="(mailto:.+)">` `<a href="$1" target="_blank">` $content | safeHTML }}
           {{ $content | safeHTML }}
+
+        {{/* Insertar partial específico si está definido */}}
+        {{ with .Params.series_partial }}
+            {{ $partialPath := printf "partials/series/%s/%s" $.Params.series . }}
+            {{ partial $partialPath $ }}
+        {{ end }}
+
+
       </div>
+    {{/*
+        {{ if .Params.series }}
+            <aside class="series-components">
+              {{ partial "layouts/series/partials/navigation" . }}
+              {{ partial "series/partials/index" . }}
+            </aside>
+         {{ end }}
+
+    */}}
       {{- if .Params.tags }}
       <footer class="post__footer">
           {{ partial "post_tags.html" . }}

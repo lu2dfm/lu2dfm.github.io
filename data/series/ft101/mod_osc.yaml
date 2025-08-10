@@ -1,0 +1,25 @@
+title:
+  es: "FT-101B: MOD OSC Unit BOM"
+  en: "FT-101B: MOD OSC Unit BOM"
+  pt-br: "FT-101B: MOD OSC Unit BOM"
+lead: 
+  es: 'Serie acerca de mi Yaesu FT-101B'
+  en: 'Series about my Yaesu FT-101B'
+  pt-br: 'Série sobre meu Yaesu FT-101B'
+
+image: "/post-images/2025/ft101/bom/osc_unit.png"
+image_alt: "MOD OSC Unit"
+
+image_caption: 
+  es: "Vista del manual, sección MOD OSC (PB-1184(A-Z))"
+  en: "Manual view, MOD OSC section (PB-1184(A-Z))"
+  pt-br: "Vista do manual, seção MOD OSC (PB-1184(A-Z))"
+
+pcb: "1184(A-Z)"
+content:
+  es: |
+    Componentes de la sección.
+  en: |
+    Components of section.
+  pt-br: |
+    Componentes da seção.

@@ -1,0 +1,43 @@
+vintage_wisdom:
+  es:
+    texto: "*En la radio, como en la vida, la estabilidad es más importante que la potencia*"
+    autor: "Proverbio de radioaficionado"
+  en:
+    texto: "*In radio, as in life, stability is more important than power*"
+    autor: "Amateur radio proverb"
+  pt:
+    texto: "*No rádio, como na vida, a estabilidade é mais importante que a potência*"
+    autor: "Provérbio de radioamador"
+
+engineering_quote:
+  es:
+    texto: "*Un buen diseño es obvio. Un gran diseño es transparente.*"
+    autor: "Joe Sparano"
+  en:
+    texto: "*Good design is obvious. Great design is transparent.*"
+    autor: "Joe Sparano"
+  pt:
+    texto: "*Um bom design é óbvio. Um grande design é transparente.*"
+    autor: "Joe Sparano"
+
+restoration_wisdom:
+  es:
+    texto: "*Restaurar un equipo vintage es como conversar con ingenieros del pasado*"
+    autor: "Filosofía del radioaficionado"
+  en:
+    texto: "*Restoring vintage equipment is like having a conversation with engineers from the past*"
+    autor: "Amateur radio philosophy"
+  pt:
+    texto: "*Restaurar equipamentos vintage é como conversar com engenheiros do passado*"
+    autor: "Filosofia do radioamador"
+
+technical_precision:
+  es:
+    texto: "*Medir dos veces, soldar una vez*"
+    autor: "Sabiduría del taller"
+  en:
+    texto: "*Measure twice, solder once*"
+    autor: "Workshop wisdom"
+  pt:
+    texto: "*Meça duas vezes, solde uma vez*"
+    autor: "Sabedoria da oficina"

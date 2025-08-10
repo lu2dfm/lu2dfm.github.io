@@ -1,0 +1,35 @@
+{{ if .Params.series }}
+  {{ $seriesName := .Params.series }}
+  {{ $allSeriesPages := where .Site.Pages "Params.series" $seriesName }}
+  {{ $currentUrl := .RelPermalink }}
+  
+  <nav class="series-navigation">
+    <h3>Artículos en esta serie: {{ $seriesName | humanize }}</h3>
+    
+    <ol>
+      {{ range sort $allSeriesPages "Params.series_order" "asc" }}
+        <li {{ if eq .RelPermalink $currentUrl }}class="active"{{ end }}>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </li>
+      {{ end }}
+    </ol>
+  </nav>
+
+  <style>
+    .series-navigation {
+      margin: 2rem 0;
+      padding: 1rem;
+      background: #f5f5f5;
+      border-radius: 4px;
+    }
+    .series-navigation h3 {
+      margin-top: 0;
+    }
+    .series-navigation ol {
+      padding-left: 1.5rem;
+    }
+    .series-navigation li.active {
+      font-weight: bold;
+    }
+  </style>
+{{ end }}

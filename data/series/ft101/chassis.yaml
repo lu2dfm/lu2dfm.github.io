@@ -1,0 +1,25 @@
+title:
+  es: "FT-101B: CHASSIS BOM"
+  en: "FT-101B: CHASSIS BOM"
+  pt-br: "FT-101B: CHASSIS BOM"
+lead: 
+  es: 'Serie acerca de mi Yaesu FT-101B'
+  en: 'Series about my Yaesu FT-101B'
+  pt-br: 'Série sobre meu Yaesu FT-101B'
+
+image: "/post-images/2025/ft101/bom/chassi.png"
+image_alt: "CHASSIS Unit"
+
+image_caption: 
+  es: "Vista del manual, sección CHASSIS"
+  en: "Manual view, CHASSIS section"
+  pt-br: "Vista do manual, seção CHASSIS"
+
+pcb: "chassis"
+content:
+  es: |
+    Componentes de la sección.
+  en: |
+    Components of section.
+  pt-br: |
+    Componentes da seção.

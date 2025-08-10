@@ -1,0 +1,250 @@
+{
+  "resistors": [
+    {
+      "part_number": "18",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": 100,
+      "unit": "\u03a9",
+      "tolerance": "\u00b110%"
+    },
+    {
+      "part_number": "1, 3",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": 150,
+      "unit": "\u03a9",
+      "tolerance": "\u00b110%"
+    },
+    {
+      "part_number": "19",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": 180,
+      "unit": "\u03a9",
+      "tolerance": "\u00b110%"
+    },
+    {
+      "part_number": "2, 21, 30",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": 470,
+      "unit": "\u03a9",
+      "tolerance": "\u00b110%"
+    },
+    {
+      "part_number": "9\u201311, 14, 24, 28",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": 1,
+      "unit": "k\u03a9",
+      "tolerance": "\u00b110%"
+    },
+    {
+      "part_number": "20",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": 1.5,
+      "unit": "k\u03a9",
+      "tolerance": "\u00b110%"
+    },
+    {
+      "part_number": "6, 8",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": 2.7,
+      "unit": "k\u03a9",
+      "tolerance": "\u00b110%"
+    },
+    {
+      "part_number": "12, 15, 16, 22, 25, 26, 29",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": 4.7,
+      "unit": "k\u03a9",
+      "tolerance": "\u00b110%"
+    },
+    {
+      "part_number": "32",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": 10,
+      "unit": "k\u03a9",
+      "tolerance": "\u00b110%"
+    },
+    {
+      "part_number": "33",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": 15,
+      "unit": "k\u03a9",
+      "tolerance": "\u00b110%"
+    },
+    {
+      "part_number": "13, 17, 23, 27",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": 22,
+      "unit": "k\u03a9",
+      "tolerance": "\u00b110%"
+    },
+    {
+      "part_number": "7",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": 33,
+      "unit": "k\u03a9",
+      "tolerance": "\u00b110%"
+    },
+    {
+      "part_number": "4",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": 100,
+      "unit": "k\u03a9",
+      "tolerance": "\u00b110%"
+    }
+  ],
+  "variable_resistors": [
+    {
+      "part_number": "1",
+      "model": "TR11R",
+      "value": 500,
+      "unit": "\u03a9",
+      "type": "variable resistor"
+    },
+    {
+      "part_number": "2",
+      "model": "TR11R",
+      "value": 5,
+      "unit": "k\u03a9",
+      "type": "variable resistor"
+    }
+  ],
+  "capacitors": [
+    {
+      "part_number": "20, 28, 30",
+      "type": "dipped mica",
+      "voltage": "50V",
+      "value": 30,
+      "unit": "pF",
+      "tolerance": "\u00b110%"
+    },
+    {
+      "part_number": "19, 27, 32",
+      "type": "dipped mica",
+      "voltage": "50V",
+      "value": 40,
+      "unit": "pF",
+      "tolerance": "\u00b110%"
+    },
+    {
+      "part_number": "38",
+      "type": "dipped mica",
+      "voltage": "50V",
+      "value": 50,
+      "unit": "pF",
+      "tolerance": "\u00b110%"
+    },
+    {
+      "part_number": "5, 10, 37",
+      "type": "dipped mica",
+      "voltage": "50V",
+      "value": 100,
+      "unit": "pF",
+      "tolerance": "\u00b110%"
+    },
+    {
+      "part_number": "4",
+      "type": "dipped mica",
+      "voltage": "50V",
+      "value": 150,
+      "unit": "pF",
+      "tolerance": "\u00b110%"
+    },
+    {
+      "part_number": "31",
+      "type": "ceramic disc",
+      "voltage": "50V",
+      "value": 0.001,
+      "unit": "\u03bcF",
+      "tolerance": "\u00b120%"
+    },
+    {
+      "part_number": "2, 8, 9, 13, 17, 18, 24",
+      "type": "ceramic disc",
+      "voltage": "50V",
+      "value": 0.01,
+      "unit": "\u03bcF",
+      "tolerance": "\u00b120%"
+    },
+    {
+      "part_number": "26, 29, 33",
+      "type": "ceramic disc",
+      "voltage": "50V",
+      "value": 0.01,
+      "unit": "\u03bcF",
+      "tolerance": "\u00b120%"
+    },
+    {
+      "part_number": "6, 11, 22, 25, 34",
+      "type": "ceramic disc",
+      "voltage": "50V",
+      "value": 0.047,
+      "unit": "\u03bcF",
+      "tolerance": "\u00b120%"
+    },
+    {
+      "part_number": "12",
+      "type": "plastic film",
+      "voltage": "50V",
+      "value": 0.22,
+      "unit": "\u03bcF",
+      "tolerance": "\u00b120%"
+    },
+    {
+      "part_number": "15",
+      "type": "electrolytic",
+      "voltage": "16V",
+      "value": 100,
+      "unit": "\u03bcF",
+      "tolerance": null
+    }
+  ],
+  "trimmer_capacitors": [
+    {
+      "part_number": "2\u20134",
+      "type": "ceramic",
+      "model": "ECV1ZW20P40",
+      "value": 20,
+      "unit": "pF"
+    },
+    {
+      "part_number": "1, 5, 6",
+      "type": "ceramic",
+      "model": "ECV1ZW50P40",
+      "value": 50,
+      "unit": "pF"
+    }
+  ],
+  "inductors": [
+    {
+      "part_number": "1\u20133, 5",
+      "type": "rf choke",
+      "value": 10,
+      "unit": "\u03bcH"
+    },
+    {
+      "part_number": "4, 6, 7",
+      "type": "rf choke",
+      "value": 22,
+      "unit": "\u03bcH"
+    },
+    {
+      "part_number": "8, 9",
+      "type": "rf choke",
+      "value": 250,
+      "unit": "\u03bcH"
+    }
+  ]
+}

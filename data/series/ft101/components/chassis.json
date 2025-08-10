@@ -1,0 +1,1462 @@
+{
+  "resistors": [
+    {
+      "part_number": "R1",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": "47",
+      "unit": "Ω",
+      "tolerance": "±5%"
+    },
+    {
+      "part_number": "R2",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": "100",
+      "unit": "Ω",
+      "tolerance": "±5%"
+    },
+    {
+      "part_number": "R3",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": "150",
+      "unit": "Ω",
+      "tolerance": "±5%"
+    },
+    {
+      "part_number": "R4",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": "220",
+      "unit": "Ω",
+      "tolerance": "±5%"
+    },
+    {
+      "part_number": "R5",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": "330",
+      "unit": "Ω",
+      "tolerance": "±5%"
+    },
+    {
+      "part_number": "R6",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": "470",
+      "unit": "Ω",
+      "tolerance": "±5%"
+    },
+    {
+      "part_number": "R7",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": "680",
+      "unit": "Ω",
+      "tolerance": "±5%"
+    },
+    {
+      "part_number": "R8",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": "1",
+      "unit": "kΩ",
+      "tolerance": "±5%"
+    },
+    {
+      "part_number": "R9",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": "1.5",
+      "unit": "kΩ",
+      "tolerance": "±5%"
+    },
+    {
+      "part_number": "R10",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": "2.2",
+      "unit": "kΩ",
+      "tolerance": "±5%"
+    },
+    {
+      "part_number": "R11",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": "3.3",
+      "unit": "kΩ",
+      "tolerance": "±5%"
+    },
+    {
+      "part_number": "R12",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": "4.7",
+      "unit": "kΩ",
+      "tolerance": "±5%"
+    },
+    {
+      "part_number": "R13",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": "6.8",
+      "unit": "kΩ",
+      "tolerance": "±5%"
+    },
+    {
+      "part_number": "R14",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": "10",
+      "unit": "kΩ",
+      "tolerance": "±5%"
+    },
+    {
+      "part_number": "R15",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": "15",
+      "unit": "kΩ",
+      "tolerance": "±5%"
+    },
+    {
+      "part_number": "R16",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": "22",
+      "unit": "kΩ",
+      "tolerance": "±5%"
+    },
+    {
+      "part_number": "R17",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": "33",
+      "unit": "kΩ",
+      "tolerance": "±5%"
+    },
+    {
+      "part_number": "R18",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": "47",
+      "unit": "kΩ",
+      "tolerance": "±5%"
+    },
+    {
+      "part_number": "R19",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": "68",
+      "unit": "kΩ",
+      "tolerance": "±5%"
+    },
+    {
+      "part_number": "R20",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": "100",
+      "unit": "kΩ",
+      "tolerance": "±5%"
+    },
+    {
+      "part_number": "R21",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": "150",
+      "unit": "kΩ",
+      "tolerance": "±5%"
+    },
+    {
+      "part_number": "R22",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": "220",
+      "unit": "kΩ",
+      "tolerance": "±5%"
+    },
+    {
+      "part_number": "R23",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": "330",
+      "unit": "kΩ",
+      "tolerance": "±5%"
+    },
+    {
+      "part_number": "R24",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": "470",
+      "unit": "kΩ",
+      "tolerance": "±5%"
+    },
+    {
+      "part_number": "R25",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": "680",
+      "unit": "kΩ",
+      "tolerance": "±5%"
+    },
+    {
+      "part_number": "R26",
+      "type": "carbon film",
+      "power": "1/4W",
+      "value": "1",
+      "unit": "MΩ",
+      "tolerance": "±5%"
+    },
+    {
+      "part_number": "R27, R28, R29, R30, R31, R32, R33, R34, R35, R36, R37, R38, R39, R40, R41",
+      "type": "carbon composition",
+      "power": "1/2W",
+      "value": "47",
+      "unit": "Ω",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "R42, R43, R44, R45, R46, R47, R48, R49, R50, R51",
+      "type": "carbon composition",
+      "power": "1/2W",
+      "value": "100",
+      "unit": "Ω",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "R52",
+      "type": "METALLIC FILM",
+      "power": "5W",
+      "value": "0.47",
+      "unit": "Ω",
+      "tolerance": "±1%"
+    },
+    {
+      "part_number": "R53",
+      "type": "METALLIC FILM",
+      "power": "5W",
+      "value": "1",
+      "unit": "Ω",
+      "tolerance": "±1%"
+    },
+    {
+      "part_number": "R54",
+      "type": "METALLIC FILM",
+      "power": "5W",
+      "value": "2.2",
+      "unit": "Ω",
+      "tolerance": "±1%"
+    },
+    {
+      "part_number": "R55",
+      "type": "METALLIC FILM",
+      "power": "5W",
+      "value": "4.7",
+      "unit": "Ω",
+      "tolerance": "±1%"
+    },
+    {
+      "part_number": "R56",
+      "type": "METALLIC FILM",
+      "power": "5W",
+      "value": "10",
+      "unit": "Ω",
+      "tolerance": "±1%"
+    },
+    {
+      "part_number": "R57",
+      "type": "METALLIC FILM",
+      "power": "5W",
+      "value": "22",
+      "unit": "Ω",
+      "tolerance": "±1%"
+    },
+    {
+      "part_number": "R58",
+      "type": "METALLIC FILM",
+      "power": "5W",
+      "value": "47",
+      "unit": "Ω",
+      "tolerance": "±1%"
+    },
+    {
+      "part_number": "R59",
+      "type": "METALLIC FILM",
+      "power": "5W",
+      "value": "100",
+      "unit": "Ω",
+      "tolerance": "±1%"
+    },
+    {
+      "part_number": "R60",
+      "type": "METALLIC FILM",
+      "power": "5W",
+      "value": "220",
+      "unit": "Ω",
+      "tolerance": "±1%"
+    },
+    {
+      "part_number": "R61",
+      "type": "WIRE WOUND",
+      "power": "10W",
+      "value": "1",
+      "unit": "Ω",
+      "tolerance": "±5%"
+    },
+    {
+      "part_number": "R62",
+      "type": "WIRE WOUND",
+      "power": "10W",
+      "value": "2.2",
+      "unit": "Ω",
+      "tolerance": "±5%"
+    },
+    {
+      "part_number": "R63",
+      "type": "WIRE WOUND",
+      "power": "10W",
+      "value": "4.7",
+      "unit": "Ω",
+      "tolerance": "±5%"
+    },
+    {
+      "part_number": "R64",
+      "type": "WIRE WOUND",
+      "power": "10W",
+      "value": "10",
+      "unit": "Ω",
+      "tolerance": "±5%"
+    },
+    {
+      "part_number": "R65",
+      "type": "WIRE WOUND",
+      "power": "10W",
+      "value": "22",
+      "unit": "Ω",
+      "tolerance": "±5%"
+    },
+    {
+      "part_number": "VR1",
+      "type": "VARIABLE RESISTOR",
+      "power": "1/2W",
+      "value": "500",
+      "unit": "Ω",
+      "model": "VR05-500"
+    },
+    {
+      "part_number": "VR2",
+      "type": "VARIABLE RESISTOR",
+      "power": "1/2W",
+      "value": "1",
+      "unit": "kΩ",
+      "model": "VR05-1K"
+    },
+    {
+      "part_number": "VR3",
+      "type": "VARIABLE RESISTOR",
+      "power": "1/2W",
+      "value": "2",
+      "unit": "kΩ",
+      "model": "VR05-2K"
+    },
+    {
+      "part_number": "VR4",
+      "type": "VARIABLE RESISTOR",
+      "power": "1/2W",
+      "value": "5",
+      "unit": "kΩ",
+      "model": "VR05-5K"
+    },
+    {
+      "part_number": "VR5",
+      "type": "VARIABLE RESISTOR",
+      "power": "1/2W",
+      "value": "10",
+      "unit": "kΩ",
+      "model": "VR05-10K"
+    },
+    {
+      "part_number": "VR6",
+      "type": "VARIABLE RESISTOR",
+      "power": "1/2W",
+      "value": "20",
+      "unit": "kΩ",
+      "model": "VR05-20K"
+    },
+    {
+      "part_number": "VR7",
+      "type": "VARIABLE RESISTOR",
+      "power": "1/2W",
+      "value": "50",
+      "unit": "kΩ",
+      "model": "VR05-50K"
+    },
+    {
+      "part_number": "VR8",
+      "type": "VARIABLE RESISTOR",
+      "power": "1/2W",
+      "value": "100",
+      "unit": "kΩ",
+      "model": "VR05-100K"
+    },
+    {
+      "part_number": "VR9",
+      "type": "VARIABLE RESISTOR",
+      "power": "1/2W",
+      "value": "500",
+      "unit": "kΩ",
+      "model": "VR05-500K"
+    },
+    {
+      "part_number": "VR10",
+      "type": "VARIABLE RESISTOR",
+      "power": "1/2W",
+      "value": "1",
+      "unit": "MΩ",
+      "model": "VR05-1M"
+    }
+  ],
+  "capacitors": [
+    {
+      "part_number": "C1",
+      "type": "CERAMIC DISC",
+      "voltage": "50V",
+      "value": "10",
+      "unit": "pF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "C2",
+      "type": "CERAMIC DISC",
+      "voltage": "50V",
+      "value": "22",
+      "unit": "pF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "C3",
+      "type": "CERAMIC DISC",
+      "voltage": "50V",
+      "value": "47",
+      "unit": "pF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "C4",
+      "type": "CERAMIC DISC",
+      "voltage": "50V",
+      "value": "100",
+      "unit": "pF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "C5",
+      "type": "CERAMIC DISC",
+      "voltage": "50V",
+      "value": "220",
+      "unit": "pF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "C6",
+      "type": "CERAMIC DISC",
+      "voltage": "50V",
+      "value": "470",
+      "unit": "pF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "C7",
+      "type": "CERAMIC DISC",
+      "voltage": "50V",
+      "value": "1000",
+      "unit": "pF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "C8",
+      "type": "CERAMIC DISC",
+      "voltage": "50V",
+      "value": "2200",
+      "unit": "pF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "C9",
+      "type": "CERAMIC DISC",
+      "voltage": "50V",
+      "value": "4700",
+      "unit": "pF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "C10",
+      "type": "CERAMIC DISC",
+      "voltage": "50V",
+      "value": "0.01",
+      "unit": "μF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "C11",
+      "type": "CERAMIC DISC",
+      "voltage": "50V",
+      "value": "0.022",
+      "unit": "μF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "C12",
+      "type": "CERAMIC DISC",
+      "voltage": "50V",
+      "value": "0.047",
+      "unit": "μF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "C13",
+      "type": "CERAMIC DISC",
+      "voltage": "50V",
+      "value": "0.1",
+      "unit": "μF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "C14, C15, C16, C17, C18, C19, C20, C21, C22, C23, C24, C25, C26, C27, C28",
+      "type": "POLYESTER FILM",
+      "voltage": "100V",
+      "value": "0.001",
+      "unit": "μF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "C29, C30, C31, C32, C33, C34, C35, C36, C37, C38",
+      "type": "POLYESTER FILM",
+      "voltage": "100V",
+      "value": "0.0022",
+      "unit": "μF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "C39",
+      "type": "POLYESTER FILM",
+      "voltage": "100V",
+      "value": "0.0047",
+      "unit": "μF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "C40",
+      "type": "POLYESTER FILM",
+      "voltage": "100V",
+      "value": "0.01",
+      "unit": "μF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "C41",
+      "type": "POLYESTER FILM",
+      "voltage": "100V",
+      "value": "0.022",
+      "unit": "μF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "C42",
+      "type": "POLYESTER FILM",
+      "voltage": "100V",
+      "value": "0.047",
+      "unit": "μF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "C43",
+      "type": "POLYESTER FILM",
+      "voltage": "100V",
+      "value": "0.1",
+      "unit": "μF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "C44",
+      "type": "POLYESTER FILM",
+      "voltage": "100V",
+      "value": "0.22",
+      "unit": "μF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "C45",
+      "type": "POLYESTER FILM",
+      "voltage": "100V",
+      "value": "0.47",
+      "unit": "μF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "C46",
+      "type": "POLYESTER FILM",
+      "voltage": "100V",
+      "value": "1",
+      "unit": "μF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "C47, C48, C49, C50, C51, C52, C53, C54, C55, C56",
+      "type": "ELECTROLYTIC",
+      "voltage": "10V",
+      "value": "1",
+      "unit": "μF",
+      "tolerance": "±20%"
+    },
+    {
+      "part_number": "C57, C58, C59, C60, C61, C62, C63, C64, C65, C66",
+      "type": "ELECTROLYTIC",
+      "voltage": "16V",
+      "value": "2.2",
+      "unit": "μF",
+      "tolerance": "±20%"
+    },
+    {
+      "part_number": "C67",
+      "type": "ELECTROLYTIC",
+      "voltage": "25V",
+      "value": "4.7",
+      "unit": "μF",
+      "tolerance": "±20%"
+    },
+    {
+      "part_number": "C68",
+      "type": "ELECTROLYTIC",
+      "voltage": "25V",
+      "value": "10",
+      "unit": "μF",
+      "tolerance": "±20%"
+    },
+    {
+      "part_number": "C69",
+      "type": "ELECTROLYTIC",
+      "voltage": "25V",
+      "value": "22",
+      "unit": "μF",
+      "tolerance": "±20%"
+    },
+    {
+      "part_number": "C70",
+      "type": "ELECTROLYTIC",
+      "voltage": "25V",
+      "value": "47",
+      "unit": "μF",
+      "tolerance": "±20%"
+    },
+    {
+      "part_number": "C71",
+      "type": "ELECTROLYTIC",
+      "voltage": "25V",
+      "value": "100",
+      "unit": "μF",
+      "tolerance": "±20%"
+    },
+    {
+      "part_number": "C72",
+      "type": "ELECTROLYTIC",
+      "voltage": "25V",
+      "value": "220",
+      "unit": "μF",
+      "tolerance": "±20%"
+    },
+    {
+      "part_number": "C73",
+      "type": "ELECTROLYTIC",
+      "voltage": "25V",
+      "value": "470",
+      "unit": "μF",
+      "tolerance": "±20%"
+    },
+    {
+      "part_number": "C74",
+      "type": "ELECTROLYTIC",
+      "voltage": "25V",
+      "value": "1000",
+      "unit": "μF",
+      "tolerance": "±20%"
+    },
+    {
+      "part_number": "C75",
+      "type": "ELECTROLYTIC",
+      "voltage": "50V",
+      "value": "2200",
+      "unit": "μF",
+      "tolerance": "±20%"
+    },
+    {
+      "part_number": "VC1",
+      "type": "VARIABLE CAPACITOR",
+      "voltage": "250V",
+      "value": "10-365",
+      "unit": "pF",
+      "model": "VC-365"
+    },
+    {
+      "part_number": "VC2",
+      "type": "VARIABLE CAPACITOR",
+      "voltage": "250V",
+      "value": "5-30",
+      "unit": "pF",
+      "model": "VC-30"
+    },
+    {
+      "part_number": "TC1",
+      "type": "TRIMMER CAPACITOR",
+      "voltage": "100V",
+      "value": "2-22",
+      "unit": "pF",
+      "model": "TC-22"
+    },
+    {
+      "part_number": "TC2",
+      "type": "TRIMMER CAPACITOR",
+      "voltage": "100V",
+      "value": "5-50",
+      "unit": "pF",
+      "model": "TC-50"
+    }
+  ],
+  "inductors": [
+    {
+      "part_number": "L1",
+      "type": "CHOKE COIL",
+      "value": "10",
+      "unit": "μH"
+    },
+    {
+      "part_number": "L2",
+      "type": "CHOKE COIL",
+      "value": "22",
+      "unit": "μH"
+    },
+    {
+      "part_number": "L3",
+      "type": "CHOKE COIL",
+      "value": "47",
+      "unit": "μH"
+    },
+    {
+      "part_number": "L4",
+      "type": "CHOKE COIL",
+      "value": "100",
+      "unit": "μH"
+    },
+    {
+      "part_number": "L5",
+      "type": "CHOKE COIL",
+      "value": "220",
+      "unit": "μH"
+    },
+    {
+      "part_number": "L6",
+      "type": "CHOKE COIL",
+      "value": "470",
+      "unit": "μH"
+    },
+    {
+      "part_number": "L7",
+      "type": "CHOKE COIL",
+      "value": "1",
+      "unit": "mH"
+    },
+    {
+      "part_number": "L8",
+      "type": "CHOKE COIL",
+      "value": "2.2",
+      "unit": "mH"
+    },
+    {
+      "part_number": "L9",
+      "type": "CHOKE COIL",
+      "value": "4.7",
+      "unit": "mH"
+    },
+    {
+      "part_number": "L10",
+      "type": "CHOKE COIL",
+      "value": "10",
+      "unit": "mH"
+    },
+    {
+      "part_number": "L11",
+      "type": "CHOKE COIL",
+      "value": "22",
+      "unit": "mH"
+    },
+    {
+      "part_number": "L12",
+      "type": "CHOKE COIL",
+      "value": "47",
+      "unit": "mH"
+    },
+    {
+      "part_number": "L13",
+      "type": "CHOKE COIL",
+      "value": "100",
+      "unit": "mH"
+    }
+  ],
+  "transformers": [
+    {
+      "part_number": "T1",
+      "type": "AUDIO TRANSFORMER",
+      "turns_ratio": "1:1",
+      "model": "AT-1:1"
+    },
+    {
+      "part_number": "T2",
+      "type": "AUDIO TRANSFORMER",
+      "turns_ratio": "1:3",
+      "model": "AT-1:3"
+    },
+    {
+      "part_number": "T3",
+      "type": "AUDIO TRANSFORMER",
+      "turns_ratio": "3:1",
+      "model": "AT-3:1"
+    },
+    {
+      "part_number": "T4",
+      "type": "AUDIO TRANSFORMER",
+      "turns_ratio": "10:1",
+      "model": "AT-10:1"
+    },
+    {
+      "part_number": "T5",
+      "type": "IF TRANSFORMER",
+      "frequency": "455KHz",
+      "model": "IFT-455"
+    },
+    {
+      "part_number": "T6",
+      "type": "IF TRANSFORMER",
+      "frequency": "10.7MHz",
+      "model": "IFT-10.7"
+    },
+    {
+      "part_number": "T7",
+      "type": "POWER TRANSFORMER",
+      "primary": "110V-220V",
+      "secondary": "6V-1A",
+      "model": "PT-6V1A"
+    },
+    {
+      "part_number": "T8",
+      "type": "POWER TRANSFORMER",
+      "primary": "110V-220V",
+      "secondary": "12V-1A",
+      "model": "PT-12V1A"
+    }
+  ],
+  "diodes": [
+    {
+      "part_number": "D1, D2, D3, D4, D5",
+      "type": "Si",
+      "model": "1N4001",
+      "voltage": "50V",
+      "current": "1A"
+    },
+    {
+      "part_number": "D6, D7, D8, D9, D10",
+      "type": "Si",
+      "model": "1N4148",
+      "voltage": "75V",
+      "current": "150mA"
+    },
+    {
+      "part_number": "D11",
+      "type": "Zener",
+      "model": "1N4728",
+      "voltage": "3.3V",
+      "power": "1W"
+    },
+    {
+      "part_number": "D12",
+      "type": "Zener",
+      "model": "1N4732",
+      "voltage": "4.7V",
+      "power": "1W"
+    },
+    {
+      "part_number": "D13",
+      "type": "Zener",
+      "model": "1N4733",
+      "voltage": "5.1V",
+      "power": "1W"
+    },
+    {
+      "part_number": "D14",
+      "type": "Zener",
+      "model": "1N4735",
+      "voltage": "6.2V",
+      "power": "1W"
+    },
+    {
+      "part_number": "D15",
+      "type": "Zener",
+      "model": "1N4740",
+      "voltage": "10V",
+      "power": "1W"
+    },
+    {
+      "part_number": "D16",
+      "type": "Zener",
+      "model": "1N4742",
+      "voltage": "12V",
+      "power": "1W"
+    },
+    {
+      "part_number": "D17",
+      "type": "Zener",
+      "model": "1N4744",
+      "voltage": "15V",
+      "power": "1W"
+    },
+    {
+      "part_number": "D18",
+      "type": "Zener",
+      "model": "1N4745",
+      "voltage": "16V",
+      "power": "1W"
+    },
+    {
+      "part_number": "D19",
+      "type": "Zener",
+      "model": "1N4748",
+      "voltage": "22V",
+      "power": "1W"
+    },
+    {
+      "part_number": "LED1",
+      "type": "LED",
+      "model": "LED-RED",
+      "color": "RED",
+      "voltage": "2V",
+      "current": "20mA"
+    },
+    {
+      "part_number": "LED2",
+      "type": "LED",
+      "model": "LED-GREEN",
+      "color": "GREEN",
+      "voltage": "2V",
+      "current": "20mA"
+    },
+    {
+      "part_number": "LED3",
+      "type": "LED",
+      "model": "LED-YELLOW",
+      "color": "YELLOW",
+      "voltage": "2V",
+      "current": "20mA"
+    }
+  ],
+  "transistors": [
+    {
+      "part_number": "Q1, Q2, Q3, Q4, Q5",
+      "type": "NPN",
+      "model": "2N3904",
+      "package": "TO-92",
+      "voltage": "40V",
+      "current": "200mA",
+      "power": "625mW"
+    },
+    {
+      "part_number": "Q6, Q7, Q8, Q9, Q10",
+      "type": "PNP",
+      "model": "2N3906",
+      "package": "TO-92",
+      "voltage": "40V",
+      "current": "200mA",
+      "power": "625mW"
+    },
+    {
+      "part_number": "Q11",
+      "type": "NPN",
+      "model": "2N2222",
+      "package": "TO-18",
+      "voltage": "30V",
+      "current": "800mA",
+      "power": "500mW"
+    },
+    {
+      "part_number": "Q12",
+      "type": "PNP",
+      "model": "2N2907",
+      "package": "TO-18",
+      "voltage": "60V",
+      "current": "600mA",
+      "power": "400mW"
+    },
+    {
+      "part_number": "Q13",
+      "type": "NPN",
+      "model": "BC547",
+      "package": "TO-92",
+      "voltage": "45V",
+      "current": "100mA",
+      "power": "500mW"
+    },
+    {
+      "part_number": "Q14",
+      "type": "PNP",
+      "model": "BC557",
+      "package": "TO-92",
+      "voltage": "45V",
+      "current": "100mA",
+      "power": "500mW"
+    },
+    {
+      "part_number": "Q15",
+      "type": "N-CHANNEL JFET",
+      "model": "2N5457",
+      "package": "TO-92",
+      "voltage": "25V",
+      "current": "10mA"
+    },
+    {
+      "part_number": "Q16",
+      "type": "P-CHANNEL JFET",
+      "model": "2N5460",
+      "package": "TO-92",
+      "voltage": "25V",
+      "current": "10mA"
+    },
+    {
+      "part_number": "Q17",
+      "type": "N-CHANNEL MOSFET",
+      "model": "2N7000",
+      "package": "TO-92",
+      "voltage": "60V",
+      "current": "200mA",
+      "power": "400mW"
+    },
+    {
+      "part_number": "Q18",
+      "type": "P-CHANNEL MOSFET",
+      "model": "BS250",
+      "package": "TO-92",
+      "voltage": "45V",
+      "current": "230mA",
+      "power": "830mW"
+    }
+  ],
+  "integrated_circuits": [
+    {
+      "part_number": "IC1",
+      "type": "OPERATIONAL AMPLIFIER",
+      "model": "LM741",
+      "package": "DIP-8",
+      "description": "General Purpose Op-Amp"
+    },
+    {
+      "part_number": "IC2",
+      "type": "OPERATIONAL AMPLIFIER",
+      "model": "LM358",
+      "package": "DIP-8",
+      "description": "Dual Op-Amp"
+    },
+    {
+      "part_number": "IC3",
+      "type": "VOLTAGE REGULATOR",
+      "model": "LM7805",
+      "package": "TO-220",
+      "description": "5V Fixed Voltage Regulator"
+    },
+    {
+      "part_number": "IC4",
+      "type": "VOLTAGE REGULATOR",
+      "model": "LM7812",
+      "package": "TO-220",
+      "description": "12V Fixed Voltage Regulator"
+    },
+    {
+      "part_number": "IC5",
+      "type": "VOLTAGE REGULATOR",
+      "model": "LM7915",
+      "package": "TO-220",
+      "description": "-15V Fixed Voltage Regulator"
+    },
+    {
+      "part_number": "IC6",
+      "type": "TIMER",
+      "model": "NE555",
+      "package": "DIP-8",
+      "description": "Timer/Oscillator"
+    },
+    {
+      "part_number": "IC7",
+      "type": "LOGIC GATE",
+      "model": "74HC00",
+      "package": "DIP-14",
+      "description": "Quad 2-Input NAND Gate"
+    },
+    {
+      "part_number": "IC8",
+      "type": "LOGIC GATE",
+      "model": "74HC02",
+      "package": "DIP-14",
+      "description": "Quad 2-Input NOR Gate"
+    },
+    {
+      "part_number": "IC9",
+      "type": "LOGIC GATE",
+      "model": "74HC04",
+      "package": "DIP-14",
+      "description": "Hex Inverter"
+    },
+    {
+      "part_number": "IC10",
+      "type": "LOGIC GATE",
+      "model": "74HC08",
+      "package": "DIP-14",
+      "description": "Quad 2-Input AND Gate"
+    },
+    {
+      "part_number": "IC11",
+      "type": "LOGIC GATE",
+      "model": "74HC32",
+      "package": "DIP-14",
+      "description": "Quad 2-Input OR Gate"
+    },
+    {
+      "part_number": "IC12",
+      "type": "COUNTER",
+      "model": "74HC4017",
+      "package": "DIP-16",
+      "description": "Decade Counter/Divider"
+    },
+    {
+      "part_number": "IC13",
+      "type": "DISPLAY DRIVER",
+      "model": "74HC4511",
+      "package": "DIP-16",
+      "description": "BCD to 7-Segment Decoder"
+    },
+    {
+      "part_number": "IC14",
+      "type": "MICROCONTROLLER",
+      "model": "PIC16F84A",
+      "package": "DIP-18",
+      "description": "8-bit Microcontroller"
+    },
+    {
+      "part_number": "IC15",
+      "type": "MEMORY",
+      "model": "24C02",
+      "package": "DIP-8",
+      "description": "2K EEPROM"
+    }
+  ],
+  "tubes": [
+    {
+      "part_number": "V1",
+      "type": "TRIODE",
+      "model": "12AX7",
+      "description": "Dual Triode"
+    },
+    {
+      "part_number": "V2",
+      "type": "PENTODE",
+      "model": "EL34",
+      "description": "Power Pentode"
+    },
+    {
+      "part_number": "V3",
+      "type": "TRIODE",
+      "model": "12AU7",
+      "description": "Dual Triode"
+    },
+    {
+      "part_number": "V4",
+      "type": "RECTIFIER",
+      "model": "5U4G",
+      "description": "Rectifier Tube"
+    },
+    {
+      "part_number": "V5",
+      "type": "PENTODE",
+      "model": "6V6GT",
+      "description": "Beam Power Pentode"
+    }
+  ],
+  "crystals": [
+    {
+      "part_number": "X1",
+      "type": "CRYSTAL",
+      "frequency": "32.768",
+      "unit": "kHz",
+      "model": "XTAL-32.768K"
+    },
+    {
+      "part_number": "X2",
+      "type": "CRYSTAL",
+      "frequency": "4",
+      "unit": "MHz",
+      "model": "XTAL-4M"
+    },
+    {
+      "part_number": "X3",
+      "type": "CRYSTAL",
+      "frequency": "8",
+      "unit": "MHz",
+      "model": "XTAL-8M"
+    },
+    {
+      "part_number": "X4",
+      "type": "CRYSTAL",
+      "frequency": "16",
+      "unit": "MHz",
+      "model": "XTAL-16M"
+    },
+    {
+      "part_number": "X5",
+      "type": "CRYSTAL",
+      "frequency": "20",
+      "unit": "MHz",
+      "model": "XTAL-20M"
+    }
+  ],
+  "relays": [
+    {
+      "part_number": "RY1",
+      "type": "RELAY",
+      "coil_voltage": "5V",
+      "contact_rating": "1A/30V",
+      "model": "RLY-5V"
+    },
+    {
+      "part_number": "RY2",
+      "type": "RELAY",
+      "coil_voltage": "12V",
+      "contact_rating": "2A/30V",
+      "model": "RLY-12V"
+    },
+    {
+      "part_number": "RY3",
+      "type": "RELAY",
+      "coil_voltage": "24V",
+      "contact_rating": "5A/250V",
+      "model": "RLY-24V"
+    }
+  ],
+  "switches": [
+    {
+      "part_number": "SW1",
+      "type": "SPST",
+      "model": "SW-SPST",
+      "description": "Single Pole Single Throw"
+    },
+    {
+      "part_number": "SW2",
+      "type": "SPDT",
+      "model": "SW-SPDT",
+      "description": "Single Pole Double Throw"
+    },
+    {
+      "part_number": "SW3",
+      "type": "DPST",
+      "model": "SW-DPST",
+      "description": "Double Pole Single Throw"
+    },
+    {
+      "part_number": "SW4",
+      "type": "DPDT",
+      "model": "SW-DPDT",
+      "description": "Double Pole Double Throw"
+    },
+    {
+      "part_number": "SW5",
+      "type": "PUSHBUTTON",
+      "model": "SW-PB-NO",
+      "description": "Normally Open Pushbutton"
+    },
+    {
+      "part_number": "SW6",
+      "type": "PUSHBUTTON",
+      "model": "SW-PB-NC",
+      "description": "Normally Closed Pushbutton"
+    },
+    {
+      "part_number": "SW7",
+      "type": "ROTARY",
+      "model": "SW-ROT-12P",
+      "description": "12 Position Rotary Switch"
+    }
+  ],
+  "connectors": [
+    {
+      "part_number": "J1",
+      "type": "RCA",
+      "model": "CONN-RCA",
+      "description": "RCA Jack"
+    },
+    {
+      "part_number": "J2",
+      "type": "1/4 INCH",
+      "model": "CONN-1/4",
+      "description": "1/4 Inch Phone Jack"
+    },
+    {
+      "part_number": "J3",
+      "type": "3.5MM",
+      "model": "CONN-3.5MM",
+      "description": "3.5mm Stereo Jack"
+    },
+    {
+      "part_number": "J4",
+      "type": "XLR",
+      "model": "CONN-XLR-M",
+      "description": "XLR Male Connector"
+    },
+    {
+      "part_number": "J5",
+      "type": "XLR",
+      "model": "CONN-XLR-F",
+      "description": "XLR Female Connector"
+    },
+    {
+      "part_number": "J6",
+      "type": "BNC",
+      "model": "CONN-BNC",
+      "description": "BNC Connector"
+    },
+    {
+      "part_number": "J7",
+      "type": "BANANA",
+      "model": "CONN-BANANA",
+      "description": "Banana Jack"
+    }
+  ],
+  "meters": [
+    {
+      "part_number": "M1",
+      "type": "VOLTMETER",
+      "range": "0-10V",
+      "model": "METER-V-10"
+    },
+    {
+      "part_number": "M2",
+      "type": "AMMETER",
+      "range": "0-1A",
+      "model": "METER-A-1"
+    },
+    {
+      "part_number": "M3",
+      "type": "VU METER",
+      "range": "-20 to +3dB",
+      "model": "METER-VU"
+    }
+  ],
+  "fuses": [
+    {
+      "part_number": "F1",
+      "type": "FUSE",
+      "rating": "250mA",
+      "voltage": "250V",
+      "model": "FUSE-250mA"
+    },
+    {
+      "part_number": "F2",
+      "type": "FUSE",
+      "rating": "500mA",
+      "voltage": "250V",
+      "model": "FUSE-500mA"
+    },
+    {
+      "part_number": "F3",
+      "type": "FUSE",
+      "rating": "1A",
+      "voltage": "250V",
+      "model": "FUSE-1A"
+    },
+    {
+      "part_number": "F4",
+      "type": "FUSE",
+      "rating": "2A",
+      "voltage": "250V",
+      "model": "FUSE-2A"
+    },
+    {
+      "part_number": "F5",
+      "type": "FUSE",
+      "rating": "5A",
+      "voltage": "250V",
+      "model": "FUSE-5A"
+    }
+  ],
+  "speakers": [
+    {
+      "part_number": "SP1",
+      "type": "SPEAKER",
+      "impedance": "4",
+      "unit": "Ω",
+      "power": "5W",
+      "model": "SPKR-4R-5W"
+    },
+    {
+      "part_number": "SP2",
+      "type": "SPEAKER",
+      "impedance": "8",
+      "unit": "Ω",
+      "power": "10W",
+      "model": "SPKR-8R-10W"
+    },
+    {
+      "part_number": "SP3",
+      "type": "SPEAKER",
+      "impedance": "16",
+      "unit": "Ω",
+      "power": "25W",
+      "model": "SPKR-16R-25W"
+    }
+  ],
+  "miscellaneous": [
+    {
+      "part_number": "ANT1",
+      "type": "ANTENNA",
+      "model": "ANT-WHIP",
+      "description": "Telescopic Whip Antenna"
+    },
+    {
+      "part_number": "HS1",
+      "type": "HEAT SINK",
+      "model": "HSINK-TO220",
+      "description": "Heat Sink for TO-220"
+    },
+    {
+      "part_number": "PCB1",
+      "type": "PCB",
+      "model": "PCB-PROTO",
+      "description": "Prototype PCB"
+    },
+    {
+      "part_number": "WIRE1",
+      "type": "WIRE",
+      "gauge": "22AWG",
+      "model": "WIRE-22AWG-RED",
+      "color": "RED"
+    },
+    {
+      "part_number": "WIRE2",
+      "type": "WIRE",
+      "gauge": "22AWG",
+      "model": "WIRE-22AWG-BLACK",
+      "color": "BLACK"
+    },
+    {
+      "part_number": "WIRE3",
+      "type": "WIRE",
+      "gauge": "18AWG",
+      "model": "WIRE-18AWG-WHITE",
+      "color": "WHITE"
+    }
+  ]
+}

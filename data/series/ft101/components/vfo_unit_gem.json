@@ -1,0 +1,223 @@
+{
+  "transistors": [
+    {
+      "part_number": "3",
+      "type": "TR",
+      "model": "2SC372Y"
+    },
+    {
+      "part_number": "1, 2",
+      "type": "FET",
+      "model": "2SK19GR"
+    }
+  ],
+  "diodes": [
+    {
+      "part_number": "Varactor",
+      "type": "Varactor",
+      "model": "1S145"
+    }
+  ],
+  "resistors": [
+    {
+      "part_number": "4, 7",
+      "type": "carbon film",
+      "power": "¼W",
+      "value": "100",
+      "unit": "Ω",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "10",
+      "type": "carbon film",
+      "power": "¼W",
+      "value": "270",
+      "unit": "Ω",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "3, 6",
+      "type": "carbon film",
+      "power": "¼W",
+      "value": "330",
+      "unit": "Ω",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "8",
+      "type": "carbon film",
+      "power": "¼W",
+      "value": "8.2",
+      "unit": "KΩ",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "1",
+      "type": "carbon film",
+      "power": "¼W",
+      "value": "10",
+      "unit": "KΩ",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "9",
+      "type": "carbon film",
+      "power": "¼W",
+      "value": "22",
+      "unit": "KΩ",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "2, 5",
+      "type": "carbon film",
+      "power": "¼W",
+      "value": "100",
+      "unit": "KΩ",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "11(L5)",
+      "type": "carbon composition",
+      "power": "½W",
+      "value": "1",
+      "unit": "KΩ",
+      "tolerance": "±10%"
+    }
+  ],
+  "capacitors": [
+    {
+      "part_number": "16",
+      "type": "dipped mica",
+      "voltage": "50WV",
+      "value": "20",
+      "unit": "PF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "8, 10",
+      "type": "dipped mica",
+      "voltage": "50WV",
+      "value": "100",
+      "unit": "PF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "1, 2",
+      "type": "dipped mica",
+      "voltage": "50WV",
+      "value": "680",
+      "unit": "PF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "11",
+      "type": "dipped mica",
+      "voltage": "50WV",
+      "value": "1000",
+      "unit": "PF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "11",
+      "type": "dipped mica",
+      "voltage": "50WV",
+      "value": "2000",
+      "unit": "PF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "6, 7, 9, 12, 15",
+      "type": "ceramic disc",
+      "voltage": "50WV",
+      "value": "0.01",
+      "unit": "µF",
+      "tolerance": "+80% -20%"
+    },
+    {
+      "part_number": "3, 5, 13",
+      "type": "ceramic disc",
+      "voltage": "500WV",
+      "value": "0.01",
+      "unit": "µF",
+      "tolerance": "+150% -0%"
+    },
+    {
+      "part_number": "14",
+      "type": "ceramic TC (NPO)",
+      "value": "6",
+      "unit": "PF",
+      "tolerance": "±0.5PF"
+    },
+    {
+      "part_number": "4",
+      "type": "ceramic TC (NPO)",
+      "value": "10",
+      "unit": "PF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "19",
+      "type": "ceramic TC (NPO)",
+      "value": "82",
+      "unit": "PF",
+      "tolerance": "±10%"
+    },
+    {
+      "part_number": "20",
+      "type": "ceramic TC (N750)",
+      "value": "2",
+      "unit": "PF",
+      "tolerance": "±0.5PF"
+    },
+    {
+      "part_number": "18",
+      "type": "ceramic TC (N750)",
+      "value": "7",
+      "unit": "PF",
+      "tolerance": "±0.5PF"
+    },
+    {
+      "part_number": "17",
+      "type": "ceramic TC (N750)",
+      "value": "20",
+      "unit": "PF",
+      "tolerance": "±10%"
+    }
+  ],
+  "variable_capacitors": [
+    {
+      "part_number": "1",
+      "type": "AIR",
+      "model": "B53-A112"
+    }
+  ],
+  "trimmer_capacitors": [
+    {
+      "part_number": "1",
+      "type": "AIR",
+      "model": "TSN150C30PF"
+    },
+    {
+      "part_number": "2",
+      "type": "AIR",
+      "model": "TSN170C10PF x2"
+    }
+  ],
+  "inductors": [
+    {
+      "part_number": "1",
+      "type": "oscillator coil",
+      "value": null
+    },
+    {
+      "part_number": "2, 4, 6, 7",
+      "type": "RF choke",
+      "value": "250µH"
+    },
+    {
+      "part_number": "5(R11)",
+      "type": "RF choke",
+      "value": null
+    }
+  ]
+}

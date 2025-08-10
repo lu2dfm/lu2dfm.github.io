@@ -1,0 +1,30 @@
+{{ define "main" }}
+
+{{ $currentLang := .Language.Lang }}
+{{ $contentData := index .Site.Data.content .Params.contentKey }}
+<article>
+
+  <h1>{{ index $contentData.title $currentLang }}</h1>
+  
+  <!-- Epigrafe -->
+  {{ with index $contentData.epigrafe $currentLang }}
+  <div class="epigrafe">
+    <blockquote>
+      {{ .texto | markdownify }}
+      {{ with .autor }}<cite>— {{ . }}</cite>{{ end }}
+    </blockquote>
+  </div>
+  {{ end }}
+  <!-- Contenido -->
+  <div class="content">
+    {{ index $contentData.content $currentLang | markdownify }}
+  </div>
+  
+  <!-- Series -->
+  <!--
+  -->
+</article>
+{{ partial "authorbox.html" . }}
+{{ partial "pager.html" . }}
+{{ partial "comments.html" . }}
+{{ end }}
