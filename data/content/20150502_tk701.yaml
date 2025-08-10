@@ -1,0 +1,84 @@
+title:
+  es: 'Conversión de Kenwood/Trio TK 701S'
+  en: 'Kenwood/Trio TK 701S Conversion'
+  pt: 'Conversão do Kenwood/Trio TK 701S'
+
+content:
+  es: |
+    #### Conversión de Kenwood/Trio TK 701S 
+    ##### Conversión a banda amateur. 
+    Esta radio me la regalaron o la levanté en alguna compraventa, y estuvo
+    arrinconada hasta ahora; decidí ponerla en funcionamiento para un
+    digipeater/iGate APRS.
+      
+    La radio originalmente es para la banda móvil terrestre 150-174 MHz. Es
+    canalera (6 canales) y se programa mediante un par de integrados desconocidos que
+    desde una llave/encoder frontal codifican los contadores del PLL. El PLL es
+    tipo N-fraccional, basado en un MC145152 y usa un prescaler de doble módulo
+    (%64-65) UPB571C (bueno hasta 500 MHz aparentemente); con el LO en 10.240 MHz
+    el step del canal es 5 kHz.
+      
+    Lo que necesitaba hacer era ver si la podía bajarla a 144-148 MHz en primer
+    lugar, y en segundo lugar determinar cómo. Mi buscador preferido (porque no me
+    trackea) [DuckDuckGo](https://duckduckgo.com) enseguida produjo un par de
+    artículos de G8UYZ publicados en los \'80s que explican el reajuste y dan unas
+    tablas de conversión para setear los divisores del PLL. Tuve que esperar los
+    dos días que los *amigos* (...) de mods.dk exigen para bajar dos archivos PDF... pero bueno.
+      
+    El colega Dave G8UYZ o bien tenía un modelo con un PLL distinto, o bien algo le
+    quedó mal editado en el artículo porque las tablas que publicó para los
+    divisores no son apropiadas para esta radio. Por lo tanto hice los deberes y
+    preparé [esta planilla de cálculo](/doc/TK701-freq-PLL.ods) para facilitar el
+    trabajo.
+      
+    El resto de la info en el [artículo de la 701](/doc/TK-701_2m_conversion.pdf)
+    es relevante para ajustar la radio en recepción y transmisión; mucha de la info
+    necesaria/interesante está en el [artículo de la
+    801](/doc/TK-801_70cm_conversion.pdf) que es la versión UHF de la misma radio.
+      
+    Como yo no tengo actualmente necesidad de cambiar de frecuencia, no me preocupé
+    mucho y simplemente soldé los pines necesarios en un par de zócalos y los puse
+    donde van U22 y U23. Pero es posible y relativamente fácil hacer con un PIC un
+    controlador que permita cambiar de frecuencia, tener memorias, desplazamiento
+    para repes, etc. y un display. Tal vez otro día.
+      
+    La radio anda lindo, en 145 MHz llega hasta unos 45W pero la dejé en 22 W
+    aproximadamente. Según el art. referido estas radios están especificadas para un
+    ciclo de trabajo del 20% solamente (típico de este tipo de radios). El receptor
+    no es nada del otro mundo pero suena bien y no parece poco sensible.
+
+  en: |
+    #### Kenwood/Trio TK 701S Conversion
+    ##### Conversion to amateur band.
+    
+    This radio was given to me or I picked it up at some swap meet, and it sat in a corner until now; I decided to put it into operation for an APRS digipeater/iGate.
+    
+    The radio was originally for the 150-174 MHz land mobile terrestrial band. It's channelized (6 channels) and is programmed through a pair of unknown ICs that encode the PLL counters from a front key/encoder. The PLL is N-fractional type, based on an MC145152 and uses a dual-modulus prescaler (%64-65) UPB571C (apparently good up to 500 MHz); with the LO at 10.240 MHz the channel step is 5 kHz.
+    
+    What I needed to do was see if I could bring it down to 144-148 MHz first, and second, determine how. My preferred search engine (because it doesn't track me) [DuckDuckGo](https://duckduckgo.com) immediately produced a couple of articles by G8UYZ published in the '80s that explain the readjustment and give some conversion tables for setting the PLL dividers. I had to wait the two days that the *friends* (...) at mods.dk demand to download two PDF files... but well.
+    
+    Colleague Dave G8UYZ either had a model with a different PLL, or something was poorly edited in the article because the tables he published for the dividers are not appropriate for this radio. Therefore I did the homework and prepared [this spreadsheet](/doc/TK701-freq-PLL.ods) to facilitate the work.
+    
+    The rest of the info in the [701 article](/doc/TK-701_2m_conversion.pdf) is relevant for adjusting the radio in reception and transmission; much of the necessary/interesting info is in the [801 article](/doc/TK-801_70cm_conversion.pdf) which is the UHF version of the same radio.
+    
+    Since I currently have no need to change frequency, I didn't worry much and simply soldered the necessary pins on a couple of sockets and put them where U22 and U23 go. But it's possible and relatively easy to make a controller with a PIC that allows frequency changes, memories, repeater offset, etc. and a display. Maybe another day.
+    
+    The radio works nicely, at 145 MHz it reaches about 45W but I left it at approximately 22W. According to the referenced article, these radios are specified for only 20% duty cycle (typical of this type of radio). The receiver is nothing special but sounds good and doesn't seem insensitive.
+
+  pt: |
+    #### Conversão do Kenwood/Trio TK 701S
+    ##### Conversão para banda amadora.
+    
+    Este rádio me foi dado de presente ou o peguei em alguma feira de trocas, e ficou encostado até agora; decidi colocá-lo em funcionamento para um digipeater/iGate APRS.
+    
+    O rádio originalmente é para a banda móvel terrestre 150-174 MHz. É canalizado (6 canais) e é programado através de um par de CIs desconhecidos que codificam os contadores do PLL a partir de uma chave/encoder frontal. O PLL é tipo N-fracional, baseado em um MC145152 e usa um prescaler de duplo módulo (%64-65) UPB571C (aparentemente bom até 500 MHz); com o LO em 10.240 MHz o step do canal é 5 kHz.
+    
+    O que eu precisava fazer era ver se conseguia baixá-lo para 144-148 MHz em primeiro lugar, e em segundo lugar determinar como. Meu buscador preferido (porque não me rastreia) [DuckDuckGo](https://duckduckgo.com) imediatamente produziu alguns artigos de G8UYZ publicados nos anos 80 que explicam o reajuste e dão algumas tabelas de conversão para configurar os divisores do PLL. Tive que esperar os dois dias que os *amigos* (...) de mods.dk exigem para baixar dois arquivos PDF... mas enfim.
+    
+    O colega Dave G8UYZ ou tinha um modelo com um PLL diferente, ou algo ficou mal editado no artigo porque as tabelas que ele publicou para os divisores não são apropriadas para este rádio. Portanto fiz a lição de casa e preparei [esta planilha](/doc/TK701-freq-PLL.ods) para facilitar o trabalho.
+    
+    O resto da info no [artigo da 701](/doc/TK-701_2m_conversion.pdf) é relevante para ajustar o rádio na recepção e transmissão; muita da informação necessária/interessante está no [artigo da 801](/doc/TK-801_70cm_conversion.pdf) que é a versão UHF do mesmo rádio.
+    
+    Como eu atualmente não tenho necessidade de mudar de frequência, não me preocupei muito e simplesmente soldei os pinos necessários em alguns soquetes e os coloquei onde vão U22 e U23. Mas é possível e relativamente fácil fazer com um PIC um controlador que permita mudanças de frequência, memórias, deslocamento para repetidoras, etc. e um display. Talvez outro dia.
+    
+    O rádio funciona bem, em 145 MHz chega até uns 45W mas o deixei em aproximadamente 22W. Segundo o artigo referenciado, estes rádios são especificados para apenas 20% de ciclo de trabalho (típico deste tipo de rádio). O receptor não é nada extraordinário, mas soa bem e não parece pouco sensível.

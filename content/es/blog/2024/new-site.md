@@ -4,7 +4,10 @@ description: Volviendo a la actividad, nuevo sitio.
 date: 2024-03-25T14:33:50-03:00
 categories:
   - "Noticias"
+  - "Software"
 tags:
+ - "HUGO"
+ - "site"
 
 # Theme-Defined params
 #thumbnail: "img/placeholder.png" # Thumbnail image
