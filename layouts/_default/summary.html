@@ -34,7 +34,7 @@
                     </a>
                 </h2>
                 {{- with $lead }}
-                <p class="list__lead post__lead">{{ . }}</p>
+                <p class="list__lead post__lead">{{ $lead }}</p>
                 {{- end }}
                 {{ with partial "post_meta.html" . -}}
                 <div class="list__meta meta">{{ . }}</div>
@@ -87,31 +87,83 @@
         </article>
     {{ end }}
 {{ else }}
-    {{/* Manejo normal para posts de blog (código original) */}}
-    <article class="list__item post">
-        {{ partial "post_thumbnail.html" (dict "class" "list" "page" .) }}
-        <header class="list__header">
-            <h2 class="list__title post__title">
-                <a href="{{ .RelPermalink }}" rel="bookmark">
-                {{ .Title }}
-                </a>
-            </h2>
-            {{- with .Params.lead }}
-            <p class="list__lead post__lead">{{ . }}</p>
+    {{/* NUEVA LÓGICA: Manejo para posts normales que usan data files */}}
+    {{/* Intentar buscar data file basado en el nombre del archivo */}}
+    {{ $dataFile := index .Site.Data.content $contentKey }}
+
+    
+    {{ if $dataFile }}
+        {{/* Post con data file - usar contenido multiidioma */}}
+        {{ $title := index $dataFile.title $currentLang }}
+        {{ $lead := index $dataFile.lead $currentLang }}
+        {{ $summary := index $dataFile.summary $currentLang }}
+        
+        {{/* Si no hay summary en data, generar desde content */}}
+        {{ if not $summary }}
+            {{ $content := index $dataFile.content $currentLang }}
+            {{ $summary = $content | markdownify | plainify | truncate 150 }}
+        {{ end }}
+        
+        {{/* Si no hay título en data file, usar el del frontmatter */}}
+        {{ if not $title }}
+            {{ $title = .Title }}
+        {{ end }}
+        
+        <article class="list__item post">
+            {{ partial "post_thumbnail.html" (dict "class" "list" "page" .) }}
+            <header class="list__header">
+                <h2 class="list__title post__title">
+                    <a href="{{ .RelPermalink }}" rel="bookmark">
+                        {{ $title }}
+                    </a>
+                </h2>
+                {{- if $lead }}
+                <p class="list__lead post__lead">{{ $lead }}</p>
+                {{- else }}
+                    {{- with .Params.lead }}
+                    <p class="list__lead post__lead">{{ . }}</p>
+                    {{- end }}
+                {{- end }}
+                {{ with partial "post_meta.html" . -}}
+                <div class="list__meta meta">{{ . }}</div>
+                {{- end }}
+            </header>
+            <div class="content list__excerpt post__content clearfix">
+                {{ $summary | markdownify }}
+            </div>
+            {{- if .Site.Params.readmore }}
+            <div class="list__footer clearfix">
+                <a class="list__footer-readmore btn" href="{{ .RelPermalink }}">{{ T "read_more" }}</a>
+            </div>
             {{- end }}
-            {{ with partial "post_meta.html" . -}}
-            <div class="list__meta meta">{{ . }}</div>
+        </article>
+    {{ else }}
+        {{/* Post normal sin data file - comportamiento original */}}
+        <article class="list__item post">
+            {{ partial "post_thumbnail.html" (dict "class" "list" "page" .) }}
+            <header class="list__header">
+                <h2 class="list__title post__title">
+                    <a href="{{ .RelPermalink }}" rel="bookmark">
+                    {{ .Title }}
+                    </a>
+                </h2>
+                {{- with .Params.lead }}
+                <p class="list__lead post__lead">{{ . }}</p>
+                {{- end }}
+                {{ with partial "post_meta.html" . -}}
+                <div class="list__meta meta">{{ . }}</div>
+                {{- end }}
+            </header>
+            <div class="content list__excerpt post__content clearfix">
+                {{ .Summary }}
+            </div>
+            {{- if .Site.Params.readmore }}
+            {{- if .Truncated }}
+            <div class="list__footer clearfix">
+                <a class="list__footer-readmore btn" href="{{ .RelPermalink }}">{{ T "read_more" }}</a>
+            </div>
             {{- end }}
-        </header>
-        <div class="content list__excerpt post__content clearfix">
-            {{ .Summary }}
-        </div>
-        {{- if .Site.Params.readmore }}
-        {{- if .Truncated }}
-        <div class="list__footer clearfix">
-            <a class="list__footer-readmore btn" href="{{ .RelPermalink }}">{{ T "read_more" }}</a>
-        </div>
-        {{- end }}
-        {{- end }}
-    </article>
+            {{- end }}
+        </article>
+    {{ end }}
 {{ end }}

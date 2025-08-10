@@ -4,7 +4,7 @@ lead: "Art. original por Eric J. Nichols, KL7AJ."
 date: 2010-11-24
 categories:
   - "Radio"
-  - "Antenas"
+  - "Antena"
 tags:
   - "Antena"
   - "Radio"
