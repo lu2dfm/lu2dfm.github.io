@@ -48,33 +48,6 @@
 <body class="body">
     <div class="container container--outer">
 
-<!--
-<details class="debug-panel">
-  <summary>DEBUG: Template Info (click to expand)</summary>
-  <div>
-    <h4>Current Template Chain</h4>
-    <ul>
-      <li><strong>Kind:</strong> {{ .Kind }}</li>
-      <li><strong>Type:</strong> {{ .Type }}</li>
-      <li><strong>Layout:</strong> {{ .Layout }}</li>
-      <li><strong>Current Template:</strong> {{ . }}</li>
-    </ul>
-    
-    <h4>Template Lookup Order</h4>
-    <pre>
-{{ $lookupOrder := slice 
-  (printf "%s/%s.html" .Type .Layout)
-  (printf "%s/single.html" .Type)
-  (printf "_default/%s.html" .Layout)
-  "_default/single.html"
-}}
-{{ range $lookupOrder }}
-• {{ . }} {{ if templates.Exists . }}✅{{ else }}❌{{ end }}
-{{ end }}
-    </pre>
-  </div>
-</details>
--->
         {{ block "header" . }}{{ partial "header.html" . }}{{ end }}
         <div class="wrapper flex">
             <div class="primary">

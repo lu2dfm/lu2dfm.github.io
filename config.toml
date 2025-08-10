@@ -81,21 +81,24 @@ widgets = ["languages",  "series-navigation", "recent", "categories", "taglist",
 # Languages
 #------------------------------------------------------------------------------
 
-[languages.es]
-languageName = 'Castellano'
-weight = 1
-subtitle = 'Radio' 
-##, electrónica, software libre'
 
-[languages.pt-br]
-languageName = 'Português'
-weight = 2
-subtitle = 'Radio' 
+[languages.es]
+  languageName = "Castellano"
+  weight = 1
+  [languages.es.params]
+    subtitle = "Radio"
 
 [languages.en]
-languageName = 'English'
-weight = 3
-subtitle = 'Radio' 
+  languageName = "English"
+  weight = 3
+  [languages.en.params]
+    subtitle = "Radio"
+
+[languages.pt-br]
+  languageName = "Português"
+  weight = 2
+  [languages.pt-br.params]
+    subtitle = "Radio"
 
 
 #------------------------------------------------------------------------------

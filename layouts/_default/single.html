@@ -4,39 +4,6 @@
 {{- $contentKey :=  .File.BaseFileName -}}
 {{- $contentData := index .Site.Data.content $contentKey -}}
 
-<!--
-<pre>
-{{ printf "Current template: %s" . }}
-{{ printf "Kind: %s" .Kind }}
-{{ printf "Type: %s" .Type }}
-{{ printf "Layout: %s" .Layout }}
-{{ printf "CurrentContentFile: %s" .File.Path }}
-Current Language: {{ .Site.Language.Lang }}
-Page URL: {{ .RelPermalink }}
-IsTranslated: {{ .IsTranslated }}
-Translations count: {{ len .Translations }}
-AllTranslations count: {{ len .AllTranslations }}
-Translations: {{ range .Translations }}{{ .Language.Lang }}: {{ .RelPermalink }} | {{ end }}
-Section: {{ .Section }}
-Type: {{ .Type }}
-</pre>
-<pre>
-File Path: {{ .File.Path }}
-File Dir: {{ .File.Dir }}
-Language Lang: {{ .Language.Lang }}
-Language ContentDir: {{ .Language.ContentDir }}
-
-
-Mount Info:
-{{- range .Site.AllPages -}}
-  {{- if eq .File.LogicalName "contact.md" -}}
-    File: {{ .File.Path }} | Lang: {{ .Language.Lang }} | URL: {{ .RelPermalink }}
- {{ else }}
-    File: {{ .File.Path }} | Lang: {{ .Language.Lang }} | URL: {{ .RelPermalink }}
-  {{- end -}}
-{{- end -}}
-</pre>
--->
 
 
 {{ if $contentData }}

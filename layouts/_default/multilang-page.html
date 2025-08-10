@@ -4,34 +4,6 @@
 {{- $contentKey :=  .File.BaseFileName -}}
 {{- $contentData := index .Site.Data.pages $contentKey -}}
 
-<!--
-<pre>
-Current Language: {{ .Site.Language.Lang }}
-Page URL: {{ .RelPermalink }}
-IsTranslated: {{ .IsTranslated }}
-Translations count: {{ len .Translations }}
-AllTranslations count: {{ len .AllTranslations }}
-Translations: {{ range .Translations }}{{ .Language.Lang }}: {{ .RelPermalink }} | {{ end }}
-Section: {{ .Section }}
-Type: {{ .Type }}
-</pre>
-<pre>
-File Path: {{ .File.Path }}
-File Dir: {{ .File.Dir }}
-Language Lang: {{ .Language.Lang }}
-Language ContentDir: {{ .Language.ContentDir }}
-
-
-Mount Info:
-{{- range .Site.AllPages -}}
-  {{- if eq .File.LogicalName "contact.md" -}}
-    File: {{ .File.Path }} | Lang: {{ .Language.Lang }} | URL: {{ .RelPermalink }}
-  {{- end -}}
-{{- end -}}
-
-</pre>
-
--->
 
 
 {{ if $contentData }}
