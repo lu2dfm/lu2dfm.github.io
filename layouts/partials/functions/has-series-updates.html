@@ -1,0 +1,44 @@
+{{/* 
+Función: Detectar si una serie tiene novedades
+Input: 
+  - .series: nombre de la serie
+  - .indexPage: página índice de la serie (opcional)
+  - .currentLang: idioma actual
+Output: true/false
+*/}}
+
+{{- $seriesName := .series }}
+{{- $indexPage := .indexPage }}
+{{- $currentLang := .currentLang }}
+{{- $hasUpdates := false }}
+
+{{/* Si no se pasó indexPage, buscarla */}}
+{{- if not $indexPage }}
+  {{- range site.RegularPages }}
+    {{- if and 
+      (eq .Params.series $seriesName)
+      (.Params.series_role)
+      (eq .Params.series_role "index")
+      (eq .Language.Lang $currentLang) }}
+      {{- $indexPage = . }}
+      {{- break }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+
+{{/* Si encontramos el índice, verificar si hay artículos más nuevos */}}
+{{- if $indexPage }}
+  {{- $indexDate := $indexPage.Date }}
+  {{- range site.RegularPages }}
+    {{- if and 
+      (eq .Params.series $seriesName)
+      (not (.Params.series_role))
+      (eq .Language.Lang $currentLang)
+      (gt .Date $indexDate) }}
+      {{- $hasUpdates = true }}
+      {{- break }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+
+{{- return $hasUpdates }}

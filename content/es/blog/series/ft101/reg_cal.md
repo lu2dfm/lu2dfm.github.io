@@ -7,7 +7,7 @@ series_components:
   - navigation
   - index
 thumbnail: "/post-images/2025/ft101/bom/reg_unit-th.png"
-catergories:
+categories:
     - "Radio"
 tags: 
   - "FT-101"
@@ -20,5 +20,5 @@ tags:
   - "radioaficionados"
   - "radio" 
 
-section_title: "REG CALIB UNIT BOM"
+weight: 80
 ---

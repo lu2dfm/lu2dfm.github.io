@@ -1,0 +1,100 @@
+{{/* Solo mostrar en páginas de series */}}
+{{ if and .Params.series (eq .Type "series") }}
+{{ $currentLang := .Language.Lang }}
+{{ $currentSeries := .Params.series }}
+{{ $currentPage := . }}
+
+{{/* Obtener todos los artículos de la serie */}}
+{{ $seriesPages := where .Site.RegularPages ".Params.series" "eq" $currentSeries }}
+{{ $seriesPages = where $seriesPages ".Language.Lang" $currentLang }}
+
+{{ if gt (len $seriesPages) 1 }}
+<div class="widget-series-nav widget">
+    <h4 class="widget__title">🧩 {{ upper $currentSeries }}</h4>
+    <div class="widget__content">
+        
+        {{/* Ordenar por weight, después por fecha como fallback */}}
+        {{ $sortedPages := sort $seriesPages ".Params.weight" "asc" }}
+        
+        {{/* Encontrar posición actual y páginas anterior/siguiente */}}
+        {{ $currentIndex := 0 }}
+        {{ $prevPage := "" }}
+        {{ $nextPage := "" }}
+        
+        {{ range $index, $page := $sortedPages }}
+            {{ if eq $page.Permalink $currentPage.Permalink }}
+                {{ $currentIndex = $index }}
+                {{ if gt $index 0 }}
+                    {{ $prevPage = index $sortedPages (sub $index 1) }}
+                {{ end }}
+                {{ if lt $index (sub (len $sortedPages) 1) }}
+                    {{ $nextPage = index $sortedPages (add $index 1) }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+        
+        {{/* Navegación anterior/siguiente con iconos Unicode */}}
+        <div class="series-nav-controls">
+            {{ if $prevPage }}
+                <a href="{{ $prevPage.Permalink }}" class="series-nav-btn series-nav-prev" title="{{ $prevPage.Title }}">
+                    <span style="color: #007acc;">⬅️</span> {{ T "series_nav_previous" }}
+                </a>
+            {{ else }}
+                <span class="series-nav-btn series-nav-disabled" style="color: #ccc;">⬅️ {{ T "series_nav_previous" }}</span>
+            {{ end }}
+            
+            {{ if $nextPage }}
+                <a href="{{ $nextPage.Permalink }}" class="series-nav-btn series-nav-next" title="{{ $nextPage.Title }}">
+                    {{ T "series_nav_next" }} <span style="color: #007acc;">➡️</span>
+                </a>
+            {{ else }}
+                <span class="series-nav-btn series-nav-disabled" style="color: #ccc;">{{ T "series_nav_next" }} ➡️</span>
+            {{ end }}
+        </div>
+        
+        {{/* Lista de artículos con indicador de posición */}}
+        <ul class="series-nav-list">
+            {{ range $index, $page := $sortedPages }}
+                {{ $isIndex := and $page.Params.series_role (eq $page.Params.series_role "index") }}
+                {{ $isCurrent := eq $page.Permalink $currentPage.Permalink }}
+                
+                <li class="series-nav-item{{ if $isCurrent }} series-nav-current{{ end }}">
+                    {{ if $isCurrent }}
+                        <span class="series-nav-indicator" style="color: #ff6b35;">👉</span>
+                    {{ else }}
+                        <span class="series-nav-number">{{ add $index 1 }}.</span>
+                    {{ end }}
+                    
+                    {{ if $isIndex }}
+                        <span class="series-nav-icon">🧩</span>
+                    {{ else }}
+                        <span class="series-nav-icon" style="color: #28a745;">📄</span>
+                    {{ end }}
+                    
+                    {{/* Obtener título desde data files */}}
+                    {{ $pageTitle := $page.Title }}
+                    {{ $contentKey := $page.File.BaseFileName }}
+                    {{ $seriesData := index $.Site.Data.series $page.Params.series }}
+                    {{ $contentData := index $seriesData $contentKey }}
+                    {{ if $contentData }}
+                        {{ $pageTitle = index $contentData.title $currentLang }}
+                    {{ end }}
+                    
+                    {{ if $isCurrent }}
+                        <strong>{{ $pageTitle }}</strong>
+                        <small class="series-nav-here"> ({{ T "series_nav_current" }})</small>
+                    {{ else }}
+                        <a href="{{ $page.Permalink }}" class="series-nav-link">{{ $pageTitle }}</a>
+                    {{ end }}
+                </li>
+            {{ end }}
+        </ul>
+        
+        {{/* Mostrar progreso */}}
+        <div class="series-nav-progress">
+            <small>{{ T "series_nav_progress" (dict "current" (add $currentIndex 1) "total" (len $sortedPages)) }}</small>
+        </div>
+    </div>
+</div>
+{{ end }}
+{{ end }}

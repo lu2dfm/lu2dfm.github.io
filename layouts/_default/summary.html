@@ -5,7 +5,7 @@
     {{/* Manejo para páginas de series usando data files */}}
     {{ $seriesData := index .Site.Data.series .Params.series }}
     {{ $contentData := index $seriesData $contentKey }}
-
+    
     {{ if $contentData }}
         {{/* Usar data de la serie */}}
         {{ $title := index $contentData.title $currentLang }}
@@ -16,12 +16,20 @@
             {{ $content := index $contentData.content $currentLang }}
             {{ $summary = $content | markdownify | plainify | truncate 150 }}
         {{ end }}
-
+        
         <article class="list__item post">
             {{ partial "post_thumbnail.html" (dict "class" "list" "page" .) }}
             <header class="list__header">
                 <h2 class="list__title post__title">
                     <a href="{{ .RelPermalink }}" rel="bookmark">
+                        {{- if .Params.series }}
+                            {{- $hasUpdates := partial "functions/has-series-updates.html" (dict "series" .Params.series "currentLang" $currentLang) }}
+                            {{- if $hasUpdates }}
+                                🧩 ⚡{{ T "series_updated" }} 
+                            {{- else }}
+                                🧩 
+                            {{- end }}
+                        {{- end }}
                         {{ $title }}
                     </a>
                 </h2>
@@ -48,6 +56,14 @@
             <header class="list__header">
                 <h2 class="list__title post__title">
                     <a href="{{ .RelPermalink }}" rel="bookmark">
+                        {{- if .Params.series }}
+                            {{- $hasUpdates := partial "functions/has-series-updates.html" (dict "series" .Params.series "currentLang" $currentLang) }}
+                            {{- if $hasUpdates }}
+                                🧩 ⚡{{ T "series_updated" }} 
+                            {{- else }}
+                                🧩 
+                            {{- end }}
+                        {{- end }}
                         {{ .Title }}
                     </a>
                 </h2>

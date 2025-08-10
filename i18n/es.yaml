@@ -23,3 +23,20 @@ trimmer_capacitor: "Capacitor Trimmer"
 inductor: "Inductor"
 
 series_articles_title: "Artículos de la serie:"
+series_nav_previous: "Anterior"
+series_nav_next: "Siguiente"
+series_nav_current: "USTED ESTÁ AQUÍ"
+series_nav_progress: "Artículo {{ .current }} de {{ .total }}"
+series_updated: "NUEVO"
+
+blog: "Blog"
+apps: "Apps"
+links: "Enlaces"
+wanted: "Se Busca"
+about: "Acerca de"
+contact: "Contacto"
+
+apps_open: "Abrir App"
+apps_code: "Código"
+apps_coming_soon: "Próximamente"
+

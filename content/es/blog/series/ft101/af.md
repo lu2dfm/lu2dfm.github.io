@@ -8,7 +8,7 @@ series_components:
   - navigation
   - index
 thumbnail: "/post-images/2025/ft101/bom/af_unit-th.png"
-catergories:
+categories:
     - "Radio"
 tags: 
   - "FT-101"
@@ -20,4 +20,5 @@ tags:
   - "restoration"
   - "radioaficionados"
   - "radio" 
+weight: 10
 ---

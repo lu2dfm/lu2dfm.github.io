@@ -1,5 +1,5 @@
 ---
-date: 2025-08-02 16:44:26-03:00
+date: 2025-08-10 06:44:26-03:00
 draft: false
 type: "series"
 series: "ft101"
@@ -8,7 +8,7 @@ series_components:
   - navigation
   - index
 thumbnail: "/post-images/2025/ft101/bom/mixer_unit-th.png"
-catergories:
+categories:
     - "Radio"
 tags: 
   - "FT-101"
@@ -20,4 +20,5 @@ tags:
   - "restoration"
   - "radioaficionados"
   - "radio" 
+weigth: 66
 ---

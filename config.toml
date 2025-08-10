@@ -72,7 +72,7 @@ languageCode = "en"
   list = "right"
   single = "right"
 
-widgets = ["languages", "apps", "recent", "categories", "taglist", "social" ]
+widgets = ["languages",  "series-navigation", "recent", "categories", "taglist", "social" ]
 
 
 
@@ -137,17 +137,41 @@ target = 'content'
 lang = 'en'
 
 
-
 [[menu.main]]
   name = "Blog"
   identifier = "blog"
-  weight = 2
-[[menu.footer]]
-  name = "Acerca de"
+  url = "/"
+  weight = 10
+
+[[menu.main]]
+  name = "Apps"
+  identifier = "apps"
+  pageRef = "/apps"
   weight = 20
+
+[[menu.main]]
+  name = "Links" 
+  identifier = "links"
+  pageRef = "/links"
+  weight = 30
+
+[[menu.main]]
+  name = "Wanted"
+  identifier = "wanted"
+  pageRef = "/wanted"
+  weight = 40
+
+[[menu.main]]
+  name = "About"
   identifier = "about"
+  pageRef = "/about"
+  weight = 50
 
-
+[[menu.main]]
+  name = "Contact"
+  identifier = "contact"
+  pageRef = "/contact"
+  weight = 60
 
 [markup]
   [markup.goldmark]

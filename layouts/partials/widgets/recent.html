@@ -2,7 +2,6 @@
 
 {{- $recent := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
 {{- $recent = partial "functions/filter-series-posts.html" (dict "pages" $recent) }}
-
 {{- if $recent }}
 <div class="widget-recent widget">
     <h4 class="widget__title">{{ T "recent_title" }}</h4>
@@ -12,10 +11,9 @@
             {{- $currentLang := site.Language.Lang }}
             {{- $contentKey := .File.BaseFileName }}
             {{- $title := .Title }}
-            
+
             {{- /* Determinar si es una serie y obtener título apropiado */ -}}
             {{- if and .Params.series (eq .Type "series") }}
-
                 {{- /* Buscar en data de series */ -}}
                 {{- $seriesData := index site.Data.series .Params.series }}
                 {{- $contentData := index $seriesData $contentKey }}
@@ -33,11 +31,16 @@
                     {{- end }}
                 {{- end }}
             {{- end }}
-            
+
             <li class="widget__item">
                 <a class="widget__link" href="{{ .RelPermalink }}">
                     {{- if .Params.series }}
-                        <span class="series-indicator">🧩 </span>
+                        {{- $hasUpdates := partial "functions/has-series-updates.html" (dict "series" .Params.series "currentLang" $currentLang) }}
+                        {{- if $hasUpdates }}
+                            <span class="series-indicator">🧩 ⚡{{ T "series_updated" }}</span>
+                        {{- else }}
+                            <span class="series-indicator">🧩 </span>
+                        {{- end }}
                     {{- end }}
                     {{ $title }}
                 </a>

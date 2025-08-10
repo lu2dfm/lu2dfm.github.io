@@ -1,46 +1,23 @@
+
 {{- $pages := .pages }}
 {{- $filtered := slice }}
 
 {{- range $pages }}
   {{- $shouldShow := false }}
-  
+
   {{- /* Verificar si tiene series */ -}}
   {{- $hasSeries := isset .Params "series" }}
   {{- $hasSeriesRole := isset .Params "series_role" }}
-  
+
   {{- if not $hasSeries }}
-    {{- /* No es parte de ninguna serie */ -}}
+    {{- /* No es parte de ninguna serie - siempre mostrar */ -}}
     {{- $shouldShow = true }}
   {{- else }}
-    {{- /* Es parte de una serie */ -}}
-    {{- $seriesName := .Params.series }}
+    {{- /* Es parte de una serie - solo mostrar si es índice */ -}}
     {{- $isIndex := and $hasSeriesRole (eq .Params.series_role "index") }}
-    
-    {{- if $isIndex }}
-      {{- /* Es el index de la serie */ -}}
-      {{- $shouldShow = true }}
-    {{- else }}
-      {{- /* Es post de serie pero no index, buscar el index */ -}}
-      {{- $serieIndex := "" }}
-      
-      {{- range site.RegularPages }}
-        {{- if and 
-          (isset .Params "series")
-          (eq .Params.series $seriesName)
-          (isset .Params "series_role")
-          (eq .Params.series_role "index") }}
-          {{- $serieIndex = . }}
-          {{- break }}
-        {{- end }}
-      {{- end }}
-      
-      {{- /* Mostrar si es más nuevo que el index */ -}}
-      {{- if and $serieIndex (gt .Date $serieIndex.Date) }}
-        {{- $shouldShow = true }}
-      {{- end }}
-    {{- end }}
+    {{- $shouldShow = $isIndex }}
   {{- end }}
-  
+
   {{- if $shouldShow }}
     {{- $filtered = $filtered | append . }}
   {{- end }}

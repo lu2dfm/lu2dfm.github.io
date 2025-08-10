@@ -1,4 +1,5 @@
 {{ define "main" }}
+
 <main class="main list" role="main">
     {{- with .Title }}
     <header class="main__header">
@@ -7,10 +8,33 @@
     {{- end }}
     {{- with .Content }}
     <div class="content main__content clearfix">
-        {{ . }}aaa
+        {{ . }}
     </div>
     {{- end }}
-    {{- range .Paginator.Pages }}
+    
+    {{/* Construir lista manualmente para incluir series en taxonomías */}}
+    {{- $pages := slice }}
+    {{- if or (eq .Kind "taxonomy") (eq .Kind "term") }}
+        {{/* Página de categoría/tag - buscar manualmente */}}
+        {{- $allPages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+        {{- $taxonomyKey := .Data.Plural }}
+        {{- $termName := .Data.Term }}
+        {{- range $allPages }}
+            {{- $termList := index .Params $taxonomyKey }}
+            {{- if and $termList (in $termList $termName) }}
+                {{- $pages = $pages | append . }}
+            {{- end }}
+        {{- end }}
+    {{- else }}
+        {{/* Otras páginas - usar RegularPages normal */}}
+        {{- $pages = .RegularPages }}
+    {{- end }}
+    
+    {{/* Aplicar filtro de series */}}
+    {{- $pages = partial "functions/filter-series-posts.html" (dict "pages" $pages) }}
+    {{- $pag := .Paginate $pages }}
+    
+    {{- range $pag.Pages }}
         {{- .Render "summary" }}
     {{- end }}
 </main>

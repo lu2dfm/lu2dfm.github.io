@@ -9,7 +9,7 @@ series_components:
   - index
 
 thumbnail: "/post-images/2025/ft101/bom/rect_unit-th.png"
-catergories:
+categories:
     - "Radio"
 tags: 
   - "FT-101"
@@ -22,5 +22,5 @@ tags:
   - "radioaficionados"
   - "radio" 
 
-section_title: "RECT UNIT BOM"
+weight: 83
 ---

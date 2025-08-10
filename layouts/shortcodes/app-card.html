@@ -1,0 +1,48 @@
+{{- $title := .Get "title" }}
+{{- $description := .Get "description" }}
+{{- $icon := .Get "icon" }}
+{{- $url := .Get "url" }}
+{{- $github := .Get "github" }}
+{{- $tags := .Get "tags" }}
+{{- $disabled := .Get "disabled" }}
+
+<div class="app-card{{ if $disabled }} app-card--disabled{{ end }}">
+    <div class="app-card__header">
+        <div class="app-card__icon">{{ $icon }}</div>
+        <h3 class="app-card__title">{{ $title }}</h3>
+    </div>
+    
+    <p class="app-card__description">{{ $description }}</p>
+    
+    {{ if $tags }}
+    <div class="app-card__tags">
+        {{ range split $tags "," }}
+        <span class="app-card__tag">{{ trim . " " }}</span>
+        {{ end }}
+    </div>
+    {{ end }}
+    
+    <div class="app-card__actions">
+        {{ if and $url (ne $url "#") (not $disabled) }}
+        <a href="{{ $url }}" 
+           class="app-card__btn app-card__btn--primary" 
+           target="_blank" 
+           rel="noopener noreferrer">
+            🚀 {{ T "apps_open" | default "Abrir App" }}
+        </a>
+        {{ else if $disabled }}
+        <button class="app-card__btn app-card__btn--primary" disabled>
+            🚧 {{ T "apps_coming_soon" | default "Próximamente" }}
+        </button>
+        {{ end }}
+        
+        {{ if and $github (not $disabled) }}
+        <a href="{{ $github }}" 
+           class="app-card__btn app-card__btn--secondary" 
+           target="_blank" 
+           rel="noopener noreferrer">
+            💻 {{ T "apps_code" | default "Código" }}
+        </a>
+        {{ end }}
+    </div>
+</div>

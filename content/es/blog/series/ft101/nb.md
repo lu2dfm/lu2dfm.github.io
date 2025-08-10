@@ -9,7 +9,7 @@ series_components:
   - index
 
 thumbnail: "/post-images/2025/ft101/bom/nb_unit-th.png"
-catergories:
+categories:
     - "Radio"
 tags: 
   - "FT-101"
@@ -21,4 +21,5 @@ tags:
   - "restoration"
   - "radioaficionados"
   - "radio" 
+weigth: 65
 ---

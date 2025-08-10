@@ -8,7 +8,7 @@ series_components:
   - navigation
   - index
 thumbnail: "/post-images/2025/ft101/bom/chassis-th.png"
-catergories:
+categories:
     - "Radio"
 tags: 
   - "FT-101"
@@ -21,4 +21,6 @@ tags:
   - "radioaficionados"
   - "radio"
 section_title: "AF UNIT BOM"
+
+weight: 100
 ---
