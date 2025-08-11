@@ -182,3 +182,11 @@ lang = 'en'
       footnote = true
     [markup.goldmark.renderer]
       unsafe = true
+
+### SEO
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+[sitemap]
+changefreq = "monthly"
+priority = 0.5
+
