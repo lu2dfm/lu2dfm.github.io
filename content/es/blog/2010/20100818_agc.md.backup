@@ -1,0 +1,219 @@
+---
+title: "AGC, ganancia de RF o como usar el receptor"
+date: 2010-08-18
+categories:
+  - "Radio"
+tags:
+  - "Radio"
+  - "Receptor"
+#thumbnail: "post-images/pre2024/agc.jpg"
+---
+
+
+#### AGC, Ganancia de RF o como se usa el receptor
+
+Rev. 20110522
+Rev. 20121101
+
+Motiva esta breve nota una conversación que he tenido recientemente con algunos
+colegas.
+
+Parece ser que la mayoría de los operadores consultados, por no decir todos
+menos uno, usan sus receptores en las bandas bajas de HF con la ganancia de RF
+al máximo y la de audio (o volumen) variando según las señales. Se ve que, como
+no hay indicación en los manuales de muchos transceptores y no todo el mundo
+lee el venerable Handbook en estos tiempos, muchos operadores no saben como
+usar un receptor.
+
+El asunto es así: prácticamente todo receptor moderno (y moderno significa de
+la Segunda Guerra para acá) tiene demasiada ganancia de RF + FI en las bandas
+bajas. La mayoría de los receptores tiene mas ganancia que la necesaria en
+todas las bandas de HF en condiciones de ruido local urbano o suburbano por
+debajo de 18 MHz.
+
+18MHz aproximadamente es la frecuencia por debajo de la cual el ruido que
+predomina es de origen terrestre (producido por el hombre o de origen
+atmosférico), a diferencia de lo que pasa por encima de esa frecuencia donde
+predomina el ruido cósmico. El piso de ruido de cualquier receptor práctico
+debería ser el ruido térmico de la primer etapa de RF por encima de esta
+frecuencia.
+
+El nivel de ruido en áreas rurales alejadas de centros urbanos o cualquier otra
+fuente de ruido local (líneas de transmisión de energía eléctrica, etc.) en las
+bandas bajas de HF es muy inferior al que se experimenta en zonas urbanas y
+suburbanas. Tom Rauch, W8JI[^1] establece que en su estación, en la banda de
+160m, para un ancho de banda de 350Hz durante el día, en una antena vertical
+omnidireccional de 60 metros de altura, el nivel de ruido es -130dBm.
+
+Durante las noches, con la banda abierta, el nivel de ruido aumenta entre 5 y
+15dB. Rauch señala que para ubicaciones suburbanas el nivel de ruido esperable
+es del orden de unos 20dB mas intenso que en ubicaciones rurales silenciosas, y
+una ubicación urbana tiene otros 15dB de ruido adicional, es decir que en una
+ubicación urbana para las condiciones expresdas (160m, BW=350Hz, día) el piso
+de ruido estará alrededor de los -95dBm. En contraste, una ubicación suburbana
+relativamente "buena" tendrá solo unos -115 dBm.
+
+Esto hace que un receptor en una zona urbana
+tenga el piso de ruido 35dB a 40dB mas alto que si estuviera ubicado en un lugar
+silencioso. Recuérdese además que la potencia de ruido es proporcional al ancho
+de banda; Tom usa un ejemplo sobre un ancho de banda típico para operar CW,
+pero en SSB el ancho de banda debe ser 5 o 8 veces mayor, por lo tanto la
+potencia de ruido total también será proporcionalmente mayor.
+
+Muchos de nosotros por nuestra ubicación nos vemos obligados a trabajar con
+altos niveles de ruido, cuyo origen incluso está muy cerca de nuestras antenas.    
+
+#### AGC
+En un receptor superheterodino, el Automatic Gain Control (AGC) o Control
+Automático de Ganancia (CAG) es un mecanismo de variación de ganancia de los
+amplificadores de FI y/o RF en función inversamente proporcional a la
+intensidad de la señal detectada. A trazo grueso, en AM esto significa que a
+mayor tensión en la salida rectificada del detector de AGC, se actúa reduciendo
+la ganancia de las etapas de FI y/o RF para mantener la señal de salida
+relativamente constante[^2].
+
+El AGC es un mecanismo que proporciona comodidad al oyente que experimenta
+fadding (particularmente en receptores de broadcasting) manteniendo el nivel de
+salida relativamente constante cuando la intensidad de la señal deseada es
+suficientemente fuerte para mantener el sistema AGC dentro de sus parámetros de
+funcionamiento, y no hay señales interferentes importantes en la banda de paso
+del receptor. Es claro que estas condiciones son comunes en las bandas de
+radiodifusión, pero no en las de aficionados.  
+
+En las bandas de aficionados el AGC es un accesorio útil cuando se está
+trabajando con señales fuertes y bien espaciadas o cuando se está haciendo una
+escucha casual con solo una señal importante en la banda de paso del receptor,
+y no hay interés en trabajar señales débiles. El resto del tiempo el AGC es un
+impedimento y no una ayuda; todas las tecnologías de AGC que existen introducen
+distorsión, reduciendo la inteligibilidad de las señales débiles y provocando
+mayor cansancio en el operador que así trabaja durante períodos prolongados.  
+
+Existen varios transceptores de las conocidas marcas japonesas que no disponen
+de la posibilidad de trabajar sin AGC. Casi todos pertenecen al período que va
+desde finales de los &#39;70 hasta mediados de los &#39;90. Estos transceptores
+pueden no ser apropiados para trabajar señales débiles dependiendo de como esté
+diseñado el lazo de AGC.  A veces se los puede modificar pero algunos que he
+podido ver están mal diseñados, y es imposible operarlos sin AGC porque las
+etapas de FI tienen tanta ganancia que al cortar la acción del AGC comienzan a
+distorsionar inmediatamente en presencia de señales moderadamente fuertes en la
+FI.
+
+Cuando algún colega dice que un receptor es "silencioso" lo que significa es
+que el AGC no está aplicando suficiente ganancia en ausencia de señales
+relativamente fuertes en la banda de paso. Esto se traduce en menor potencia de
+señal en la entrada de la etapa de audio, y se percibe como un bajo nivel de
+ruido. Dicho de otra forma, la curva de respuesta del AGC es tal que en
+condiciones de banda normales (normales para el: su antena, ubicación, etc.) y
+sin señal fuerte, ese receptor ajustado como está tiene poca acción del AGC
+(poca ganancia de RF/FI).  Pasa que el AGC tiene un umbral para empezar a
+actuar que no es alcanzado por las señales débiles. Cuando se necesita trabajar
+una señal débil con en este diseño de AGC, hay que subir el audio y RF mucho
+para poder escuchar lo que está por debajo del umbral de AGC, pero si aparece
+una señal fuerte en la banda de paso del receptor se puede terminar con un
+tímpano estropeado :(
+
+#### Ganancia de RF y ganancia de Audio
+
+El ajuste del receptor, RF y Audio 
+
+Por fortuna hoy tenemos receptores mucho mejores en varios aspectos. Sin
+embargo, es fácil usarlos de forma tal que se pierdan muchas de las ventajas
+que proporcionan. Veamos como aprovechar al máximo el receptor de la estación.   
+
+Incialmente hay que determinar cuanta ganancia se necesita: desconectar la
+antena, cortar el AGC, reducir la ganancia de RF al mínimo, elevar el volumen
+(ganancia de audio) al máximo posible justo para empezar a escuchar el ruido
+interno del receptor. Usualmente, en un receptor no demasiado malo, el volumen
+se puede poner al máximo. Se está apenas escuchando el ruido interno del
+receptor. Este paso inicial conviene hacerlo con parlante y con auriculares, y
+anotar los ajustes en cada caso. No debieran ser muy distintos. Es necesario
+repetir este procedimiento en cada banda.   
+
+Con la antena desconectada y el filtro en el ancho de banda adecuado al modo
+que se va a usar, pero en general esto se puede hacer con el filtro mas angosto
+y va a ser suficiente para todos los demás, se ajusta la ganancia de RF hasta
+que el ruido del receptor comience a oírse por encima del soplido de audio.
+Este ajuste es el máximo nivel de ganancia que se puede usar. Cualquier
+incremento de ganancia a partir de ese punto es como mínimo inútil, pero en
+general, perjudicial (ver nota al final sobre receptores SDR y filtros DSP).  
+
+Se conecta la antena, se sintoniza un lugar de la banda donde no haya señales;
+se tiene que poder escuchar el ruido externo (proveniente de la antena) por
+encima del nivel de ruido del receptor. Se agrega atenuación (con el atenuador
+incorporado o con uno externo) paso a paso hasta que no se puede percibir mas
+el ruido de la antena. En ese punto (demasiada atenuación) se reduce la
+atenuación hasta que se vuelve a escuchar el ruido de la banda.  
+
+Por lo general hará falta retocar el control de ganancia de RF porque los pasos
+del atenuador suelen ser grandes (6 o 10dB).  
+
+En los receptores que cuentan con preamplificador, será necesario establecer el
+ajuste de piso de ruido del receptor (por encima del soplido de la etapa de
+audio) con el preamplificador conectado y sin antena. Si al apagar el pre con
+la antena conectada se deja de oír el ruido de banda, significa que <i>para esa
+banda y con esa antena</i> es necesario el pre. Si se sigue percibiendo el
+ruido de banda con el pre apagado en este punto, se procede a aplicar
+atenuación tal como se explica mas arriba.
+
+#### Ruido y escucha
+Para trabajar señales no demasiado cómodas, es imperativo el uso de
+auriculares. <i>Cualquier par de auriculares es superior al mejor parlante</i>.
+En serio.
+
+Si se tiene que trabajar en un lugar ruidoso, los auriculares, o mejor aún, los
+monitores intracanal que utilizan los músicos en escena o que se venden para
+los reproductores multimedia portátiles, son insuperables.  
+
+Aquellos que pueden elegir dentro de su presupuesto un receptor moderno que
+disponga de límite de protección de alto volumen, deberían comprar uno de estos
+receptores y ajustar el nivel de protección para los auriculares que están
+usando. Esta característica ayuda muchísimo cuando se está trabajando una
+estación débil y sorpresivamente aparece dentro de la banda de paso del
+receptor un vecino cargando el lineal.
+  
+#### Conclusión
+Para los que tenemos que operar habitualmente desde ubicaciones ruidosas, es de
+capital importancia conocer el receptor y saber utilizarlo para poder
+aprovecharlo al máximo, para no vernos limitados a trabajar solamente con las
+señales que nos llegan fuertes.  
+
+La mayoría de los receptores derivan la lectura del medidor de S de la línea
+del AGC; por esta razón, en estos receptores no se tendrá lectura en el medidor
+de S cuando el AGC esté cortado o cuando el control de ganancia de RF no esté
+al máximo. En casi todos los casos es posible observar que el cero del medidor
+sube al disminuirse la ganancia de RF.    En estos casos no se podrá usar el
+medidor de S para dar el reporte de señal a la estación corresponsal, pero no
+importa: los medidores de S <i>NUNCA</i> están calibrados, la escala RST no es
+precisa, y además, con el receptor bien ajustado se podrán establecer contactos
+con estaciones que de otra manera no podrían ser trabajadas.  
+
+
+#### Actualización (20121101): 
+Estuve recibiendo algunos comentarios señalando que no todos los receptores se
+comportan del mismo modo, etc. Parece que vale la pena alguna aclaración. 
+
+Este artículo se refiere a receptores analógicos superheterodinos de simple o
+doble conversión que tengan control de ganancia de RF y AGC que se pueda
+desactivar.
+
+En particular, estos comentarios NO son aplicables a ningún receptor que tenga
+AGC implementado en software (SDR) o bien filtros digitales (DSP) ya que en
+estos casos no se puede saber como funciona el AGC a menos que se tenga acceso
+al código.
+
+En un SDR es posible que se necesite *mucha* señal llegando al ADC para que
+este pueda tomar muestras en todo su rango. Sin embargo, algunos de los
+receptores con SDR o con un filtro DSP que usé o uso son notables por el mal
+desempeño del AGC y los filtros de ruido (NF,NB) cuando la ganancia de RF es
+muy alta o muy baja: el rango del AGC se comprime (resultando en señales
+fuertes legibles pero perdiendo por completo señales moderadamente fuertes y
+débiles) y el NB distorsiona excesivamente o no llega a actuar.
+
+No obstante, yo no tengo ni usé nunca un receptor que empeore al bajar la
+ganancia de RF por el método descripto acá.
+  
+[^1]: http://www.w8ji.com/noise.htm
+[^2]: Antes de la Guerra, se solía usar el término Automatic Volume Control
+(AVC) en los receptores; la aparición de tecnologías de radio tales como la
+televisión y el RADAR, cuya señal de salida no es audio, impuso el uso del
+término AGC.  

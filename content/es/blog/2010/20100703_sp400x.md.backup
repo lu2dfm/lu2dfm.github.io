@@ -1,0 +1,341 @@
+---
+title: 'Hammarlund Super Pro SP-400-X'
+lead: 'Artículo sobre el receptor Hammarlund.'
+date: 2010-03-11
+categories:
+  - "Radio"
+tags:
+  - "Boatanchor"
+  - "Hammarlund"
+  - "Valvular"
+  - "Receptor"
+thumbnail: "post-images/pre2024/sp400x.png"
+---
+
+#### Algunas notas acerca del receptor. 
+
+El número de serie es 4-4633. El número de
+serie podría indicar 1946 como año de fabricación. Este modelo se fabricó solo
+entre 1946 y 1948, aunque podría haber algunos posteriores. 
+
+Este receptor no es un SP-400 standard. Parece que se trata de una versión
+especialmente diseñada para RTTY o servicio similar. Tiene 13 válvulas:
+
+- RF: 2 x 6K7
+- MIX: 6L7
+- OSC: 6J5 (std.  6J7)
+- 1° IF: 6K7
+- 2° y 3° IF: 6SK7
+- DET: 6H6
+- BFO: 6SJ7
+- AVC Amplifier: 6SK7
+- AVC Rectifier: 6H6
+- Pre Audio: 6J5
+- Audio Out: 6V6
+
+Aparte de 2 rectificadoras (5Y3 y 80 o 1V) en la fuente, que es separada.
+
+
+##### Diferencias con el modelo standard del SP-400-X:
+
+Por lo visto, aparentemente todos los SP-200 (BC-779 y otros) (y los
+anteriores?) tienen la bobina de antena blindada por una pantalla
+electrostática. Es decir, el acoplamiento de antena está realizado mediante un
+transformador que tiene el primaro separado del secundario por un blindaje.
+Este blindaje está representado en todos los esquemas del SP-200/BC-779 que he
+podido encontrar, pero no aparece dibujado en alguno de los esquemas del
+SP-400, aunque si en otros. Lo mas probable es que ambos receptores fueran
+iguales originalmente, y se introdujo este cambio en posteriores años de
+producción, o bien esta versión en particular no tenga el blindaje.  El
+blindaje es una placa de metal entre las dos partes del trafo, en lugar de la
+placa de isolanita igual a las que existen en las demás etapas de RF y
+oscilador. Esto presumiblemente modifique la impedancia de antena con la
+frecuencia, ya que al no haber pantalla electrostática, habrá algo de
+acoplamiento capacitivo entre las dos bobinas. 
+
+
+Esta modificación no parece ser debida a una reducción de costo de producción,
+ya que no creo que la placa de isolanita fuera mas barata que una chapa de
+aluminio. 
+
+El mezclador tenía cuando yo compré el receptor una 6K7 en lugar de la 6L7.
+Como el circuito del mezclador es igual al mostrado en el esquema, yo creo que
+debería ir originalmente la 6L7.
+
+El oscilador local es completamente distinto.  Está armado alrededor de un
+triodo 6J5, a diferencia del standard que usa un pentodo 6J7 (conectado como
+triodo); la grilla de la 6J5 está en el zócalo, mientras que en el caso de la
+6J7 está en el cap de la válvula, por lo tanto el cable que viene del circuito
+sintonizado y conmutador de banda a través del blindaje superior, también
+atraviesa el chasis para conectarse en la pata 5 del zócalo de la 6J5. El
+circuito del oscilador es diferente.
+
+El receptor no tiene noise blanker (NB), no existe directamente el circuito, ni
+el agujero en el chasis correspondiente a la 6N7 (V9) del SP-400 standard.
+Asimismo, el panel tiene grabado en relieve la leyenda SO-MO en el lugar de la
+llave del NB, por lo tanto esta es una modifición de fábrica sin dudas. 
+
+La etapa de audio no tiene la salida push-pull normal, solamente una 6V6
+single-ended. La disposición sobre el chasis, y las perforaciones
+correspondientes a las dos 6V6 de salida y el transformador no están. Esta
+también es una modificación de fábrica.
+
+El receptor probablemente se diseñó específicamente para RTTY, es decir que no
+se necesitaba potencia de salida de audio (los Super Pro standard tienen unos
+14 W de salida de audio) y la supresión de estas dos válvulas reduciría
+bastante la temperatura, mejorando la estabilidad. El transformador original,
+que corresponde en el circuito y en ubicación en el chasis al driver de la
+etapa final no estaba en el receptor cuando lo compré. La salida es una única
+6V6, como ya dije, y está ubicada en el lugar correspondiente a la driver 6F6
+en el chasis standard. La válvula preamplificadora es la misma que en el
+standard, una 6J5.
+
+
+La bornera trasera tiene marcada la salida de audio como 500 ohms y otra como
+PHONES. Probablemente hubiera un trafo chico (del tamaño del driver standard
+con doble secundario de alta impedancia) y una 6F6 como salida (es decir, el
+circuito original del pre y driver de audio) con los secundarios del
+transformador conectados directamente a la salida, uno de ellos a través del
+jack de auriculares en el frente. La 6V6 y el trafo actual de salida de audio
+son probablemente modificaciones realizadas por un propietario anterior.
+
+El hecho de que el chasis no es idéntico al chasis standard del SP-400
+indicaría que Hammarlund produjo algunos cuantos de estos receptores; yo hasta
+ahora no he podido encontrar ninguna referencia a esta versión del receptor.
+
+La fecha de fabricación asimismo es dudosa; la mayoría de las fuentes que pude
+consultar coinciden en asignar el período de fabricación del SP-400 entre 1946
+y 1948; el SP-600 estuvo aparentemente disponible ya en 1947; sin embargo, es
+posible que este receptor haya sido fabricado algún tiempo después,
+posiblemente para alguna licitación pública o bien para algún subcontrato para
+propósito específico, ya que alguien me ha dicho que Hammarlund realizó varias
+veces proyectos especiales.
+
+
+Varias de las válvulas metálicas del receptor tienen una etiqueta autoadhesiva
+tipo calco con el emblema y la leyenda "Correos y Telecomunicaciones".
+Curiosamente el receptor en sí no tiene ninguna etiqueta ni marca de inventario
+ni nada.
+
+##### Necesito:
+- Saber si alguien ha visto o utilizado este equipo antes, o fué dueño o sabe
+  de quien fue o tiene algún otro dato de la historia del receptor.
+- Cualquier información que permita aclarar o determinar si este equipo fue en
+  algún momento un modelo producido para venta, o bien corresponde a un
+  contrato para una licitación particular.
+- Saber si existen o existieron otros receptores parecidos a esta versión.
+- Saber si los calcos de las válvulas ("Correos y Telecomunicaciones") los
+  ponía el correo a sus válvulas exclusivamente, o era una especie de
+  "estampilla de aduana" para todas las válvulas importadas.
+- Una perilla de sintonía.
+- Un trafo driver original de SP-200 o SP-400.
+- Un instrumento de señal de cualquier Hammarlund Super Pro (o quien se dedica
+  a reparar instrumentos de bobina móvil, esto lo agradecería muchísimo).
+- El manual de esta versión. El circuito de esta versión.
+
+
+#### Funcionamiento:
+La radio funciona bien. Es un diseño de simple conversión con dos etapas
+sintonizadas de preselección (2 x 6K7) antes del mezclador (6L7). A
+continuación hay tres amplificadores FI (1ra 6K7, 2da y 3ra 6SK7) y el detector
+es un doble diodo (6H6). Hay un amplificador de AGC (6SK7) y detector de AGC
+separado (6H6).
+
+Aunque el mezclador 6L7 es ciertamente cuestionable (aunque no tengo muy claro
+si en los años \'30 cuando se diseñó el SP-200 había válvulas mezcladoras
+superiores como hubo después) la radio tiene una calidad de audio excepcional,
+particularmente en AM creo que es uno de los mejores receptores que he podido
+escuchar jamás, o tal vez el mejor en cuanto a baja distorsión y rango
+dinámico.
+
+Algo de esta calidad deriva de la categoría de los transformadores de FI que
+son extraordinarios, en primer lugar por la calidad de la construcción y los
+materiales, y en segundo lugar por el hecho de que son todos con núcleo de
+aire(!), lo cual produce una curva de respuesta casi plana arriba y de faldas
+muy rectas, con casi nula distorsión.
+
+Todo el centro del chasis está ocupado por el mecanismo de sintonía, el
+variable de 4 secciones de sintonía y otro variable de 12 secciones para el
+ensanche de banda fabricados especialmente para este receptor, y los
+compartimientos completamente blindados de las bobinas de las dos etapas
+preselectoras, oscilador y mezclador. Esta sección está construida de tal forma
+que su solidez y estabilidad mecánica son extraordinarias.
+
+Cada par de trimmer de ajuste (bronce) y bobina correspondiente a cada circuito
+sintonizado está montado en una placa de isolanita que a su vez va montada en
+el sub-chasis. De este sub-chasis solo salen los cables para las grillas de las
+válvulas, y un cable al primer amplificador de FI. 
+
+Sobre estos circuitos está la llave de cambio de banda que consiste en un árbol
+de levas que mueve una serie de llaves de cuchilla, o mejor dicho de tipo
+guillotina, con contactos de plata. El mecanismo de cambio está diseñado para
+minimizar el acoplamiento entre etapas y mantener las conexiones lo mas cortas
+posibles, y las levas están posicionadas de tal manera que el nuevo juego de
+contactos en el orden de rotación cierra completamente antes de que el juego
+anterior abra, para evitar arcos en los circuitos que llevan corriente.
+
+El receptor cuenta con un filtro a cristal de ancho seleccionable por una
+llave, y ajuste de fase por trimmer en el frente. Además cuenta con un control
+de ancho de banda de 3kHz a 16kHz continuamente variable que consiste en un
+árbol de levas que varía el acoplamiento entre los bobinados de cada
+transformador de FI.
+
+La sensibilidad es buena o muy buena hasta 18 o 20 MHz y se reduce un poco a
+partir de ahí y hasta los 30MHz. De todas maneras es suficiente, o por lo menos
+yo nunca pude usarlo con niveles de ruido tales que la sensibilidad se viera
+comprometida (con una antena razonable, está claro). 
+
+La sintonía se hace mediante dos diales, un dial con lectura directa de
+frecuencia graduada en pasos de 100kHz que permite sintonizar en la banda y
+cuya velocidad de sintonía es bastante rápida (particularmente para CW) y otro
+dial con una escala arbitraria de 100 divisiones que es el ensanche de banda.
+Esto permite sintonizar mas cómodamente, pero si el segundo dial no está en
+100, la lectura de frecuencia en el dial principal no representa la sintonía
+del receptor. El ensanche cubre aproximadamente 150kHz en 7MHz, y varía un poco
+en otras bandas.
+
+El receptor tiene un rango de frecuencias de 540kHz a 30MHz, en seis bandas de
+una relación algo superior a 2:1, como sigue:  - 540 a 1240 kHz - 1.24 a 2.86
+MHz - 2.85 a 6.3 MHz</p>  - 6.3 a 14.0 MHz - 13.4 a 30 MHz
+
+Es notable que se haya tomado la decisión de diseño de bandas de esta forma,
+cortando al medio la banda de broadcasting de MF (535 a 1705 kHz).  Aunque
+Hammarlund intentó vender en los años \'30 y \'40 este receptor para uso
+doméstico (y el hecho de que tiene la entrada PHONE para una bandeja tocadiscos
+y un amplificador muy poderoso para la época, características estas que parecen
+contradictorias) es claro que no comprometió el diseño para simplificar el uso
+en la banda mas usada por el público general.
+
+La estabilidad del receptor a corto plazo es malísima, en los primeros quince o
+veinte minutos puede llegar a tironear hasta 50 o 70 kHz. Estas radios fueron
+diseñadas para servicio continuo, y aparentemente a nadie le interesaba
+demasiado el hecho de que para que estabilice necesita estar encendida unas
+cuantas horas. La estabilidad está basada solamente en el sistema mecánico del
+equipo, no hay ninguna compensación eléctrica (ni siquiera una válvula VR en el
+oscilador). 
+
+A partir de los primeros 20 minutos el receptor es suficientemente estable como
+para escuchar cómodamente una Broadcasting en cualquier banda, pero no para CW.
+A partir de la cuarta hora la estabilidad mejora y después de un día o día y
+medio la estabilidad es bastante buena (si no hay aire acondicionado
+modificando demasiado la temperatura ambiente), unas pocas decenas de c.p.s., y
+es completamente apto para escuchar banda lateral y CW.
+
+##### Contexto:
+Comenzando en 1931 Hammarlund produjo una línea de receptores de onda corta
+denominados Comet Pro. El Comet Pro era un receptor superheterodino de
+excelente calidad y estaba entre los mejores de los tempranos años \'30.  Usaba
+8 válvulas y juegos de bobinas intercambiables para cubrir en cuatro bandas de
+240 a 550 metros (en esos años no se hablaba de frecuencias...).
+
+En 1936 Hammarlund introduce un nuevo receptor denominado Super Pro. El diseño
+del Super Pro comienza tres o cuatro años antes y es profusamente anunciado por
+el mismo Hammarlund. Estos receptores incorporan avanzados diseños para su
+época: AGC amplificado, BFO calibrado, filtros de cristal, bobina de antena con
+blindaje electrostático, doble amplificador de RF, y llave de cambio de bandas. 
+
+Esta última característica es muy notable, porque el único receptor de la época
+que es comparable (y según algunos superior) a los Super Pro en cuanto a
+desempeño, bajo ruido y baja distorsión adecuados para trabajar señales
+débiles, es el National HRO, que como la mayoría de los buenos receptores de
+pre-guerra, usaba un juego de bobinas intercambiables para cada banda (existió
+un hoy rarísimo receptor de RCA denominado AR-60 que sería comparable al Super
+Pro en este aspecto. Este receptor costaba unos US$ 600 nuevo en 1936, en plena
+Depresión; no se debe haber vendido bien, por lo cual existen pocos ejemplares.
+Como referencia, un Chevrolet Master Deluxe costaba US$ 560 en 1935. El Super
+Pro apareció en 1936 con un precio de unos US$ 400, aunque algunas fuentes
+indican que algunos negocios del ramo los vendían con importantes descuentos).
+
+El otro receptor de excelente performance de aquellos últimos años no
+aparecería hasta 1940: el Hallicrafters Super SkyRider SX-28. Este último fue
+uno de los dos receptores elegidos por los analistas de Bletchley Park para
+monitorear las comunicaciones del Eje (también utilizaron el National HRO).
+
+Creo que se puede afirmar que el Super Pro es el primer receptor de
+comunicaciones moderno, ya que precede (por lo menos en diseño, según todas las
+fuentes que encontré el Super Pro se habría empezado a diseñar en 1932 o 1933)
+a los demás receptores similares por lo menos en unos cuantos meses. Las dos
+caracterísiticas mas destacables en este aspecto es que Hammarlund se aparta
+decididamente del paradigma de la época con dos innovaciones que no se
+abandonarían mas: la llave de cambio de banda y la lectura directa de
+frecuencia.
+
+Hammarlund había sido durante casi 20 años el principal fabricante de partes
+para radios, particularmente capacitores variables de sintonía y de ajuste
+(trimmers y padders) para HF. Tanto que algunas fuentes señalan que para el
+comienzo de la Segunda Guerra Mundial, el 90% de las radios militares
+estadounidenses usaban variables Hammarlund.
+
+El Super Pro SP-200 es el resultado de años de diseño y experiencia. El primer
+receptor de la línea Super Pro apareció en 1936, pero llevaba ya cuatro años de
+diseño y pruebas cuando salió al mercado. Para principios de la guerra (EE.UU.
+entró en el conflicto en 1941), el SP-200 (BC-779 y BC-1004 en sus
+denominaciones militares) acumulaba ocho años de mejoras. Este receptor no tuvo
+virtualmente modificación en los años de producción durante la guerra.
+
+Al final de la guerra Hammarlund ya estaba trabajando en el magnífico SP-600
+(1947 o 1948), y el SP-200 fue discontinuado; desde 1946 a 1948 vendió el
+SP-400, que es exactamente igual al SP-200 pero con la frecuencia intermedia en
+455kHz en lugar de los tradicionales 465kHz del SP-200. 
+
+
+#### Conclusión:
+Esta radio es realmente excepcional desde varios puntos de vista. En primer
+lugar tiene una fidelidad extraordinaria, produce al escucharla la misma
+sensación que un conversión directa. Se puede literalmente "oír la banda".
+
+En una época donde AM era virtualmente el único modo en fone, este receptor se
+destaca por la calidad de la recepción, fiel, libre de distorsión, cristalina y
+potente de un diseño de entrada sintonizada y cadena de FI de 16kHz de ancho de
+banda para alta fidelidad. No sufre las restricciones de calidad y claridad que
+los receptores de posguerra tuvieron cuando los diseños comenzaron a
+preocuparse por la selectividad y la congestión de las bandas de los años \'50.
+
+Hammarlund había empezado justamente a fabricar receptores con el propósito de
+demostrar que se podía hacer un superheterodino que compitiese o superase al
+conversión directa, TRF y regenerativos de la época (1931) con señales débiles.
+Esta radio demuestra que por lo menos parcialmente lo logró, ya que a pesar del
+mezclador 6L7 este receptor es realmente silencioso. La respuesta de
+frecuencia de la cadena de FI y la acción del AGC son excelentes, y el
+amplificador tiene suficiente potencia para emitir un sonido claro y de amplio
+rango dinámico.
+
+El receptor tiene mucha ganancia y es fácil sobrecargarlo si no se lo sabe usar
+apropiadamente en presencia de señales fuertes, pero realmente tiene suficiente
+rango dinámico para manejar cualquier señal si es operado correctamente.  El
+AGC es especialmente suave (controla las dos etapas de RF y las tres de FI) y
+proporciona una respuesta prácticamente perfecta y casi totalmente
+independiente del nivel de la señal. Las dos etapas amplificadoras del
+preselector son suficientemente rectangulares como para que el AGC no tironee
+aún con señales fuertes relativamente próximas.
+
+Otro aspecto destacable es que mecánicamente es una maravilla. No hay el menor
+compromiso de diseño en el chasis, cada cosa está hecha bien, es de primera
+calidad y está montada como es debido. El cableado y la mano de obra de montaje
+son excelentes también, se puede ver claramente la calidad de construcción
+hasta en los menores detalles. El receptor sin la fuente pesa mas de 25kg.
+Consume unos 110 o 120 watts a volumen normal.
+
+Es una de las radios mas placenteras para operar y escuchar que he tratado. Un
+lujo de otros tiempos.
+
+Un post separado en [este mismo blog](sp400fotos.md).
+
+#### Enlaces:
+    
+
+- Detalles, fotos y publicidad sobre el Super Pro [The Hammarlund SuperPro](<http://www.skywaves.ar88.net/commrx/Hammarlumd/SP-10/Super-Pro_SP-10.html>).
+- Historia sobre Hammarlund en [http://www.hammarlund.info](http://www.hammarlund.info/).
+- El Hammarlund en Radio Boulevard [Western Historic Radio Museum](http://www.radioblvd.com/hammarlund_super_pro.htm) 
+- En Radio Museum: [http://www.radioing.com/museum/rx4.html](http://www.radioing.com/museum/rx4.html).
+- El National HRO: [http://www.radioblvd.com/National%20HRO.htm](http://www.radioblvd.com/National%20HRO.htm).
+- Bletchley Park: 
+    - [Sitio oficial](http://www.bletchleypark.org).
+    - [Wikipedia en castellano](http://es.wikipedia.org/wiki/Bletchley_Park).
+    - [Wikipedia en inglés](http://en.wikipedia.org/wiki/Bletchley_Park).
+    - [Museo virtual](http://www.codesandciphers.org.uk/bletchleypark)
+    - En el [museo de computación](http://www.tnmoc.org).
+
+
+
+    

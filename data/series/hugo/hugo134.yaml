@@ -1,0 +1,199 @@
+title:
+  es: 'Sitio multilenguaje: un solo árbol de contenido'
+  en: 'Sitio multilenguaje: un solo árbol de contenido'
+  pt-br: 'Sitio multilenguaje: un solo árbol de contenido'
+
+lead:
+  es: 'Actualización y cambio de estructura'
+  en: 'Actualización y cambio de estructura'
+  pt-br: 'Actualización y cambio de estructura'
+
+content:
+  en: 
+  pt-br: 
+  es: |
+    Después de cambiar el site a HUGO el año pasado y entender un poco mejor esta
+    tecnología/framework, quise resolver algunos problemas y de paso ver si es posible
+    servir contenido multilingüe en una forma simplificada, o sea  **desde un solo
+    árbol de archivos**, sin multiplicar las ramas de contenido.
+
+    ## La forma convencional
+
+    Por default HUGO propone hacer un árbol de contenido para cada idioma. Esto
+    implica crear una estructura similar para cada uno:
+
+    ```
+    content/
+    ├── es/
+    │   ├── posts/
+    │   └── series/
+    ├── en/
+    │   ├── posts/
+    │   └── series/
+    └── pt-br/
+        ├── posts/
+        └── series/
+    ```
+    En el caso de que el contenido es muy distinto entre idiomas este approach es
+    adecuado. No es mi caso.
+
+    La mayor penalidad la impone  **mantener 3 versiones** de cada archivo.
+
+    ## Las series
+
+    Otra cosa que quería hacer es crear series simples de artículos, algo que ayude
+    a mantener una navegación y flujo informativo coherente entre un conjunto de artículos
+    relacionados a un tema. Este mismo post es parte de una serie, y de esto voy a hablar
+    en otro artículo mas adelante.
+
+    ## Data Files + Templates Inteligentes
+
+    Para resolver el contenido multilenguaje finalmente implementé un sistema
+    híbrido que usa **data files YAML** para el contenido multiidioma y **templates
+    Hugo** que seleccionan automáticamente el idioma correcto.
+
+    ### Estructura Final
+
+    ```
+    content/
+    └── 20250810_mi_post.md          # Solo metadatos
+
+    data/
+    └── 20250810_mi_post.yaml        # Contenido en 3 idiomas
+
+    layouts/
+    ├── _default/
+    │   ├── single.html              # Renderiza desde data files
+    │   └── summary.html             # Extractos multiidioma
+    └── partials/
+        └── content-renderer.html    # Lógica de selección de idioma
+    ```
+
+    ### Archivo de Contenido (.md)
+
+    El archivo `.md` solo contiene metadatos y una referencia:
+
+    ```markdown
+    ---
+    title: 'Antena Moxon para 6m'
+    date: 2025-08-10
+    categories: ["Radio"]
+    tags: ["Antena", "VHF"]
+    ---
+
+    Este post usa data files para mostrar contenido diferente según el idioma del usuario.
+    ```
+
+    ### Data File (.yaml)
+
+    Todo el contenido real está en el archivo YAML:
+
+    ```yaml
+    title:
+      es: 'Antena Moxon para 6 metros'
+      en: 'Moxon Antenna for 6 meters'
+      pt: 'Antena Moxon para 6 metros'
+
+    content:
+      es: |
+        La Moxon es una direccional simple de dos elementos...
+        
+      en: |
+        The Moxon is a simple two-element directional antenna...
+        
+      pt: |
+        A Moxon é uma antena direcional simples de dois elementos...
+    ```
+
+
+    **No estoy convencido de esta estructura.** De movida pienso que no es necesario,
+    y no se si es conveniente, usar el archivo en /data para el contenido traducido,
+    es probable que retorne a tener el contenido en todos los idiomas pero en el .md.
+
+
+    ### Template de Renderizado
+
+    El template detecta automáticamente el idioma y renderiza el contenido apropiado:
+
+    ```go-html-template
+    {{ $currentLang := .Language.Lang }}
+    {{ $contentKey := .File.BaseFileName }}
+    {{ $dataFile := index .Site.Data $contentKey }}
+
+    {{ if $dataFile }}
+      {{ $title := index $dataFile.title $currentLang }}
+      {{ $content := index $dataFile.content $currentLang }}
+      
+      <h1>{{ $title }}</h1>
+      <div class="content">
+        {{ $content | markdownify }}
+      </div>
+    {{ end }}
+    ```
+
+    ## Beneficios del Sistema
+
+    ### ✅ **Mantenimiento Simplificado**
+    - **Un solo archivo** por post (el .yaml)
+    - **Una sola URL** que sirve 3 idiomas
+    - **Sin duplicación** de estructura de directorios
+
+    ### ✅ **SEO Optimizado**
+    - URLs limpias: `/es/post/`, `/en/post/`, `/pt-br/post/`
+    - **Hreflang automático** entre versiones
+    - **Contenido único** por idioma (no duplicado)
+
+    ### ✅ **Experiencia de Usuario**
+    - **Cambio de idioma instantáneo** (misma URL)
+    - **Consistencia** en navegación
+    - **Fallback inteligente** si falta traducción
+
+    ### ✅ **Flujo de Trabajo Eficiente**
+    - Escribo en castellano
+    - Sistema traduce automáticamente a EN/PT-BR
+    - **Una sola publicación** para los 3 idiomas
+
+    ## Implementación Técnica
+
+    El corazón del sistema está en la lógica de templates que:
+
+    1. **Detecta el idioma** actual (`{{ .Language.Lang }}`)
+    2. **Busca el data file** correspondiente
+    3. **Extrae contenido** en el idioma apropiado
+    4. **Renderiza con fallback** si falta traducción
+
+    ```go-html-template
+    {{/* Buscar contenido en idioma actual */}}
+    {{ $content := index $dataFile.content $currentLang }}
+
+    {{/* Fallback a castellano si no existe traducción */}}
+    {{ if not $content }}
+      {{ $content = index $dataFile.content "es" }}
+    {{ end }}
+
+    {{ $content | markdownify }}
+    ```
+
+    ## Resultados
+
+    El sitio ahora sirve **automáticamente** contenido en castellano, 
+    inglés y portugués desde una sola base de código. Los lectores pueden 
+    acceder a los artículos en su idioma preferido, pero yo tengo que mantener
+    un conjunto de archivos.
+
+    ## git hooks
+
+    Como la ventaja principal de esto es que publicar un post es muy aerodinámico
+    (nuevo archivo, escribir, git add, git commit, git push) hacer las traducciones
+    es de todos una fricción adicional e importante. Por eso voy a implementar un
+    script que use la API de alguna IA para hacer las traducciones, ya veremos.
+
+    **URLs del sitio:**
+    - 🇦🇷 [lu2dfm.github.io/es/](https://lu2dfm.github.io/es/)
+    - 🇧🇷 [lu2dfm.github.io/pt-br/](https://lu2dfm.github.io/pt-br/)
+    - 🇺🇸 [lu2dfm.github.io/en/](https://lu2dfm.github.io/en/) 
+
+    El sistema funciona transparentemente para el usuario final, pero simplifica
+    enormemente el trabajo de mantenimiento.
+
+

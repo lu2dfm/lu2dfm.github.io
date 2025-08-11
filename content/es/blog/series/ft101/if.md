@@ -13,12 +13,10 @@ tags:
 - FT-101
 - Yaesu
 - bom
-- Boatanchor
-- Transceiver
+- boatanchor
+- transceiver
 - componentes
 - restoration
-- radioaficionados
-- radio
 thumbnail: /post-images/2025/ft101/bom/if_unit-th.png
 type: series
 weight: 40

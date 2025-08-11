@@ -1,0 +1,56 @@
+---
+title: 'BFO en el BC-348'
+lead: 'Artículo sobre el receptor BC-348.'
+date: 2013-09-14
+categories:
+  - "Radio"
+tags:
+  - "Boatanchor"
+  - "Valvular"
+  - "Receptor"
+---
+
+#### BC-348 BFO 
+##### Nota sobre el BFO en el BC-348-R. 
+
+ 
+El receptor tiene un BFO basado en la sección triodo de la 6F7/VT70, la sección
+pentodo de la cual es la 2da etapa de IF.
+
+La inyección del BFO para el detector se hace mediante un capacitor gimmick (un
+pedazo de cable enroscado sobre otro) desde la reja del triodo sobre la placa
+del pentodo, en el cable que entra al último trafo de FI.
+  
+En mi receptor el capacitor gimmick era prácticamente inexistente, aunque
+parecía original. Esto producía poca inyección de BFO, haciendo imposible
+recuperar señales CW y SSB excepto de muy bajo nivel. Se necesitaba mas
+inyección desde el BFO (gimmick original, [foto 1](/post-images/pre2024/0bc348_gimmick0.jpg)
+).
+
+Provisoriamente cambié la disposición del gimmick (gimmick azul *provisorio*,
+[foto 2](/post-images/pre2024/0bc348_gimmick1.jpg), poniendo mucha mas
+capacidad de acoplamiento. La modificación produce mucha mas inyección y parece
+resolver el problema, sin embargo al variar esta capacidad se necesita
+reajustar la cadena de FI del receptor.
+
+Otra cosa que probé es acoplar el BFO en la primera etapa de FI; esto también da
+resultado pero el audio tiende a distorsionar un poco. 
+
+Un aporte fudamental lo obtuve de los comentarios de los amigos de la lista
+de ARC-5 (arc5@mailman.qth.net) que es sumamente interesante y está ahí
+toda la gente que sabe :)
+
+Hice un video donde se puede escuchar el audio en SSB en MVC y AVC (AGC):
+
+{{< rawhtml >}}
+<video width="320" height="240" controls>
+    <source src="/videos/bc348_ssb.ogg" type="video/ogg">
+    <source src="/videos/bc348_ssb.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video> 
+{{< /rawhtml >}}
+
+*SSB in MVC and AVC.*
+
+
+

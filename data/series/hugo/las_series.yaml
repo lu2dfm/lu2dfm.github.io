@@ -1,0 +1,173 @@
+title:
+  es: 'Series de artículos con HUGO'
+  en: 'Posts series in HUGO'
+  pt-br: 'Séries de artigos com HUGO'
+
+lead:
+  es: 'Índice, presentación, navegación'
+  en: 'Index, presentation, navigation'
+  pt-br: 'Índice, apresentação, navegação'
+
+
+content:
+  en:
+  es: |
+    Un problema general cuando hay una serie de posts relacionados entre si es
+    que el blog queda saturado de esos posts, todos similares y relacionados. Si 
+    el eventual o conjetural lector no está interesado en ese tópico 
+    particular, no ve otra cosa que lo induzca a seguir leyendo.
+
+    El ejemplo de esto es la serie de la 
+    <a href="/es/blog/series/ft101/intro/">lista de componentes del FT101</a>: todos
+    los artículos de esta lista son similares entre si.
+
+    Incluso para el lector con interés en el tema, es tedioso y poco atractivo
+    presentar un sumario que tiene diez artículos todos igual, todos seguidos.
+
+    ### Presentación
+
+    Una posible solución es presentar solo un artículo representativo, el "index" 
+    de la serie, y que este sea el acceso a la misma. Sin embargo, esto presenta
+    el problema de que si la serie es ampliada con mas artículos, o alguno de los
+    artículos de la serie es editado/actualizado, no se vería, dado que el sumario no
+    presenta artículos individuales de la serie.
+
+    Con estas ideas implementé el sistema actual: la serie se presenta como un 
+    solo post que se muestra en su lugar cronológicamente
+    correspondiente tanto en el sumario como en las vistas de categorías 
+    (taxonomías HUGO...), tags, etc. Este "post" es especial, representa la cabecera
+    de la serie, es el punto de acceso a la misma. Esto resuelve el aspecto "polución"
+    o secuestro del sumario cuando hay muchos artículos seguidos y similares.
+
+    Para resolver el problema de como presentar la serie cuando es de alguna 
+    forma actualizada, por edición o agregado de un artículo,
+    se actualiza el campo "date:" del artículo cabecera: esto "flota" ese artículo 
+    a un lugar mas nuevo y muestra la info relevante con una decoración 
+     ⚡NUEVO 
+    .
+   
+    Yo encuentro esta solución no diría elegante pero un poco mas limpia.
+
+    ### Índice
+
+    El índice es un post con una prop "series_role" en Front Matter que se usa
+    para título de la serie y como índice. Este es el post cuya fecha se va
+    actualizar cuando se cambia algo en la serie. 
+
+    Esto último se hace automágicamente usando git hooks. De esto hablaré mas
+    adelante probablemente.
+
+
+    ### Navegación
+
+    El partial de navegación inicialmente lo puse en la cabecera de cada
+    artículo. Ocupa demasiado espacio. De momento la solución es un widget en
+    la barra lateral, que solo aparece cuando el artículo es parte de una
+    serie. No estoy desconforme con este mecanismo.
+
+    Tiene un inconveniente que no he resuelto aún, que es que la sidebar no es fixed, por
+    lo tanto si el artículo es largo, cosa frecuente, hay que volver arriba para navegar.
+    
+    Ya veremos.
+
+    ### Futuro
+
+    Lo voy a dejar un tiempo para ir viendo que experiencia tengo y que ideas me produce,
+    pero falta ajuste. Una posible mejora es poner el nuevo artículo de la serie en
+    lugar del índice, pero esto no sirva para un viejo artículo editado, así que tengo que resolver
+    eso.
+
+    Tengo previsto implementar otro git hook para traducir con algún agente LLM
+    automáticamente los artículos nuevos. Veremos que pasa.
+
+
+    ### Conclusión
+    Espero que estos cambios mejoren la UX. Por lo menos la implementación de todo esto
+    me ha servido para entender mejor el framework y la tecnología subyacente, y para poder
+    apreciar la inteligencia y elegancia detrás de 
+        <a href="https://gohugo.io" target="_blank">Hugo ↗️</a>
+      .
+
+
+  en: |
+    A general problem when there's a series of related posts is that the blog becomes saturated with these posts, all similar and related. If the eventual or hypothetical reader isn't interested in that particular topic, they don't see anything else that induces them to keep reading.
+
+    The example of this is the series of the <a href="/en/blog/series/ft101/intro/">FT101 component list</a>: all the articles in this list are similar to each other.
+
+    Even for readers interested in the topic, it's tedious and unattractive to present a summary that has ten articles all the same, all consecutive.
+
+    ### Presentation
+
+    A possible solution is to present only one representative article, the "index" of the series, and make this the access point to it. However, this presents the problem that if the series is expanded with more articles, or any of the series articles is edited/updated, it wouldn't be visible, since the summary doesn't present individual articles from the series.
+
+    With these ideas I implemented the current system: the series is presented as a single post that is shown in its chronologically corresponding place both in the summary and in category views (HUGO taxonomies...), tags, etc. This "post" is special, it represents the series header, it's the access point to it. This solves the "pollution" aspect or summary hijacking when there are many consecutive and similar articles.
+
+    To solve the problem of how to present the series when it's somehow updated, by editing or adding an article, the "date:" field of the header article is updated: this "floats" that article to a newer place and shows the relevant info with a ⚡NEW decoration.
+
+    I find this solution not exactly elegant but somewhat cleaner.
+
+    ### Index
+
+    The index is a post with a "series_role" prop in Front Matter that is used for the series title and as an index. This is the post whose date will be updated when something changes in the series.
+
+    This latter is done automatically using git hooks. I'll probably talk more about this later.
+
+    ### Navigation
+
+    I initially put the navigation partial in the header of each article. It takes up too much space. For now, the solution is a widget in the sidebar, which only appears when the article is part of a series. I'm not dissatisfied with this mechanism.
+
+    It has one drawback I haven't resolved yet, which is that the sidebar isn't fixed, so if the article is long, which is frequent, you have to go back up to navigate.
+
+    We'll see.
+
+    ### Future
+
+    I'm going to leave it for a while to see what experience I have and what ideas it produces, but it needs adjustment. A possible improvement is to put the new series article in place of the index, but this doesn't work for an old edited article, so I have to solve that.
+
+    I plan to implement another git hook to automatically translate new articles with some LLM agent. We'll see what happens.
+
+    ### Conclusion
+
+    I hope these changes improve the UX. At least implementing all this has helped me better understand the framework and underlying technology, and to appreciate the intelligence and elegance behind <a href="https://gohugo.io" target="_blank">Hugo ↗️</a>.
+
+
+  pt-br: |
+    Um problema geral quando há uma série de posts relacionados entre si é que o blog fica saturado com esses posts, todos similares e relacionados. Se o eventual ou hipotético leitor não está interessado nesse tópico particular, não vê outra coisa que o induza a continuar lendo.
+
+    O exemplo disso é a série da <a href="/pt-br/blog/series/ft101/intro/">lista de componentes do FT101</a>: todos os artigos dessa lista são similares entre si.
+
+    Mesmo para o leitor interessado no tema, é tedioso e pouco atrativo apresentar um sumário que tem dez artigos todos iguais, todos seguidos.
+
+    ### Apresentação
+
+    Uma possível solução é apresentar apenas um artigo representativo, o "índice" da série, e que este seja o acesso à mesma. No entanto, isso apresenta o problema de que se a série for ampliada com mais artigos, ou algum dos artigos da série for editado/atualizado, não seria visível, já que o sumário não apresenta artigos individuais da série.
+
+    Com essas ideias implementei o sistema atual: a série é apresentada como um único post que é mostrado em seu lugar cronologicamente correspondente tanto no sumário quanto nas visualizações de categorias (taxonomias HUGO...), tags, etc. Este "post" é especial, representa o cabeçalho da série, é o ponto de acesso à mesma. Isso resolve o aspecto de "poluição" ou sequestro do sumário quando há muitos artigos seguidos e similares.
+
+    Para resolver o problema de como apresentar a série quando é de alguma forma atualizada, por edição ou adição de um artigo, o campo "date:" do artigo cabeçalho é atualizado: isso "flutua" esse artigo para um lugar mais novo e mostra a info relevante com uma decoração ⚡NOVO.
+
+    Eu considero esta solução não diria elegante, mas um pouco mais limpa.
+
+    ### Índice
+
+    O índice é um post com uma prop "series_role" no Front Matter que é usada para o título da série e como índice. Este é o post cuja data será atualizada quando algo mudar na série.
+
+    Isso último é feito automaticamente usando git hooks. Provavelmente falarei mais sobre isso depois.
+
+    ### Navegação
+
+    O partial de navegação inicialmente coloquei no cabeçalho de cada artigo. Ocupa muito espaço. Por enquanto, a solução é um widget na barra lateral, que só aparece quando o artigo é parte de uma série. Não estou descontente com este mecanismo.
+
+    Tem um inconveniente que ainda não resolvi, que é que a sidebar não é fixa, portanto se o artigo é longo, coisa frequente, é preciso voltar para cima para navegar.
+
+    Vamos ver.
+
+    ### Futuro
+
+    Vou deixar um tempo para ir vendo que experiência tenho e que ideias me produz, mas falta ajuste. Uma possível melhoria é colocar o novo artigo da série no lugar do índice, mas isso não serve para um artigo antigo editado, então tenho que resolver isso.
+
+    Tenho previsto implementar outro git hook para traduzir automaticamente os artigos novos com algum agente LLM. Veremos o que acontece.
+
+    ### Conclusão
+
+    Espero que essas mudanças melhorem a UX. Pelo menos a implementação de tudo isso me serviu para entender melhor o framework e a tecnologia subjacente, e para poder apreciar a inteligência e elegância por trás do <a href="https://gohugo.io" target="_blank">Hugo ↗️</a>.
