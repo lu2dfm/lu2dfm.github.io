@@ -1,14 +1,16 @@
 ---
-title: 'pyaprs. Otro cliente ARPS mas'
-lead: 'Preanuncio del proyecto, alpha, beta. Notas.'
-date: 2015-04-20
 categories:
-  - "Software"
+- Software
+date: 2015-04-20
+description: 'Nota: Este proyecto no despertó interés. Xastir sigue funcionando bien.
+  Si alguien está interesado sigo dispuesto a meterle algunas horas. pyaprs: otro
+  clien...'
+lead: Preanuncio del proyecto, alpha, beta. Notas.
 tags:
-  - "APRS"
-  - "Python"
-
-thumbnail: "post-images/pre2024/pyaprs_0_cap0.jpg"
+- APRS
+- Python
+thumbnail: post-images/pre2024/pyaprs_0_cap0.jpg
+title: pyaprs. Otro cliente ARPS mas
 ---
 
 

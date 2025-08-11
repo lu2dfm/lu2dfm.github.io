@@ -1,15 +1,16 @@
 ---
-title: "Radio Club Berazategui (ex LU5DX)"
-lead: Recordando al RCB.
-date: 2013-06-25
+authorbox: true
 categories:
-  - "Misc"
+- Misc
+comments: false
+date: 2013-06-25
+description: 'Algunos recuerdos <p class="Preformatted20Text"> Recibí este mail entre
+  corchetes son agregados míos: From lu9dx@--------- Thu Jun 06 20:33:12 2013 Hola
+  soy ...'
+lead: Recordando al RCB.
 tags:
-  - "Radio Club"
-comments: false # Enable Disqus comments for specific page
-authorbox: true # Enable authorbox for specific page
-#pager: true # Enable pager navigation (prev/next) for specific page
-#toc: true # Enable Table of Contents for specific page
+- Radio Club
+title: Radio Club Berazategui (ex LU5DX)
 ---
 
 ### Algunos recuerdos

@@ -1,16 +1,18 @@
 ---
-title: 'Fotos SP-400-X'
-lead: 'Fotos del receptor Hammarlund.'
-date: 2010-03-11
 categories:
-  - "Radio"
+- Radio
+date: 2010-03-11
+description: El artículo en este mismo blog/es/post/2010/20100703sp400x. Así estaba
+  cuando los recibí. Click sobre las fotos para ver en tamaño completo. !Chassis/post-im...
+lead: Fotos del receptor Hammarlund.
 tags:
-  - "Boatanchor"
-  - "Hammarlund"
-  - "Valvular"
-  - "Receptor"
-  - "Fotos"
-thumbnail: "post-images/pre2024/sp400/IMG_0650.JPG"
+- Boatanchor
+- Hammarlund
+- Valvular
+- Receptor
+- Fotos
+thumbnail: post-images/pre2024/sp400/IMG_0650.JPG
+title: Fotos SP-400-X
 ---
 
 El artículo [en este mismo blog](/es/post/2010/20100703_sp400x).

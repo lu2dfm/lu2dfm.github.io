@@ -1,9 +1,11 @@
 ---
-title: "Aplicaciones"
 date: 2025-08-10
+description: Una colección de herramientas útiles para radioaficionados y electrónica.
+  Apps Disponibles {{< apps-grid >}} {{< app-card title="Plan de Bandas" description=...
 draft: false
-type: "page"
-layout: "apps-grid"
+layout: apps-grid
+title: Aplicaciones
+type: page
 ---
 
 Una colección de herramientas útiles para radioaficionados y electrónica.

@@ -1,12 +1,14 @@
 ---
-title: 'Boletín Radio Nederland 1979'
-lead: 'España e Iberoamérica'
-date: 2021-02-26
 categories:
-  - "Radio"
+- Radio
+date: 2021-02-26
+description: Boletín de Radio Nederland, Mayo a Noviembre de 1979. !/post-images/pre2024/bole1.jpg
+  "bole 1" !/post-images/pre2024/bole2.jpg "bole 2" !/post-images/pre2024...
+lead: España e Iberoamérica
 tags:
-  - "SWL"
-thumbnail: "/post-images/pre2024/bole_thumb.png"
+- SWL
+thumbnail: /post-images/pre2024/bole_thumb.png
+title: Boletín Radio Nederland 1979
 ---
 
 #### Boletín de Radio Nederland, Mayo a Noviembre de 1979.

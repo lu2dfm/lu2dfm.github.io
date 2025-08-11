@@ -1,15 +1,15 @@
 ---
-title: "Los medidores de ROE te hacen estúpido"
-lead: "Art. original por Eric J. Nichols, KL7AJ."
-date: 2010-11-24
 categories:
-  - "Radio"
-  - "Antena"
+- Radio
+- Antena
+date: 2010-11-24
+description: 'Traducción autorizada por el autor, por Fer, LU2DFM el 10 de Marzo de
+  2010. Original en: <http://www.eham.net/articles/23317>. Versión PDF/doc/kl7ajSWRMeters...'
+lead: Art. original por Eric J. Nichols, KL7AJ.
 tags:
-  - "Antena"
-  - "Radio"
-
-###    <p><br><a href="http://lu2dfm.blogspot.com/2010/03/los-medidores-de-roe-te-hacen-estupido.html">Entrada en el blog</a> de este artículo.
+- Antena
+- Radio
+title: Los medidores de ROE te hacen estúpido
 ---
 
 

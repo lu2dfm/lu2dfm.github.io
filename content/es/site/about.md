@@ -1,8 +1,10 @@
 ---
-title: "About"
-contentKey: "about"
-layout: "multilang-page"
-type: "page"
+contentKey: about
+description: 'Proyecto de radioafición: About. About page content loaded from data
+  files.'
+layout: multilang-page
+title: About
+type: page
 ---
 
 About page content loaded from data files.

@@ -1,20 +1,20 @@
 ---
-title: 'Night of Nights XXVI: Morse desde Point Reyes esta noche 21.00 LU'
-lead: 'Evento conmemorativo desde la histórica estación costera KPH'
-date: 2025-07-12
 categories:
-  - "Radio"
+- Radio
+date: 2025-07-12
+description: KPH revive el CW comercial en su tradicional "Night of Nights" Esta noche,
+  la Maritime Radio Historical Society MRHS celebra la edición XXVI del evento
+lead: Evento conmemorativo desde la histórica estación costera KPH
 tags:
-  - "KPH"
-  - "CW"
-  - "Morse"
-  - "MRHS"
-  - "Historia"
-  - "Frecuencias"
-  - "Radiocomunicación"
-
-thumbnail: /post-images/2025/pointreyesRCA.webp
+- KPH
+- CW
+- Morse
+- MRHS
+- Historia
+- Frecuencias
+- Radiocomunicación
 thumbnail: /post-images/2025/rca_reyes_color.png
+title: 'Night of Nights XXVI: Morse desde Point Reyes esta noche 21.00 LU'
 ---
 
 #### KPH revive el CW comercial en su tradicional "Night of Nights"
