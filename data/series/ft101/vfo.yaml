@@ -3,9 +3,9 @@ title:
   en: "FT-101B: VFO Unit BOM"
   pt-br: "FT-101B: VFO Unit BOM"
 lead: 
-  es: 'Serie acerca de mi Yaesu FT-101B'
-  en: 'Series about my Yaesu FT-101B'
-  pt-br: 'Série sobre meu Yaesu FT-101B'
+  es: 'Lista de componentes de la unidad VFO (Oscilador de Frecuencia Variable) del Yaesu FT-101B'
+  en: 'Bill of materials for the VFO (Variable Frequency Oscillator) unit of the Yaesu FT-101B'
+  pt-br: 'Lista de componentes da unidade VFO (Oscilador de Frequência Variável) do Yaesu FT-101B'
 
 image: "/post-images/2025/ft101/bom/vfo_unit.png"
 image_alt: "VFO Unit"

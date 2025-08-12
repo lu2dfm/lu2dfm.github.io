@@ -4,9 +4,9 @@ title:
   pt-br: "FT-101B: AF Unit BOM"
 
 lead:
-  es: 'Serie acerca de mi Yaesu FT-101B'
-  en: 'Series about my Yaesu FT-101B'
-  pt-br: 'Série sobre meu Yaesu FT-101B'
+  es: 'Lista de componentes de la unidad de Audio Frecuencia (AF) del Yaesu FT-101B'
+  en: 'Bill of materials for the Audio Frequency (AF) unit of the Yaesu FT-101B'
+  pt-br: 'Lista de componentes da unidade de Áudio Frequência (AF) do Yaesu FT-101B'
 
 image: "/post-images/2025/ft101/bom/af_unit.png"
 image_alt: "AF Unit"
