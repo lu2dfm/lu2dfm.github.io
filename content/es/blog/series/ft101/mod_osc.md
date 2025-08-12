@@ -2,7 +2,7 @@
 categories:
 - Radio
 date: 2025-08-02 16:48:21-03:00
-description: 'Proyecto de radioafición: mod_osc. '
+description: 'Lista de componentes de la unidad osciladora (OSC) del Yaesu FT-101B'
 draft: false
 series: ft101
 series_components:
@@ -20,6 +20,7 @@ tags:
 - radioaficionados
 - radio
 thumbnail: /post-images/2025/ft101/bom/osc_unit-th.png
+title: "FT-101B: OSC Unit BOM"
 type: series
 weight: 60
 ---
