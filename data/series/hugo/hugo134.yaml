@@ -4,9 +4,9 @@ title:
   pt-br: 'Sitio multilenguaje: un solo árbol de contenido'
 
 lead:
-  es: 'Actualización y cambio de estructura'
-  en: 'Actualización y cambio de estructura'
-  pt-br: 'Actualización y cambio de estructura'
+  es: 'Cómo implementar un sitio multilenguaje en Hugo usando un solo árbol de contenido y data files'
+  en: 'How to implement a multilingual Hugo site using a single content tree and data files'
+  pt-br: 'Como implementar um site multilíngue em Hugo usando uma única árvore de conteúdo e data files'
 
 content:
   en: 
