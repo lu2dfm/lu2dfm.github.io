@@ -3,9 +3,9 @@ title:
   en: "FT-101B: REG CAL Unit BOM"
   pt-br: "FT-101B: REG CAL Unit BOM"
 lead: 
-  es: 'Serie acerca de mi Yaesu FT-101B'
-  en: 'Series about my Yaesu FT-101B'
-  pt-br: 'Série sobre meu Yaesu FT-101B'
+  es: 'Lista de componentes de la unidad de regulación y calibración (REG CAL) del Yaesu FT-101B'
+  en: 'Bill of materials for the regulation and calibration (REG CAL) unit of the Yaesu FT-101B'
+  pt-br: 'Lista de componentes da unidade de regulação e calibração (REG CAL) do Yaesu FT-101B'
 
 image: "/post-images/2025/ft101/bom/reg_unit.png"
 image_alt: "REG CAL Unit"
