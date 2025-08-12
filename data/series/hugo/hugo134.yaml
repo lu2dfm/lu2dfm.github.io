@@ -9,8 +9,372 @@ lead:
   pt-br: 'Como implementar um site multilíngue em Hugo usando uma única árvore de conteúdo e data files'
 
 content:
-  en: 
-  pt-br: 
+  en: |
+    After changing the site to HUGO last year and getting a better understanding of this
+    technology/framework, I wanted to solve some issues and see if it's possible to
+    serve multilingual content in a simplified way, that is, **from a single
+    file tree**, without multiplying content branches.
+
+    ## The Conventional Way
+
+    By default, HUGO proposes creating a content tree for each language. This
+    means creating a similar structure for each one:
+
+    ```
+    content/
+    ├── es/
+    │   ├── posts/
+    │   └── series/
+    ├── en/
+    │   ├── posts/
+    │   └── series/
+    └── pt-br/
+        ├── posts/
+        └── series/
+    ```
+    In cases where content is very different between languages, this approach is
+    appropriate. That's not my case.
+
+    The biggest penalty comes from **maintaining 3 versions** of each file.
+
+    ## The Series
+
+    Another thing I wanted to do is create simple article series, something that helps
+    maintain coherent navigation and information flow between a set of articles
+    related to a topic. This post itself is part of a series, and I'll talk about this
+    in another article later on.
+
+    ## Data Files + Smart Templates
+
+    To solve the multilingual content, I finally implemented a hybrid system
+    that uses **YAML data files** for multilingual content and **Hugo
+    templates** that automatically select the correct language.
+
+    ### Final Structure
+
+    ```
+    content/
+    └── 20250810_my_post.md          # Only metadata
+
+    data/
+    └── 20250810_my_post.yaml        # Content in 3 languages
+
+    layouts/
+    ├── _default/
+    │   ├── single.html              # Renders from data files
+    │   └── summary.html             # Multilingual excerpts
+    └── partials/
+        └── content-renderer.html    # Language selection logic
+    ```
+
+    ### Content File (.md)
+
+    The `.md` file only contains metadata and a reference:
+
+    ```markdown
+    ---
+    title: 'Moxon Antenna for 6m'
+    date: 2025-08-10
+    categories: ["Radio"]
+    tags: ["Antenna", "VHF"]
+    ---
+
+    This post uses data files to show different content based on user language.
+    ```
+
+    ### Data File (.yaml)
+
+    All the actual content is in the YAML file:
+
+    ```yaml
+    title:
+      es: 'Antena Moxon para 6 metros'
+      en: 'Moxon Antenna for 6 meters'
+      pt: 'Antena Moxon para 6 metros'
+
+    content:
+      es: |
+        La Moxon es una direccional simple de dos elementos...
+        
+      en: |
+        The Moxon is a simple two-element directional antenna...
+        
+      pt: |
+        A Moxon é uma antena direcional simples de dois elementos...
+    ```
+
+    **I'm not convinced about this structure.** Right off the bat, I think it's not necessary,
+    and I'm not sure if it's convenient, to use the file in /data for translated content,
+    I'll probably go back to having all language content in the .md file.
+
+    ### Rendering Template
+
+    The template automatically detects the language and renders the appropriate content:
+
+    ```go-html-template
+    {{ $currentLang := .Language.Lang }}
+    {{ $contentKey := .File.BaseFileName }}
+    {{ $dataFile := index .Site.Data $contentKey }}
+
+    {{ if $dataFile }}
+      {{ $title := index $dataFile.title $currentLang }}
+      {{ $content := index $dataFile.content $currentLang }}
+      
+      <h1>{{ $title }}</h1>
+      <div class="content">
+        {{ $content | markdownify }}
+      </div>
+    {{ end }}
+    ```
+
+    ## System Benefits
+
+    ### ✅ **Simplified Maintenance**
+    - **Single file** per post (the .yaml)
+    - **Single URL** serving 3 languages
+    - **No duplication** of directory structure
+
+    ### ✅ **SEO Optimized**
+    - Clean URLs: `/es/post/`, `/en/post/`, `/pt-br/post/`
+    - **Automatic hreflang** between versions
+    - **Unique content** per language (not duplicated)
+
+    ### ✅ **User Experience**
+    - **Instant language switching** (same URL)
+    - **Navigation consistency**
+    - **Smart fallback** if translation is missing
+
+    ### ✅ **Efficient Workflow**
+    - Write in Spanish
+    - System automatically translates to EN/PT-BR
+    - **Single publication** for all 3 languages
+
+    ## Technical Implementation
+
+    The heart of the system is in the template logic that:
+
+    1. **Detects current language** (`{{ .Language.Lang }}`)
+    2. **Looks up corresponding** data file
+    3. **Extracts content** in appropriate language
+    4. **Renders with fallback** if translation is missing
+
+    ```go-html-template
+    {{/* Look for content in current language */}}
+    {{ $content := index $dataFile.content $currentLang }}
+
+    {{/* Fallback to Spanish if translation doesn't exist */}}
+    {{ if not $content }}
+      {{ $content = index $dataFile.content "es" }}
+    {{ end }}
+
+    {{ $content | markdownify }}
+    ```
+
+    ## Results
+
+    The site now **automatically** serves content in Spanish,
+    English and Portuguese from a single codebase. Readers can
+    access articles in their preferred language, but I only have to maintain
+    one set of files.
+
+    ## git hooks
+
+    Since the main advantage of this is that publishing a post is very streamlined
+    (new file, write, git add, git commit, git push), doing translations
+    is definitely an additional and significant friction point. That's why I'm going to implement a
+    script that uses some AI API to do the translations, we'll see how that goes.
+
+    **Site URLs:**
+    - 🇦🇷 [lu2dfm.github.io/es/](https://lu2dfm.github.io/es/)
+    - 🇧🇷 [lu2dfm.github.io/pt-br/](https://lu2dfm.github.io/pt-br/)
+    - 🇺🇸 [lu2dfm.github.io/en/](https://lu2dfm.github.io/en/)
+
+    The system works transparently for the end user, but greatly simplifies
+    maintenance work.
+
+  pt-br: |
+    Depois de mudar o site para HUGO no ano passado e entender melhor esta
+    tecnologia/framework, quis resolver alguns problemas e ver se é possível
+    servir conteúdo multilíngue de forma simplificada, ou seja, **a partir de uma única
+    árvore de arquivos**, sem multiplicar os ramos de conteúdo.
+
+    ## A Forma Convencional
+
+    Por padrão, o HUGO propõe fazer uma árvore de conteúdo para cada idioma. Isso
+    implica criar uma estrutura similar para cada um:
+
+    ```
+    content/
+    ├── es/
+    │   ├── posts/
+    │   └── series/
+    ├── en/
+    │   ├── posts/
+    │   └── series/
+    └── pt-br/
+        ├── posts/
+        └── series/
+    ```
+    Nos casos em que o conteúdo é muito diferente entre idiomas, essa abordagem é
+    adequada. Não é o meu caso.
+
+    A maior penalidade vem de **manter 3 versões** de cada arquivo.
+
+    ## As Séries
+
+    Outra coisa que eu queria fazer é criar séries simples de artigos, algo que ajude
+    a manter uma navegação e fluxo de informação coerente entre um conjunto de artigos
+    relacionados a um tema. Este post faz parte de uma série, e vou falar sobre isso
+    em outro artigo mais adiante.
+
+    ## Data Files + Templates Inteligentes
+
+    Para resolver o conteúdo multilíngue, finalmente implementei um sistema
+    híbrido que usa **arquivos de dados YAML** para conteúdo multilíngue e **templates
+    Hugo** que selecionam automaticamente o idioma correto.
+
+    ### Estrutura Final
+
+    ```
+    content/
+    └── 20250810_meu_post.md         # Apenas metadados
+
+    data/
+    └── 20250810_meu_post.yaml       # Conteúdo em 3 idiomas
+
+    layouts/
+    ├── _default/
+    │   ├── single.html              # Renderiza a partir de data files
+    │   └── summary.html             # Trechos multilíngues
+    └── partials/
+        └── content-renderer.html    # Lógica de seleção de idioma
+    ```
+
+    ### Arquivo de Conteúdo (.md)
+
+    O arquivo `.md` contém apenas metadados e uma referência:
+
+    ```markdown
+    ---
+    title: 'Antena Moxon para 6m'
+    date: 2025-08-10
+    categories: ["Radio"]
+    tags: ["Antena", "VHF"]
+    ---
+
+    Este post usa data files para mostrar conteúdo diferente de acordo com o idioma do usuário.
+    ```
+
+    ### Data File (.yaml)
+
+    Todo o conteúdo real está no arquivo YAML:
+
+    ```yaml
+    title:
+      es: 'Antena Moxon para 6 metros'
+      en: 'Moxon Antenna for 6 meters'
+      pt: 'Antena Moxon para 6 metros'
+
+    content:
+      es: |
+        La Moxon es una direccional simple de dos elementos...
+        
+      en: |
+        The Moxon is a simple two-element directional antenna...
+        
+      pt: |
+        A Moxon é uma antena direcional simples de dois elementos...
+    ```
+
+    **Não estou convencido desta estrutura.** Logo de cara, penso que não é necessário,
+    e não sei se é conveniente, usar o arquivo em /data para o conteúdo traduzido,
+    provavelmente voltarei a ter todo o conteúdo em todos os idiomas no arquivo .md.
+
+    ### Template de Renderização
+
+    O template detecta automaticamente o idioma e renderiza o conteúdo apropriado:
+
+    ```go-html-template
+    {{ $currentLang := .Language.Lang }}
+    {{ $contentKey := .File.BaseFileName }}
+    {{ $dataFile := index .Site.Data $contentKey }}
+
+    {{ if $dataFile }}
+      {{ $title := index $dataFile.title $currentLang }}
+      {{ $content := index $dataFile.content $currentLang }}
+      
+      <h1>{{ $title }}</h1>
+      <div class="content">
+        {{ $content | markdownify }}
+      </div>
+    {{ end }}
+    ```
+
+    ## Benefícios do Sistema
+
+    ### ✅ **Manutenção Simplificada**
+    - **Um único arquivo** por post (o .yaml)
+    - **Uma única URL** servindo 3 idiomas
+    - **Sem duplicação** de estrutura de diretórios
+
+    ### ✅ **SEO Otimizado**
+    - URLs limpas: `/es/post/`, `/en/post/`, `/pt-br/post/`
+    - **Hreflang automático** entre versões
+    - **Conteúdo único** por idioma (não duplicado)
+
+    ### ✅ **Experiência do Usuário**
+    - **Troca instantânea de idioma** (mesma URL)
+    - **Consistência** na navegação
+    - **Fallback inteligente** se faltar tradução
+
+    ### ✅ **Fluxo de Trabalho Eficiente**
+    - Escrevo em espanhol
+    - Sistema traduz automaticamente para EN/PT-BR
+    - **Uma única publicação** para os 3 idiomas
+
+    ## Implementação Técnica
+
+    O coração do sistema está na lógica de templates que:
+
+    1. **Detecta o idioma** atual (`{{ .Language.Lang }}`)
+    2. **Busca o data file** correspondente
+    3. **Extrai conteúdo** no idioma apropriado
+    4. **Renderiza com fallback** se faltar tradução
+
+    ```go-html-template
+    {{/* Buscar conteúdo no idioma atual */}}
+    {{ $content := index $dataFile.content $currentLang }}
+
+    {{/* Fallback para espanhol se não existir tradução */}}
+    {{ if not $content }}
+      {{ $content = index $dataFile.content "es" }}
+    {{ end }}
+
+    {{ $content | markdownify }}
+    ```
+
+    ## Resultados
+
+    O site agora serve **automaticamente** conteúdo em espanhol,
+    inglês e português a partir de uma única base de código. Os leitores podem
+    acessar os artigos em seu idioma preferido, mas eu só preciso manter
+    um conjunto de arquivos.
+
+    ## git hooks
+
+    Como a principal vantagem disso é que publicar um post é muito simplificado
+    (novo arquivo, escrever, git add, git commit, git push), fazer as traduções
+    é definitivamente um ponto de fricção adicional e significativo. Por isso vou implementar um
+    script que use a API de alguma IA para fazer as traduções, veremos como isso funciona.
+
+    **URLs do site:**
+    - 🇦🇷 [lu2dfm.github.io/es/](https://lu2dfm.github.io/es/)
+    - 🇧🇷 [lu2dfm.github.io/pt-br/](https://lu2dfm.github.io/pt-br/)
+    - 🇺🇸 [lu2dfm.github.io/en/](https://lu2dfm.github.io/en/)
+
+    O sistema funciona de forma transparente para o usuário final, mas simplifica enormemente
+    o trabalho de manutenção.
+
   es: |
     Después de cambiar el site a HUGO el año pasado y entender un poco mejor esta
     tecnología/framework, quise resolver algunos problemas y de paso ver si es posible
