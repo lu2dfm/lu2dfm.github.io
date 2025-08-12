@@ -1,7 +1,7 @@
 title:
     es: "Nuevo sitio"
     en: "New site"
-    pt-br: "Nuevo sitio"
+    pt-br: "Novo site"
 
 lead:
     es: Volviendo a la actividad, sitio con HUGO.
@@ -42,68 +42,60 @@ content:
 
         73
     en: |
-        Después de un hiato de algunos años estoy por fin tratando de retomar alguna
-        forma de actividad.
+        After a hiatus of several years, I'm finally trying to get back to some
+        form of activity.
 
+        For now, I'm focusing on two or three basic and simple projects
+        so as not to be too ambitious, keeping in mind that old saying about
+        biting off more than one can chew.
 
-        De momento me estoy concentrando en dos o tres proyectos
-        básicos y sencillos como para no pecar de ambicioso, por aquello de que el que
-        mucho abarca poco aprieta.
+        On the list is gradually getting the lab in working order first,
+        instruments, tools, and other essential items, and then putting together
+        something that resembles a station. Later, if circumstances
+        are favorable, there will be time to take care of some of the old and beloved
+        "boatanchors" that need attention and electrons flowing through their veins.
+        We'll see.
 
-
-        Está en la lista paulatinamente poner en condiciones primero que nada el
-        laboratorio, instrumentos, herramientas y otras yerbas esenciales, y luego ir
-        conformando algo que parezca una estación. Mas adelante si las circunstancias
-        son favorables habrá tiempo de ocuparse de algunos de los viejos y queridos
-        "boatanchors" que necesitan atención y electrones fluyendo por sus venas.
-        Veremos.
-
-
-        Sirva esta breve nota de agradecimiento a todos los que me han insistido, caso
-        contrario quizá no hubiese resuelto volver nunca. 
+        Let this brief note serve as thanks to all those who have insisted,
+        otherwise I might never have decided to come back.
 
         -----
-        Esta vez el sitio está hecho de cero en 
+        This time the site is built from scratch using
         <a href="https://gohugo.io" target="_blank">Hugo ↗️</a>
-        , que es un fantástico framework para sitios estáticos.
+        , which is a fantastic framework for static sites.
 
-        Espero en los próximos meses tener algunos ratos para mejorar este sitio, 
-        no es gran cosa, ni por el sitio, ni por el contenido. Ya veremos que designios
-        el destino teje.
-
+        I hope in the coming months to have some time to improve this site,
+        it's not much, neither the site nor the content. We'll see what designs
+        fate weaves.
 
         73
 
     pt-br: |
-        Después de un hiato de algunos años estoy por fin tratando de retomar alguna
-        forma de actividad.
+        Depois de um hiato de vários anos, finalmente estou tentando retomar alguma
+        forma de atividade.
 
+        Por enquanto, estou me concentrando em dois ou três projetos
+        básicos e simples para não pecar de ambicioso, lembrando aquele ditado
+        que quem muito abarca pouco abraça.
 
-        De momento me estoy concentrando en dos o tres proyectos
-        básicos y sencillos como para no pecar de ambicioso, por aquello de que el que
-        mucho abarca poco aprieta.
-
-
-        Está en la lista paulatinamente poner en condiciones primero que nada el
-        laboratorio, instrumentos, herramientas y otras yerbas esenciales, y luego ir
-        conformando algo que parezca una estación. Mas adelante si las circunstancias
-        son favorables habrá tiempo de ocuparse de algunos de los viejos y queridos
-        "boatanchors" que necesitan atención y electrones fluyendo por sus venas.
+        Na lista está gradualmente colocar em ordem primeiro o laboratório,
+        instrumentos, ferramentas e outros itens essenciais, e depois montar
+        algo que se pareça com uma estação. Mais adiante, se as circunstâncias
+        forem favoráveis, haverá tempo para cuidar de alguns dos velhos e queridos
+        "boatanchors" que precisam de atenção e elétrons fluindo por suas veias.
         Veremos.
 
-
-        Sirva esta breve nota de agradecimiento a todos los que me han insistido, caso
-        contrario quizá no hubiese resuelto volver nunca. 
+        Que esta breve nota sirva de agradecimento a todos que insistiram,
+        caso contrário talvez nunca tivesse decidido voltar.
 
         -----
-        Esta vez el sitio está hecho de cero en 
+        Desta vez o site foi feito do zero usando
         <a href="https://gohugo.io" target="_blank">Hugo ↗️</a>
-        , que es un fantástico framework para sitios estáticos.
+        , que é um fantástico framework para sites estáticos.
 
-        Espero en los próximos meses tener algunos ratos para mejorar este sitio, 
-        no es gran cosa, ni por el sitio, ni por el contenido. Ya veremos que designios
-        el destino teje.
-
+        Espero nos próximos meses ter algum tempo para melhorar este site,
+        não é grande coisa, nem o site nem o conteúdo. Veremos que desígnios
+        o destino tece.
 
         73
 
